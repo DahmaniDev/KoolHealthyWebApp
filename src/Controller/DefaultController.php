@@ -15,10 +15,10 @@ class DefaultController extends AbstractController
     return $this->render('base.html.twig');
   }
   /**
-   * @Route("/menu", name="menu")
+   * @Route("/CalculateMyNeeds", name="CalculateMyNeeds")
    */
-  public function menu():Response{
-    return $this->render('/menu/menu.html.twig');
+  public function CalculateMyNeeds():Response{
+    return $this->render('/CalculateMyNeeds/CalculateMyNeeds.html.twig');
   }
   /**
    * @Route("/about", name="about")

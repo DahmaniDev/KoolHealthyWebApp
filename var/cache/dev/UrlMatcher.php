@@ -14,7 +14,7 @@ return [
         '/_profiler/phpinfo' => [[['_route' => '_profiler_phpinfo', '_controller' => 'web_profiler.controller.profiler::phpinfoAction'], null, null, null, false, false, null]],
         '/_profiler/open' => [[['_route' => '_profiler_open_file', '_controller' => 'web_profiler.controller.profiler::openAction'], null, null, null, false, false, null]],
         '/' => [[['_route' => 'home', '_controller' => 'App\\Controller\\DefaultController::home'], null, null, null, false, false, null]],
-        '/menu' => [[['_route' => 'menu', '_controller' => 'App\\Controller\\DefaultController::menu'], null, null, null, false, false, null]],
+        '/CalculateMyNeeds' => [[['_route' => 'CalculateMyNeeds', '_controller' => 'App\\Controller\\DefaultController::CalculateMyNeeds'], null, null, null, false, false, null]],
         '/about' => [[['_route' => 'about', '_controller' => 'App\\Controller\\DefaultController::about'], null, null, null, false, false, null]],
         '/reservation' => [[['_route' => 'reservation', '_controller' => 'App\\Controller\\DefaultController::reservation'], null, null, null, false, false, null]],
         '/stuff' => [[['_route' => 'stuff', '_controller' => 'App\\Controller\\DefaultController::stuff'], null, null, null, false, false, null]],

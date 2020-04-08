@@ -89,7 +89,7 @@ class __TwigTemplate_cd7715d02fe11c9bf330b021c3670eed5a05cd7d0b022ba3353b55b4c07
 \t\t\t\t<div class=\"collapse navbar-collapse\" id=\"navbars-rs-food\">
 \t\t\t\t\t<ul class=\"navbar-nav ml-auto\">
 \t\t\t\t\t\t<li class=\"nav-item active\"><a class=\"nav-link\" href=\"home\">Home</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"menu\">Calculate My Needs</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"CalculateMyNeeds\">Calculate My Needs</a></li>
 \t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"about\">Prepared Meals</a></li>
 \t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"about\">Articles</a></li>
 \t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"about\">Profile</a></li>
@@ -715,7 +715,7 @@ class __TwigTemplate_cd7715d02fe11c9bf330b021c3670eed5a05cd7d0b022ba3353b55b4c07
 \t\t\t\t<div class=\"collapse navbar-collapse\" id=\"navbars-rs-food\">
 \t\t\t\t\t<ul class=\"navbar-nav ml-auto\">
 \t\t\t\t\t\t<li class=\"nav-item active\"><a class=\"nav-link\" href=\"home\">Home</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"menu\">Calculate My Needs</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"CalculateMyNeeds\">Calculate My Needs</a></li>
 \t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"about\">Prepared Meals</a></li>
 \t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"about\">Articles</a></li>
 \t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"about\">Profile</a></li>
@@ -1271,6 +1271,6 @@ class __TwigTemplate_cd7715d02fe11c9bf330b021c3670eed5a05cd7d0b022ba3353b55b4c07
     <script src=\"js/contact-form-script.js\"></script>
     <script src=\"js/custom.js\"></script>
 </body>
-</html>", "base.html.twig", "C:\\Users\\Dahmani\\SymfonyProjects\\ProjetFE\\templates\\base.html.twig");
+</html>", "base.html.twig", "C:\\Users\\tarza\\SymfonyProjects\\ProjetSymfony\\templates\\base.html.twig");
     }
 }

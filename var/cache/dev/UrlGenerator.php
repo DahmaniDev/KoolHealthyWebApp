@@ -16,7 +16,7 @@ return [
     '_profiler_exception' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::body'], [], [['text', '/exception'], ['variable', '/', '[^/]++', 'token'], ['text', '/_profiler']], [], []],
     '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::stylesheet'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token'], ['text', '/_profiler']], [], []],
     'home' => [[], ['_controller' => 'App\\Controller\\DefaultController::home'], [], [['text', '/']], [], []],
-    'menu' => [[], ['_controller' => 'App\\Controller\\DefaultController::menu'], [], [['text', '/menu']], [], []],
+    'CalculateMyNeeds' => [[], ['_controller' => 'App\\Controller\\DefaultController::CalculateMyNeeds'], [], [['text', '/CalculateMyNeeds']], [], []],
     'about' => [[], ['_controller' => 'App\\Controller\\DefaultController::about'], [], [['text', '/about']], [], []],
     'reservation' => [[], ['_controller' => 'App\\Controller\\DefaultController::reservation'], [], [['text', '/reservation']], [], []],
     'stuff' => [[], ['_controller' => 'App\\Controller\\DefaultController::stuff'], [], [['text', '/stuff']], [], []],
