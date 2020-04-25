@@ -88,25 +88,12 @@ class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b
 \t\t\t\t</button>
 \t\t\t\t<div class=\"collapse navbar-collapse\" id=\"navbars-rs-food\">
 \t\t\t\t\t<ul class=\"navbar-nav ml-auto\">
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"/\">Home</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"menu\">Menu</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"about\">About</a></li>
-\t\t\t\t\t\t<li class=\"nav-item dropdown\">
-\t\t\t\t\t\t\t<a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"dropdown-a\" data-toggle=\"dropdown\">Pages</a>
-\t\t\t\t\t\t\t<div class=\"dropdown-menu\" aria-labelledby=\"dropdown-a\">
-\t\t\t\t\t\t\t\t<a class=\"dropdown-item\" href=\"reservation\">Reservation</a>
-\t\t\t\t\t\t\t\t<a class=\"dropdown-item\" href=\"stuff\">Stuff</a>
-\t\t\t\t\t\t\t\t<a class=\"dropdown-item\" href=\"gallery\">Gallery</a>
-\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t</li>
-\t\t\t\t\t\t<li class=\"nav-item dropdown\">
-\t\t\t\t\t\t\t<a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"dropdown-a\" data-toggle=\"dropdown\">Blog</a>
-\t\t\t\t\t\t\t<div class=\"dropdown-menu\" aria-labelledby=\"dropdown-a\">
-\t\t\t\t\t\t\t\t<a class=\"dropdown-item\" href=\"blog\">blog</a>
-\t\t\t\t\t\t\t\t<a class=\"dropdown-item\" href=\"blog-details\">blog Single</a>
-\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t</li>
-\t\t\t\t\t\t<li class=\"nav-item active\"><a class=\"nav-link\" href=\"contact\">Contact</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"home\">Home</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"CalculateMyNeeds\">Calculate My Needs</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"PreparedMeals\">Prepared Meals</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"Articles\">Articles</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"Profile\">Profile</a></li>
+\t\t\t\t\t\t<li class=\"nav-item active\"><a class=\"nav-link\" href=\"Contact\">Contact</a></li>
 \t\t\t\t\t</ul>
 \t\t\t\t</div>
 \t\t\t</div>
@@ -376,25 +363,12 @@ class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b
 \t\t\t\t</button>
 \t\t\t\t<div class=\"collapse navbar-collapse\" id=\"navbars-rs-food\">
 \t\t\t\t\t<ul class=\"navbar-nav ml-auto\">
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"/\">Home</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"menu\">Menu</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"about\">About</a></li>
-\t\t\t\t\t\t<li class=\"nav-item dropdown\">
-\t\t\t\t\t\t\t<a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"dropdown-a\" data-toggle=\"dropdown\">Pages</a>
-\t\t\t\t\t\t\t<div class=\"dropdown-menu\" aria-labelledby=\"dropdown-a\">
-\t\t\t\t\t\t\t\t<a class=\"dropdown-item\" href=\"reservation\">Reservation</a>
-\t\t\t\t\t\t\t\t<a class=\"dropdown-item\" href=\"stuff\">Stuff</a>
-\t\t\t\t\t\t\t\t<a class=\"dropdown-item\" href=\"gallery\">Gallery</a>
-\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t</li>
-\t\t\t\t\t\t<li class=\"nav-item dropdown\">
-\t\t\t\t\t\t\t<a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"dropdown-a\" data-toggle=\"dropdown\">Blog</a>
-\t\t\t\t\t\t\t<div class=\"dropdown-menu\" aria-labelledby=\"dropdown-a\">
-\t\t\t\t\t\t\t\t<a class=\"dropdown-item\" href=\"blog\">blog</a>
-\t\t\t\t\t\t\t\t<a class=\"dropdown-item\" href=\"blog-details\">blog Single</a>
-\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t</li>
-\t\t\t\t\t\t<li class=\"nav-item active\"><a class=\"nav-link\" href=\"contact\">Contact</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"home\">Home</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"CalculateMyNeeds\">Calculate My Needs</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"PreparedMeals\">Prepared Meals</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"Articles\">Articles</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"Profile\">Profile</a></li>
+\t\t\t\t\t\t<li class=\"nav-item active\"><a class=\"nav-link\" href=\"Contact\">Contact</a></li>
 \t\t\t\t\t</ul>
 \t\t\t\t</div>
 \t\t\t</div>
@@ -595,6 +569,6 @@ class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b
 \t\t});\t
 \t</script>
 </body>
-</html>", "/contact/contact.html.twig", "C:\\Users\\Dahmani\\SymfonyProjects\\ProjetFE\\templates\\contact\\contact.html.twig");
+</html>", "/contact/contact.html.twig", "C:\\Users\\tarza\\SymfonyProjects\\ProjetSymfony\\templates\\contact\\contact.html.twig");
     }
 }

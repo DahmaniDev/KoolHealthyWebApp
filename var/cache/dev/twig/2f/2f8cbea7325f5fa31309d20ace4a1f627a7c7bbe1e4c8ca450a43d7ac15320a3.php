@@ -12,7 +12,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* about/about.html.twig */
+/* /about/about.html.twig */
 class __TwigTemplate_b2b1a12a128ea91c4aeec3e9c1e31112793bcb86a7e2413a073ad8cf9c7ad80a extends Template
 {
     private $source;
@@ -34,10 +34,10 @@ class __TwigTemplate_b2b1a12a128ea91c4aeec3e9c1e31112793bcb86a7e2413a073ad8cf9c7
     {
         $macros = $this->macros;
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "about/about.html.twig"));
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "/about/about.html.twig"));
 
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "about/about.html.twig"));
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "/about/about.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -88,24 +88,11 @@ class __TwigTemplate_b2b1a12a128ea91c4aeec3e9c1e31112793bcb86a7e2413a073ad8cf9c7
 \t\t\t\t</button>
 \t\t\t\t<div class=\"collapse navbar-collapse\" id=\"navbars-rs-food\">
 \t\t\t\t\t<ul class=\"navbar-nav ml-auto\">
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"/\">Home</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"menu\">Menu</a></li>
-\t\t\t\t\t\t<li class=\"nav-item active\"><a class=\"nav-link\" href=\"about\">About</a></li>
-\t\t\t\t\t\t<li class=\"nav-item dropdown\">
-\t\t\t\t\t\t\t<a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"dropdown-a\" data-toggle=\"dropdown\">Pages</a>
-\t\t\t\t\t\t\t<div class=\"dropdown-menu\" aria-labelledby=\"dropdown-a\">
-\t\t\t\t\t\t\t\t<a class=\"dropdown-item\" href=\"reservation\">Reservation</a>
-\t\t\t\t\t\t\t\t<a class=\"dropdown-item\" href=\"stuff\">Stuff</a>
-\t\t\t\t\t\t\t\t<a class=\"dropdown-item\" href=\"gallery\">Gallery</a>
-\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t</li>
-\t\t\t\t\t\t<li class=\"nav-item dropdown\">
-\t\t\t\t\t\t\t<a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"dropdown-a\" data-toggle=\"dropdown\">Blog</a>
-\t\t\t\t\t\t\t<div class=\"dropdown-menu\" aria-labelledby=\"dropdown-a\">
-\t\t\t\t\t\t\t\t<a class=\"dropdown-item\" href=\"blog\">blog</a>
-\t\t\t\t\t\t\t\t<a class=\"dropdown-item\" href=\"blog-details\">blog Single</a>
-\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t</li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"home\">Home</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"CalculateMyNeeds\">Calculate My Needs</a></li>
+\t\t\t\t\t\t<li class=\"nav-item active\"><a class=\"nav-link\" href=\"about\">Prepared Meals</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"about\">Articles</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"about\">Profile</a></li>
 \t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"contact\">Contact</a></li>
 \t\t\t\t\t</ul>
 \t\t\t\t</div>
@@ -514,7 +501,7 @@ class __TwigTemplate_b2b1a12a128ea91c4aeec3e9c1e31112793bcb86a7e2413a073ad8cf9c7
 
     public function getTemplateName()
     {
-        return "about/about.html.twig";
+        return "/about/about.html.twig";
     }
 
     public function getDebugInfo()
@@ -572,24 +559,11 @@ class __TwigTemplate_b2b1a12a128ea91c4aeec3e9c1e31112793bcb86a7e2413a073ad8cf9c7
 \t\t\t\t</button>
 \t\t\t\t<div class=\"collapse navbar-collapse\" id=\"navbars-rs-food\">
 \t\t\t\t\t<ul class=\"navbar-nav ml-auto\">
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"/\">Home</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"menu\">Menu</a></li>
-\t\t\t\t\t\t<li class=\"nav-item active\"><a class=\"nav-link\" href=\"about\">About</a></li>
-\t\t\t\t\t\t<li class=\"nav-item dropdown\">
-\t\t\t\t\t\t\t<a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"dropdown-a\" data-toggle=\"dropdown\">Pages</a>
-\t\t\t\t\t\t\t<div class=\"dropdown-menu\" aria-labelledby=\"dropdown-a\">
-\t\t\t\t\t\t\t\t<a class=\"dropdown-item\" href=\"reservation\">Reservation</a>
-\t\t\t\t\t\t\t\t<a class=\"dropdown-item\" href=\"stuff\">Stuff</a>
-\t\t\t\t\t\t\t\t<a class=\"dropdown-item\" href=\"gallery\">Gallery</a>
-\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t</li>
-\t\t\t\t\t\t<li class=\"nav-item dropdown\">
-\t\t\t\t\t\t\t<a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"dropdown-a\" data-toggle=\"dropdown\">Blog</a>
-\t\t\t\t\t\t\t<div class=\"dropdown-menu\" aria-labelledby=\"dropdown-a\">
-\t\t\t\t\t\t\t\t<a class=\"dropdown-item\" href=\"blog\">blog</a>
-\t\t\t\t\t\t\t\t<a class=\"dropdown-item\" href=\"blog-details\">blog Single</a>
-\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t</li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"home\">Home</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"CalculateMyNeeds\">Calculate My Needs</a></li>
+\t\t\t\t\t\t<li class=\"nav-item active\"><a class=\"nav-link\" href=\"about\">Prepared Meals</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"about\">Articles</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"about\">Profile</a></li>
 \t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"contact\">Contact</a></li>
 \t\t\t\t\t</ul>
 \t\t\t\t</div>
@@ -987,6 +961,6 @@ class __TwigTemplate_b2b1a12a128ea91c4aeec3e9c1e31112793bcb86a7e2413a073ad8cf9c7
     <script src=\"js/contact-form-script.js\"></script>
     <script src=\"js/custom.js\"></script>
 </body>
-</html>", "about/about.html.twig", "C:\\Users\\tarza\\SymfonyProjects\\ProjetSymfony\\templates\\about\\about.html.twig");
+</html>", "/about/about.html.twig", "C:\\Users\\tarza\\SymfonyProjects\\ProjetSymfony\\templates\\about\\about.html.twig");
     }
 }

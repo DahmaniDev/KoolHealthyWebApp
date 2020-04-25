@@ -9,10 +9,16 @@ use Symfony\Component\HttpFoundation\Response;
 class DefaultController extends AbstractController
 {
     /**
-   * @Route("/", name="home")
+   * @Route("/", name="home_")
    */
-   public function home():Response{
-    return $this->render('base.html.twig');
+   public function home_():Response{
+    return $this->render('home.html.twig');
+  }
+   /**
+   * @Route("/home", name="home")
+   */
+  public function home():Response{
+    return $this->render('home.html.twig');
   }
   /**
    * @Route("/CalculateMyNeeds", name="CalculateMyNeeds")
@@ -21,28 +27,28 @@ class DefaultController extends AbstractController
     return $this->render('/CalculateMyNeeds/CalculateMyNeeds.html.twig');
   }
   /**
-   * @Route("/about", name="about")
+   * @Route("/PreparedMeals", name="PreparedMeals")
    */
-  public function about():Response{
-    return $this->render('/about/about.html.twig');
+  public function PreparedMeals():Response{
+    return $this->render('/preparedmeals/preparedmeals.html.twig');
   }
   /**
-   * @Route("/reservation", name="reservation")
+   * @Route("/Articles", name="Articles")
    */
-  public function reservation():Response{
-    return $this->render('/reservation/reservation.html.twig');
+  public function Articles():Response{
+    return $this->render('/articles/articles.html.twig');
   }
   /**
-   * @Route("/stuff", name="stuff")
+   * @Route("/Profile", name="Profile")
    */
-  public function stuff():Response{
-    return $this->render('/stuff/stuff.html.twig');
+  public function Profile():Response{
+    return $this->render('/profile/profile.html.twig');
   }
   /**
-   * @Route("/gallery", name="gallery")
+   * @Route("/Contact", name="Contact")
    */
-  public function gallery():Response{
-    return $this->render('/gallery/gallery.html.twig');
+  public function contact():Response{
+    return $this->render('/contact/contact.html.twig');
   }
   /**
    * @Route("/blog", name="blog")
@@ -55,11 +61,5 @@ class DefaultController extends AbstractController
    */
   public function blogdetail():Response{
     return $this->render('/blog-detail/blog-detail.html.twig');
-  }
-  /**
-   * @Route("/contact", name="contact")
-   */
-  public function contact():Response{
-    return $this->render('/contact/contact.html.twig');
   }
 }

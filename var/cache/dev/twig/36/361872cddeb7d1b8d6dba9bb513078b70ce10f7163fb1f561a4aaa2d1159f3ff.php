@@ -90,10 +90,10 @@ class __TwigTemplate_cd7715d02fe11c9bf330b021c3670eed5a05cd7d0b022ba3353b55b4c07
 \t\t\t\t\t<ul class=\"navbar-nav ml-auto\">
 \t\t\t\t\t\t<li class=\"nav-item active\"><a class=\"nav-link\" href=\"home\">Home</a></li>
 \t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"CalculateMyNeeds\">Calculate My Needs</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"about\">Prepared Meals</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"about\">Articles</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"about\">Profile</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"contact\">Contact</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"PreparedMeals\">Prepared Meals</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"Articles\">Articles</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"Profile\">Profile</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"Contact\">Contact</a></li>
 \t\t\t\t\t</ul>
 \t\t\t\t</div>
 \t\t\t</div>
@@ -221,9 +221,9 @@ class __TwigTemplate_cd7715d02fe11c9bf330b021c3670eed5a05cd7d0b022ba3353b55b4c07
 \t\t\t\t\t\t\t\t\t<div class=\"gallery-single fix\">
 \t\t\t\t\t\t\t\t\t\t<img src=\"images/img-01.jpg\" class=\"img-fluid\" alt=\"Image\">
 \t\t\t\t\t\t\t\t\t\t<div class=\"why-text\">
-\t\t\t\t\t\t\t\t\t\t\t<h4>Special Drinks 1</h4>
-\t\t\t\t\t\t\t\t\t\t\t<p>Sed id magna vitae eros sagittis euismod.</p>
-\t\t\t\t\t\t\t\t\t\t\t<h5> \$7.79</h5>
+\t\t\t\t\t\t\t\t\t\t\t<h4>Baked or Broiled Fish</h4>
+\t\t\t\t\t\t\t\t\t\t\t<p>200 Kcal / 40g Protein / 20g Fats / 50g Carbs</p>
+\t\t\t\t\t\t\t\t\t\t\t<h5> 15.0 DT</h5>
 \t\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t</div>
@@ -504,8 +504,8 @@ class __TwigTemplate_cd7715d02fe11c9bf330b021c3670eed5a05cd7d0b022ba3353b55b4c07
 \t\t\t\t\t\t\t\t\t<img class=\"d-block w-100 rounded-circle\" src=\"images/quotations-button.png\" alt=\"\">
 \t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t<h5 class=\"mt-4 mb-0\"><strong class=\"text-warning text-uppercase\">Paul Mitchel</strong></h5>
-\t\t\t\t\t\t\t\t<h6 class=\"text-dark m-0\">Web Developer</h6>
-\t\t\t\t\t\t\t\t<p class=\"m-0 pt-3\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
+\t\t\t\t\t\t\t\t<h6 class=\"text-dark m-0\">Student</h6>
+\t\t\t\t\t\t\t\t<p class=\"m-0 pt-3\">One of the best meals I had, well prepared and well delivered. <br>Thank you Kool Healthy</p>
 \t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t<div class=\"carousel-item text-center\">
 \t\t\t\t\t\t\t\t<div class=\"img-box p-1 border rounded-circle m-auto\">
@@ -548,25 +548,23 @@ class __TwigTemplate_cd7715d02fe11c9bf330b021c3670eed5a05cd7d0b022ba3353b55b4c07
 \t\t\t\t\t<div class=\"overflow-hidden\">
 \t\t\t\t\t\t<h4>Phone</h4>
 \t\t\t\t\t\t<p class=\"lead\">
-\t\t\t\t\t\t\t+01 123-456-4590
+\t\t\t\t\t\t\t+216 52-680-290
 \t\t\t\t\t\t</p>
 \t\t\t\t\t</div>
 \t\t\t\t</div>
-\t\t\t\t<div class=\"col-md-4 arrow-right\">
-\t\t\t\t\t<i class=\"fa fa-envelope\"></i>
+\t\t\t\t<i class=\"fa fa-envelope\"></i>
 \t\t\t\t\t<div class=\"overflow-hidden\">
 \t\t\t\t\t\t<h4>Email</h4>
 \t\t\t\t\t\t<p class=\"lead\">
-\t\t\t\t\t\t\tyourmail@gmail.com
+\t\t\t\t\t\t\tkool.healthy.contact@gmail.com
 \t\t\t\t\t\t</p>
 \t\t\t\t\t</div>
-\t\t\t\t</div>
 \t\t\t\t<div class=\"col-md-4\">
 \t\t\t\t\t<i class=\"fa fa-map-marker\"></i>
 \t\t\t\t\t<div class=\"overflow-hidden\">
 \t\t\t\t\t\t<h4>Location</h4>
 \t\t\t\t\t\t<p class=\"lead\">
-\t\t\t\t\t\t\t800, Lorem Street, US
+\t\t\t\t\t\t\t5000, Monastir, Tunisia
 \t\t\t\t\t\t</p>
 \t\t\t\t\t</div>
 \t\t\t\t</div>
@@ -581,7 +579,7 @@ class __TwigTemplate_cd7715d02fe11c9bf330b021c3670eed5a05cd7d0b022ba3353b55b4c07
 \t\t\t<div class=\"row\">
 \t\t\t\t<div class=\"col-lg-3 col-md-6\">
 \t\t\t\t\t<h3>About Us</h3>
-\t\t\t\t\t<p>Integer cursus scelerisque ipsum id efficitur. Donec a dui fringilla, gravida lorem ac, semper magna. Aenean rhoncus ac lectus a interdum. Vivamus semper posuere dui.</p>
+\t\t\t\t\t<p>Kool Healthy is a Meal-Prep Service based in Tunisia. Founded in 2020 with the help of : Mr. Sami Bhiri and OneDev</p>
 \t\t\t\t</div>
 \t\t\t\t<div class=\"col-lg-3 col-md-6\">
 \t\t\t\t\t<h3>Subscribe</h3>
@@ -592,26 +590,22 @@ class __TwigTemplate_cd7715d02fe11c9bf330b021c3670eed5a05cd7d0b022ba3353b55b4c07
 \t\t\t\t\t\t\t<div class=\"clearfix\"></div>
 \t\t\t\t\t\t</form>
 \t\t\t\t\t</div>
+\t\t\t\t\t
+\t\t\t\t</div>
+\t\t\t\t<div class=\"col-lg-3 col-md-6\">
+\t\t\t\t\t<h3>Contact information</h3>
+\t\t\t\t\t<p class=\"lead\">Monastir</p>
+\t\t\t\t\t<p class=\"lead\"><a href=\"#\">+216 52 680 290</a></p>
+\t\t\t\t\t<p><a href=\"#\"> kool.healthy.contact@gmail.com</a></p>
+\t\t\t\t</div>
+\t\t\t\t<div class=\"col-lg-3 col-md-6\">
+\t\t\t\t\t<h3>Follow Us</h3>
 \t\t\t\t\t<ul class=\"list-inline f-social\">
 \t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-facebook\" aria-hidden=\"true\"></i></a></li>
-\t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-twitter\" aria-hidden=\"true\"></i></a></li>
 \t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-linkedin\" aria-hidden=\"true\"></i></a></li>
 \t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-google-plus\" aria-hidden=\"true\"></i></a></li>
 \t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-instagram\" aria-hidden=\"true\"></i></a></li>
 \t\t\t\t\t</ul>
-\t\t\t\t</div>
-\t\t\t\t<div class=\"col-lg-3 col-md-6\">
-\t\t\t\t\t<h3>Contact information</h3>
-\t\t\t\t\t<p class=\"lead\">Ipsum Street, Lorem Tower, MO, Columbia, 508000</p>
-\t\t\t\t\t<p class=\"lead\"><a href=\"#\">+01 2000 800 9999</a></p>
-\t\t\t\t\t<p><a href=\"#\"> info@admin.com</a></p>
-\t\t\t\t</div>
-\t\t\t\t<div class=\"col-lg-3 col-md-6\">
-\t\t\t\t\t<h3>Opening hours</h3>
-\t\t\t\t\t<p><span class=\"text-color\">Monday: </span>Closed</p>
-\t\t\t\t\t<p><span class=\"text-color\">Tue-Wed :</span> 9:Am - 10PM</p>
-\t\t\t\t\t<p><span class=\"text-color\">Thu-Fri :</span> 9:Am - 10PM</p>
-\t\t\t\t\t<p><span class=\"text-color\">Sat-Sun :</span> 5:PM - 10PM</p>
 \t\t\t\t</div>
 \t\t\t</div>
 \t\t</div>
@@ -620,8 +614,8 @@ class __TwigTemplate_cd7715d02fe11c9bf330b021c3670eed5a05cd7d0b022ba3353b55b4c07
 \t\t\t<div class=\"container\">
 \t\t\t\t<div class=\"row\">
 \t\t\t\t\t<div class=\"col-lg-12\">
-\t\t\t\t\t\t<p class=\"company-name\">All Rights Reserved. &copy; 2018 <a href=\"#\">Live Dinner Restaurant</a> Design By : 
-\t\t\t\t\t<a href=\"https://html.design/\">html design</a></p>
+\t\t\t\t\t\t<p class=\"company-name\">All Rights Reserved. &copy; 2020 <a href=\"#\">Kool Healthy</a> Developped By : 
+\t\t\t\t\t<a href=\"https://github.com/DahmaniDev\">DahmaniDev</a></p>
 \t\t\t\t\t</div>
 \t\t\t\t</div>
 \t\t\t</div>
@@ -716,10 +710,10 @@ class __TwigTemplate_cd7715d02fe11c9bf330b021c3670eed5a05cd7d0b022ba3353b55b4c07
 \t\t\t\t\t<ul class=\"navbar-nav ml-auto\">
 \t\t\t\t\t\t<li class=\"nav-item active\"><a class=\"nav-link\" href=\"home\">Home</a></li>
 \t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"CalculateMyNeeds\">Calculate My Needs</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"about\">Prepared Meals</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"about\">Articles</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"about\">Profile</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"contact\">Contact</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"PreparedMeals\">Prepared Meals</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"Articles\">Articles</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"Profile\">Profile</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"Contact\">Contact</a></li>
 \t\t\t\t\t</ul>
 \t\t\t\t</div>
 \t\t\t</div>
@@ -847,9 +841,9 @@ class __TwigTemplate_cd7715d02fe11c9bf330b021c3670eed5a05cd7d0b022ba3353b55b4c07
 \t\t\t\t\t\t\t\t\t<div class=\"gallery-single fix\">
 \t\t\t\t\t\t\t\t\t\t<img src=\"images/img-01.jpg\" class=\"img-fluid\" alt=\"Image\">
 \t\t\t\t\t\t\t\t\t\t<div class=\"why-text\">
-\t\t\t\t\t\t\t\t\t\t\t<h4>Special Drinks 1</h4>
-\t\t\t\t\t\t\t\t\t\t\t<p>Sed id magna vitae eros sagittis euismod.</p>
-\t\t\t\t\t\t\t\t\t\t\t<h5> \$7.79</h5>
+\t\t\t\t\t\t\t\t\t\t\t<h4>Baked or Broiled Fish</h4>
+\t\t\t\t\t\t\t\t\t\t\t<p>200 Kcal / 40g Protein / 20g Fats / 50g Carbs</p>
+\t\t\t\t\t\t\t\t\t\t\t<h5> 15.0 DT</h5>
 \t\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t</div>
@@ -1130,8 +1124,8 @@ class __TwigTemplate_cd7715d02fe11c9bf330b021c3670eed5a05cd7d0b022ba3353b55b4c07
 \t\t\t\t\t\t\t\t\t<img class=\"d-block w-100 rounded-circle\" src=\"images/quotations-button.png\" alt=\"\">
 \t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t<h5 class=\"mt-4 mb-0\"><strong class=\"text-warning text-uppercase\">Paul Mitchel</strong></h5>
-\t\t\t\t\t\t\t\t<h6 class=\"text-dark m-0\">Web Developer</h6>
-\t\t\t\t\t\t\t\t<p class=\"m-0 pt-3\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
+\t\t\t\t\t\t\t\t<h6 class=\"text-dark m-0\">Student</h6>
+\t\t\t\t\t\t\t\t<p class=\"m-0 pt-3\">One of the best meals I had, well prepared and well delivered. <br>Thank you Kool Healthy</p>
 \t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t<div class=\"carousel-item text-center\">
 \t\t\t\t\t\t\t\t<div class=\"img-box p-1 border rounded-circle m-auto\">
@@ -1174,25 +1168,23 @@ class __TwigTemplate_cd7715d02fe11c9bf330b021c3670eed5a05cd7d0b022ba3353b55b4c07
 \t\t\t\t\t<div class=\"overflow-hidden\">
 \t\t\t\t\t\t<h4>Phone</h4>
 \t\t\t\t\t\t<p class=\"lead\">
-\t\t\t\t\t\t\t+01 123-456-4590
+\t\t\t\t\t\t\t+216 52-680-290
 \t\t\t\t\t\t</p>
 \t\t\t\t\t</div>
 \t\t\t\t</div>
-\t\t\t\t<div class=\"col-md-4 arrow-right\">
-\t\t\t\t\t<i class=\"fa fa-envelope\"></i>
+\t\t\t\t<i class=\"fa fa-envelope\"></i>
 \t\t\t\t\t<div class=\"overflow-hidden\">
 \t\t\t\t\t\t<h4>Email</h4>
 \t\t\t\t\t\t<p class=\"lead\">
-\t\t\t\t\t\t\tyourmail@gmail.com
+\t\t\t\t\t\t\tkool.healthy.contact@gmail.com
 \t\t\t\t\t\t</p>
 \t\t\t\t\t</div>
-\t\t\t\t</div>
 \t\t\t\t<div class=\"col-md-4\">
 \t\t\t\t\t<i class=\"fa fa-map-marker\"></i>
 \t\t\t\t\t<div class=\"overflow-hidden\">
 \t\t\t\t\t\t<h4>Location</h4>
 \t\t\t\t\t\t<p class=\"lead\">
-\t\t\t\t\t\t\t800, Lorem Street, US
+\t\t\t\t\t\t\t5000, Monastir, Tunisia
 \t\t\t\t\t\t</p>
 \t\t\t\t\t</div>
 \t\t\t\t</div>
@@ -1207,7 +1199,7 @@ class __TwigTemplate_cd7715d02fe11c9bf330b021c3670eed5a05cd7d0b022ba3353b55b4c07
 \t\t\t<div class=\"row\">
 \t\t\t\t<div class=\"col-lg-3 col-md-6\">
 \t\t\t\t\t<h3>About Us</h3>
-\t\t\t\t\t<p>Integer cursus scelerisque ipsum id efficitur. Donec a dui fringilla, gravida lorem ac, semper magna. Aenean rhoncus ac lectus a interdum. Vivamus semper posuere dui.</p>
+\t\t\t\t\t<p>Kool Healthy is a Meal-Prep Service based in Tunisia. Founded in 2020 with the help of : Mr. Sami Bhiri and OneDev</p>
 \t\t\t\t</div>
 \t\t\t\t<div class=\"col-lg-3 col-md-6\">
 \t\t\t\t\t<h3>Subscribe</h3>
@@ -1218,26 +1210,22 @@ class __TwigTemplate_cd7715d02fe11c9bf330b021c3670eed5a05cd7d0b022ba3353b55b4c07
 \t\t\t\t\t\t\t<div class=\"clearfix\"></div>
 \t\t\t\t\t\t</form>
 \t\t\t\t\t</div>
+\t\t\t\t\t
+\t\t\t\t</div>
+\t\t\t\t<div class=\"col-lg-3 col-md-6\">
+\t\t\t\t\t<h3>Contact information</h3>
+\t\t\t\t\t<p class=\"lead\">Monastir</p>
+\t\t\t\t\t<p class=\"lead\"><a href=\"#\">+216 52 680 290</a></p>
+\t\t\t\t\t<p><a href=\"#\"> kool.healthy.contact@gmail.com</a></p>
+\t\t\t\t</div>
+\t\t\t\t<div class=\"col-lg-3 col-md-6\">
+\t\t\t\t\t<h3>Follow Us</h3>
 \t\t\t\t\t<ul class=\"list-inline f-social\">
 \t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-facebook\" aria-hidden=\"true\"></i></a></li>
-\t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-twitter\" aria-hidden=\"true\"></i></a></li>
 \t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-linkedin\" aria-hidden=\"true\"></i></a></li>
 \t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-google-plus\" aria-hidden=\"true\"></i></a></li>
 \t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-instagram\" aria-hidden=\"true\"></i></a></li>
 \t\t\t\t\t</ul>
-\t\t\t\t</div>
-\t\t\t\t<div class=\"col-lg-3 col-md-6\">
-\t\t\t\t\t<h3>Contact information</h3>
-\t\t\t\t\t<p class=\"lead\">Ipsum Street, Lorem Tower, MO, Columbia, 508000</p>
-\t\t\t\t\t<p class=\"lead\"><a href=\"#\">+01 2000 800 9999</a></p>
-\t\t\t\t\t<p><a href=\"#\"> info@admin.com</a></p>
-\t\t\t\t</div>
-\t\t\t\t<div class=\"col-lg-3 col-md-6\">
-\t\t\t\t\t<h3>Opening hours</h3>
-\t\t\t\t\t<p><span class=\"text-color\">Monday: </span>Closed</p>
-\t\t\t\t\t<p><span class=\"text-color\">Tue-Wed :</span> 9:Am - 10PM</p>
-\t\t\t\t\t<p><span class=\"text-color\">Thu-Fri :</span> 9:Am - 10PM</p>
-\t\t\t\t\t<p><span class=\"text-color\">Sat-Sun :</span> 5:PM - 10PM</p>
 \t\t\t\t</div>
 \t\t\t</div>
 \t\t</div>
@@ -1246,8 +1234,8 @@ class __TwigTemplate_cd7715d02fe11c9bf330b021c3670eed5a05cd7d0b022ba3353b55b4c07
 \t\t\t<div class=\"container\">
 \t\t\t\t<div class=\"row\">
 \t\t\t\t\t<div class=\"col-lg-12\">
-\t\t\t\t\t\t<p class=\"company-name\">All Rights Reserved. &copy; 2018 <a href=\"#\">Live Dinner Restaurant</a> Design By : 
-\t\t\t\t\t<a href=\"https://html.design/\">html design</a></p>
+\t\t\t\t\t\t<p class=\"company-name\">All Rights Reserved. &copy; 2020 <a href=\"#\">Kool Healthy</a> Developped By : 
+\t\t\t\t\t<a href=\"https://github.com/DahmaniDev\">DahmaniDev</a></p>
 \t\t\t\t\t</div>
 \t\t\t\t</div>
 \t\t\t</div>
