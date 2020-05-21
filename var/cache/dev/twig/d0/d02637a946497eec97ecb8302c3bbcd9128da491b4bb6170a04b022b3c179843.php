@@ -88,11 +88,11 @@ class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b
 \t\t\t\t</button>
 \t\t\t\t<div class=\"collapse navbar-collapse\" id=\"navbars-rs-food\">
 \t\t\t\t\t<ul class=\"navbar-nav ml-auto\">
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"home\">Home</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"CalculateMyNeeds\">Calculate My Needs</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"PreparedMeals\">Prepared Meals</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"home\">Accueil</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"CalculateMyNeeds\">Calculer Mes Besoins</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"PreparedMeals\">repas préparés</a></li>
 \t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"Articles\">Articles</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"Profile\">Profile</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"Profile\">Profil</a></li>
 \t\t\t\t\t\t<li class=\"nav-item active\"><a class=\"nav-link\" href=\"Contact\">Contact</a></li>
 \t\t\t\t\t</ul>
 \t\t\t\t</div>
@@ -114,13 +114,11 @@ class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b
 \t<!-- End All Pages -->
 \t
 \t<!-- Start Contact -->
-\t<div class=\"map-full\"></div>
 \t<div class=\"contact-box\">
 \t\t<div class=\"container\">
 \t\t\t<div class=\"row\">
 \t\t\t\t<div class=\"col-lg-12\">
 \t\t\t\t\t<div class=\"heading-title text-center\">
-\t\t\t\t\t\t<h2>Contact</h2>
 \t\t\t\t\t\t<p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
 \t\t\t\t\t</div>
 \t\t\t\t</div>
@@ -141,28 +139,19 @@ class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b
 \t\t\t\t\t\t\t\t\t<div class=\"help-block with-errors\"></div>
 \t\t\t\t\t\t\t\t</div> 
 \t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t<div class=\"col-md-12\">
-\t\t\t\t\t\t\t\t<div class=\"form-group\">
-\t\t\t\t\t\t\t\t\t<select class=\"custom-select d-block form-control\" id=\"guest\" required data-error=\"Please Select Person\">
-\t\t\t\t\t\t\t\t\t  <option disabled selected>Please Select Person*</option>
-\t\t\t\t\t\t\t\t\t  <option value=\"1\">1</option>
-\t\t\t\t\t\t\t\t\t  <option value=\"2\">2</option>
-\t\t\t\t\t\t\t\t\t  <option value=\"3\">3</option>
-\t\t\t\t\t\t\t\t\t  <option value=\"4\">4</option>
-\t\t\t\t\t\t\t\t\t  <option value=\"5\">5</option>
-\t\t\t\t\t\t\t\t\t</select>
-\t\t\t\t\t\t\t\t\t<div class=\"help-block with-errors\"></div>
-\t\t\t\t\t\t\t\t</div> 
-\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t<div class=\"col-md-12\">
 \t\t\t\t\t\t\t\t<div class=\"form-group\"> 
 \t\t\t\t\t\t\t\t\t<textarea class=\"form-control\" id=\"message\" placeholder=\"Your Message\" rows=\"4\" data-error=\"Write your message\" required></textarea>
 \t\t\t\t\t\t\t\t\t<div class=\"help-block with-errors\"></div>
 \t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t<div class=\"submit-button text-center\">
-\t\t\t\t\t\t\t\t\t<button class=\"btn btn-common\" id=\"submit\" type=\"submit\">Send Message</button>
+\t\t\t\t\t\t\t\t\t<button class=\"btn btn-common\" id=\"submit\" type=\"submit\">Contacter Nous</button>
 \t\t\t\t\t\t\t\t\t<div id=\"msgSubmit\" class=\"h3 text-center hidden\"></div> 
 \t\t\t\t\t\t\t\t\t<div class=\"clearfix\"></div> 
+\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t<div class=\"submit-button text-center\">
+\t\t\t\t\t\t\t\t\t<p><a class=\"btn btn-lg btn-circle btn-outline-new-white\" href=\"#\">Devenir un Partenaire ?</a></p> 
 \t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t</div>            
@@ -363,11 +352,11 @@ class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b
 \t\t\t\t</button>
 \t\t\t\t<div class=\"collapse navbar-collapse\" id=\"navbars-rs-food\">
 \t\t\t\t\t<ul class=\"navbar-nav ml-auto\">
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"home\">Home</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"CalculateMyNeeds\">Calculate My Needs</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"PreparedMeals\">Prepared Meals</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"home\">Accueil</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"CalculateMyNeeds\">Calculer Mes Besoins</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"PreparedMeals\">repas préparés</a></li>
 \t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"Articles\">Articles</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"Profile\">Profile</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"Profile\">Profil</a></li>
 \t\t\t\t\t\t<li class=\"nav-item active\"><a class=\"nav-link\" href=\"Contact\">Contact</a></li>
 \t\t\t\t\t</ul>
 \t\t\t\t</div>
@@ -389,13 +378,11 @@ class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b
 \t<!-- End All Pages -->
 \t
 \t<!-- Start Contact -->
-\t<div class=\"map-full\"></div>
 \t<div class=\"contact-box\">
 \t\t<div class=\"container\">
 \t\t\t<div class=\"row\">
 \t\t\t\t<div class=\"col-lg-12\">
 \t\t\t\t\t<div class=\"heading-title text-center\">
-\t\t\t\t\t\t<h2>Contact</h2>
 \t\t\t\t\t\t<p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
 \t\t\t\t\t</div>
 \t\t\t\t</div>
@@ -416,28 +403,19 @@ class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b
 \t\t\t\t\t\t\t\t\t<div class=\"help-block with-errors\"></div>
 \t\t\t\t\t\t\t\t</div> 
 \t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t<div class=\"col-md-12\">
-\t\t\t\t\t\t\t\t<div class=\"form-group\">
-\t\t\t\t\t\t\t\t\t<select class=\"custom-select d-block form-control\" id=\"guest\" required data-error=\"Please Select Person\">
-\t\t\t\t\t\t\t\t\t  <option disabled selected>Please Select Person*</option>
-\t\t\t\t\t\t\t\t\t  <option value=\"1\">1</option>
-\t\t\t\t\t\t\t\t\t  <option value=\"2\">2</option>
-\t\t\t\t\t\t\t\t\t  <option value=\"3\">3</option>
-\t\t\t\t\t\t\t\t\t  <option value=\"4\">4</option>
-\t\t\t\t\t\t\t\t\t  <option value=\"5\">5</option>
-\t\t\t\t\t\t\t\t\t</select>
-\t\t\t\t\t\t\t\t\t<div class=\"help-block with-errors\"></div>
-\t\t\t\t\t\t\t\t</div> 
-\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t<div class=\"col-md-12\">
 \t\t\t\t\t\t\t\t<div class=\"form-group\"> 
 \t\t\t\t\t\t\t\t\t<textarea class=\"form-control\" id=\"message\" placeholder=\"Your Message\" rows=\"4\" data-error=\"Write your message\" required></textarea>
 \t\t\t\t\t\t\t\t\t<div class=\"help-block with-errors\"></div>
 \t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t<div class=\"submit-button text-center\">
-\t\t\t\t\t\t\t\t\t<button class=\"btn btn-common\" id=\"submit\" type=\"submit\">Send Message</button>
+\t\t\t\t\t\t\t\t\t<button class=\"btn btn-common\" id=\"submit\" type=\"submit\">Contacter Nous</button>
 \t\t\t\t\t\t\t\t\t<div id=\"msgSubmit\" class=\"h3 text-center hidden\"></div> 
 \t\t\t\t\t\t\t\t\t<div class=\"clearfix\"></div> 
+\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t<div class=\"submit-button text-center\">
+\t\t\t\t\t\t\t\t\t<p><a class=\"btn btn-lg btn-circle btn-outline-new-white\" href=\"#\">Devenir un Partenaire ?</a></p> 
 \t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t</div>            
