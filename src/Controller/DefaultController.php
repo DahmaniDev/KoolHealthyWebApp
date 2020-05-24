@@ -9,10 +9,10 @@ use Symfony\Component\HttpFoundation\Response;
 class DefaultController extends AbstractController
 {
     /**
-   * @Route("/", name="home_")
+   * @Route("/", name="signin")
    */
    public function home_():Response{
-    return $this->render('home.html.twig');
+    return $this->render('/signin/signin.html.twig');
   }
    /**
    * @Route("/home", name="home")

@@ -15,7 +15,7 @@ return [
     '_profiler_router' => [['token'], ['_controller' => 'web_profiler.controller.router::panelAction'], [], [['text', '/router'], ['variable', '/', '[^/]++', 'token'], ['text', '/_profiler']], [], []],
     '_profiler_exception' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::body'], [], [['text', '/exception'], ['variable', '/', '[^/]++', 'token'], ['text', '/_profiler']], [], []],
     '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::stylesheet'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token'], ['text', '/_profiler']], [], []],
-    'home_' => [[], ['_controller' => 'App\\Controller\\DefaultController::home_'], [], [['text', '/']], [], []],
+    'signin' => [[], ['_controller' => 'App\\Controller\\DefaultController::home_'], [], [['text', '/']], [], []],
     'home' => [[], ['_controller' => 'App\\Controller\\DefaultController::home'], [], [['text', '/home']], [], []],
     'CalculateMyNeeds' => [[], ['_controller' => 'App\\Controller\\DefaultController::CalculateMyNeeds'], [], [['text', '/CalculateMyNeeds']], [], []],
     'PreparedMeals' => [[], ['_controller' => 'App\\Controller\\DefaultController::PreparedMeals'], [], [['text', '/PreparedMeals']], [], []],

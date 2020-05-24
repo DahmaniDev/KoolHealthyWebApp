@@ -203,38 +203,34 @@ class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b
 \t\t<div class=\"container\">
 \t\t\t<div class=\"row\">
 \t\t\t\t<div class=\"col-lg-3 col-md-6\">
-\t\t\t\t\t<h3>About Us</h3>
-\t\t\t\t\t<p>Integer cursus scelerisque ipsum id efficitur. Donec a dui fringilla, gravida lorem ac, semper magna. Aenean rhoncus ac lectus a interdum. Vivamus semper posuere dui.</p>
+\t\t\t\t\t<h3>à propos</h3>
+\t\t\t\t\t<p>Kool Healthy est un service de préparation de repas basé en Tunisie. Fondé en 2020 avec l'aide de: M. Sami Bhiri et OneDev</p>
 \t\t\t\t</div>
 \t\t\t\t<div class=\"col-lg-3 col-md-6\">
-\t\t\t\t\t<h3>Subscribe</h3>
+\t\t\t\t\t<h3>Abonnez-Vous</h3>
 \t\t\t\t\t<div class=\"subscribe_form\">
 \t\t\t\t\t\t<form class=\"subscribe_form\">
-\t\t\t\t\t\t\t<input name=\"EMAIL\" id=\"subs-email\" class=\"form_input\" placeholder=\"Email Address...\" type=\"email\">
-\t\t\t\t\t\t\t<button type=\"submit\" class=\"submit\">SUBSCRIBE</button>
+\t\t\t\t\t\t\t<input name=\"EMAIL\" id=\"subs-email\" class=\"form_input\" placeholder=\"Addresse Email...\" type=\"email\">
+\t\t\t\t\t\t\t<button type=\"submit\" class=\"submit\">Abonnez-Vous</button>
 \t\t\t\t\t\t\t<div class=\"clearfix\"></div>
 \t\t\t\t\t\t</form>
 \t\t\t\t\t</div>
+\t\t\t\t\t
+\t\t\t\t</div>
+\t\t\t\t<div class=\"col-lg-3 col-md-6\">
+\t\t\t\t\t<h3>Contact</h3>
+\t\t\t\t\t<p class=\"lead\">Monastir</p>
+\t\t\t\t\t<p class=\"lead\"><a href=\"#\">+216 52 680 290</a></p>
+\t\t\t\t\t<p><a href=\"#\"> kool.healthy.contact@gmail.com</a></p>
+\t\t\t\t</div>
+\t\t\t\t<div class=\"col-lg-3 col-md-6\">
+\t\t\t\t\t<h3>Suivez-Nous</h3>
 \t\t\t\t\t<ul class=\"list-inline f-social\">
 \t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-facebook\" aria-hidden=\"true\"></i></a></li>
-\t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-twitter\" aria-hidden=\"true\"></i></a></li>
 \t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-linkedin\" aria-hidden=\"true\"></i></a></li>
 \t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-google-plus\" aria-hidden=\"true\"></i></a></li>
 \t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-instagram\" aria-hidden=\"true\"></i></a></li>
 \t\t\t\t\t</ul>
-\t\t\t\t</div>
-\t\t\t\t<div class=\"col-lg-3 col-md-6\">
-\t\t\t\t\t<h3>Contact information</h3>
-\t\t\t\t\t<p class=\"lead\">Ipsum Street, Lorem Tower, MO, Columbia, 508000</p>
-\t\t\t\t\t<p class=\"lead\"><a href=\"#\">+01 2000 800 9999</a></p>
-\t\t\t\t\t<p><a href=\"#\"> info@admin.com</a></p>
-\t\t\t\t</div>
-\t\t\t\t<div class=\"col-lg-3 col-md-6\">
-\t\t\t\t\t<h3>Opening hours</h3>
-\t\t\t\t\t<p><span class=\"text-color\">Monday: </span>Closed</p>
-\t\t\t\t\t<p><span class=\"text-color\">Tue-Wed :</span> 9:Am - 10PM</p>
-\t\t\t\t\t<p><span class=\"text-color\">Thu-Fri :</span> 9:Am - 10PM</p>
-\t\t\t\t\t<p><span class=\"text-color\">Sat-Sun :</span> 5:PM - 10PM</p>
 \t\t\t\t</div>
 \t\t\t</div>
 \t\t</div>
@@ -243,8 +239,8 @@ class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b
 \t\t\t<div class=\"container\">
 \t\t\t\t<div class=\"row\">
 \t\t\t\t\t<div class=\"col-lg-12\">
-\t\t\t\t\t\t<p class=\"company-name\">All Rights Reserved. &copy; 2018 <a href=\"#\">Live Dinner Restaurant</a> Design By : 
-\t\t\t\t\t<a href=\"https://html.design/\">html design</a></p>
+\t\t\t\t\t\t<p class=\"company-name\">Tous Droits Réservés &copy; 2020 <a href=\"#\">Kool Healthy</a> Développé par : 
+\t\t\t\t\t<a href=\"https://github.com/DahmaniDev\">DahmaniDev</a></p>
 \t\t\t\t\t</div>
 \t\t\t\t</div>
 \t\t\t</div>
@@ -467,38 +463,34 @@ class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b
 \t\t<div class=\"container\">
 \t\t\t<div class=\"row\">
 \t\t\t\t<div class=\"col-lg-3 col-md-6\">
-\t\t\t\t\t<h3>About Us</h3>
-\t\t\t\t\t<p>Integer cursus scelerisque ipsum id efficitur. Donec a dui fringilla, gravida lorem ac, semper magna. Aenean rhoncus ac lectus a interdum. Vivamus semper posuere dui.</p>
+\t\t\t\t\t<h3>à propos</h3>
+\t\t\t\t\t<p>Kool Healthy est un service de préparation de repas basé en Tunisie. Fondé en 2020 avec l'aide de: M. Sami Bhiri et OneDev</p>
 \t\t\t\t</div>
 \t\t\t\t<div class=\"col-lg-3 col-md-6\">
-\t\t\t\t\t<h3>Subscribe</h3>
+\t\t\t\t\t<h3>Abonnez-Vous</h3>
 \t\t\t\t\t<div class=\"subscribe_form\">
 \t\t\t\t\t\t<form class=\"subscribe_form\">
-\t\t\t\t\t\t\t<input name=\"EMAIL\" id=\"subs-email\" class=\"form_input\" placeholder=\"Email Address...\" type=\"email\">
-\t\t\t\t\t\t\t<button type=\"submit\" class=\"submit\">SUBSCRIBE</button>
+\t\t\t\t\t\t\t<input name=\"EMAIL\" id=\"subs-email\" class=\"form_input\" placeholder=\"Addresse Email...\" type=\"email\">
+\t\t\t\t\t\t\t<button type=\"submit\" class=\"submit\">Abonnez-Vous</button>
 \t\t\t\t\t\t\t<div class=\"clearfix\"></div>
 \t\t\t\t\t\t</form>
 \t\t\t\t\t</div>
+\t\t\t\t\t
+\t\t\t\t</div>
+\t\t\t\t<div class=\"col-lg-3 col-md-6\">
+\t\t\t\t\t<h3>Contact</h3>
+\t\t\t\t\t<p class=\"lead\">Monastir</p>
+\t\t\t\t\t<p class=\"lead\"><a href=\"#\">+216 52 680 290</a></p>
+\t\t\t\t\t<p><a href=\"#\"> kool.healthy.contact@gmail.com</a></p>
+\t\t\t\t</div>
+\t\t\t\t<div class=\"col-lg-3 col-md-6\">
+\t\t\t\t\t<h3>Suivez-Nous</h3>
 \t\t\t\t\t<ul class=\"list-inline f-social\">
 \t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-facebook\" aria-hidden=\"true\"></i></a></li>
-\t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-twitter\" aria-hidden=\"true\"></i></a></li>
 \t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-linkedin\" aria-hidden=\"true\"></i></a></li>
 \t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-google-plus\" aria-hidden=\"true\"></i></a></li>
 \t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-instagram\" aria-hidden=\"true\"></i></a></li>
 \t\t\t\t\t</ul>
-\t\t\t\t</div>
-\t\t\t\t<div class=\"col-lg-3 col-md-6\">
-\t\t\t\t\t<h3>Contact information</h3>
-\t\t\t\t\t<p class=\"lead\">Ipsum Street, Lorem Tower, MO, Columbia, 508000</p>
-\t\t\t\t\t<p class=\"lead\"><a href=\"#\">+01 2000 800 9999</a></p>
-\t\t\t\t\t<p><a href=\"#\"> info@admin.com</a></p>
-\t\t\t\t</div>
-\t\t\t\t<div class=\"col-lg-3 col-md-6\">
-\t\t\t\t\t<h3>Opening hours</h3>
-\t\t\t\t\t<p><span class=\"text-color\">Monday: </span>Closed</p>
-\t\t\t\t\t<p><span class=\"text-color\">Tue-Wed :</span> 9:Am - 10PM</p>
-\t\t\t\t\t<p><span class=\"text-color\">Thu-Fri :</span> 9:Am - 10PM</p>
-\t\t\t\t\t<p><span class=\"text-color\">Sat-Sun :</span> 5:PM - 10PM</p>
 \t\t\t\t</div>
 \t\t\t</div>
 \t\t</div>
@@ -507,8 +499,8 @@ class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b
 \t\t\t<div class=\"container\">
 \t\t\t\t<div class=\"row\">
 \t\t\t\t\t<div class=\"col-lg-12\">
-\t\t\t\t\t\t<p class=\"company-name\">All Rights Reserved. &copy; 2018 <a href=\"#\">Live Dinner Restaurant</a> Design By : 
-\t\t\t\t\t<a href=\"https://html.design/\">html design</a></p>
+\t\t\t\t\t\t<p class=\"company-name\">Tous Droits Réservés &copy; 2020 <a href=\"#\">Kool Healthy</a> Développé par : 
+\t\t\t\t\t<a href=\"https://github.com/DahmaniDev\">DahmaniDev</a></p>
 \t\t\t\t\t</div>
 \t\t\t\t</div>
 \t\t\t</div>
