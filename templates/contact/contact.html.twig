@@ -38,7 +38,7 @@
 	<header class="top-navbar">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<div class="container">
-				<a class="navbar-brand" href="index.html">
+				<a class="navbar-brand" href="home">
 					<img src="images/logo.png" alt="" />
 				</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-rs-food" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
@@ -86,30 +86,14 @@
 					<form id="contactForm">
 						<div class="row">
 							<div class="col-md-12">
-								<div class="form-group">
-									<input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your name">
-									<div class="help-block with-errors"></div>
-								</div>                                 
-							</div>
-							<div class="col-md-12">
-								<div class="form-group">
-									<input type="text" placeholder="Your Email" id="email" class="form-control" name="name" required data-error="Please enter your email">
-									<div class="help-block with-errors"></div>
-								</div> 
-							</div>
-							
-							<div class="col-md-12">
 								<div class="form-group"> 
-									<textarea class="form-control" id="message" placeholder="Your Message" rows="4" data-error="Write your message" required></textarea>
+									<textarea class="form-control" id="message" placeholder="Votre Message" rows="4" data-error="Écrire votre message" required></textarea>
 									<div class="help-block with-errors"></div>
 								</div>
 								<div class="submit-button text-center">
 									<button class="btn btn-common" id="submit" type="submit">Contacter Nous</button>
 									<div id="msgSubmit" class="h3 text-center hidden"></div> 
 									<div class="clearfix"></div> 
-								</div>
-								<div class="submit-button text-center">
-									<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Devenir un Partenaire ?</a></p> 
 								</div>
 							</div>
 						</div>            
@@ -127,27 +111,25 @@
 				<div class="col-md-4 arrow-right">
 					<i class="fa fa-volume-control-phone"></i>
 					<div class="overflow-hidden">
-						<h4>Phone</h4>
+						<h4>Téléphone</h4>
 						<p class="lead">
-							+01 123-456-4590
+							+216 52-680-290
 						</p>
 					</div>
 				</div>
-				<div class="col-md-4 arrow-right">
-					<i class="fa fa-envelope"></i>
+				<i class="fa fa-envelope"></i>
 					<div class="overflow-hidden">
 						<h4>Email</h4>
 						<p class="lead">
-							yourmail@gmail.com
+							kool.healthy.contact@gmail.com
 						</p>
 					</div>
-				</div>
 				<div class="col-md-4">
 					<i class="fa fa-map-marker"></i>
 					<div class="overflow-hidden">
-						<h4>Location</h4>
+						<h4>Localisation</h4>
 						<p class="lead">
-							800, Lorem Street, US
+							5000, Monastir, Tunisia
 						</p>
 					</div>
 				</div>
@@ -165,13 +147,9 @@
 					<p>Kool Healthy est un service de préparation de repas basé en Tunisie. Fondé en 2020 avec l'aide de: M. Sami Bhiri et OneDev</p>
 				</div>
 				<div class="col-lg-3 col-md-6">
-					<h3>Abonnez-Vous</h3>
+					<h3>Courriel</h3>
 					<div class="subscribe_form">
-						<form class="subscribe_form">
-							<input name="EMAIL" id="subs-email" class="form_input" placeholder="Addresse Email..." type="email">
-							<button type="submit" class="submit">Abonnez-Vous</button>
-							<div class="clearfix"></div>
-						</form>
+						<button type="submit" class="submit" onclick="showDialogAbonnez()">Abonnez-Vous</button>
 					</div>
 					
 				</div>
@@ -184,10 +162,10 @@
 				<div class="col-lg-3 col-md-6">
 					<h3>Suivez-Nous</h3>
 					<ul class="list-inline f-social">
-						<li class="list-inline-item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-						<li class="list-inline-item"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-						<li class="list-inline-item"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-						<li class="list-inline-item"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="https://facebook.com/DahmaniMhd/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="https://linkedin.com/in/mohamed-hedi-dahmani/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="https://github.com/DahmaniDev"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="https://instagram.com/mohamedhedi.dahmani"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
 					</ul>
 				</div>
 			</div>
@@ -198,7 +176,8 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<p class="company-name">Tous Droits Réservés &copy; 2020 <a href="#">Kool Healthy</a> Développé par : 
-					<a href="https://github.com/DahmaniDev">DahmaniDev</a></p>
+							<a href="https://github.com/DahmaniDev">DahmaniDev <i class="fa fa-github"></i></a>
+						</p>
 					</div>
 				</div>
 			</div>
@@ -224,17 +203,9 @@
     <script src="js/contact-form-script.js"></script>
     <script src="js/custom.js"></script>
 	<script>
-		$('.map-full').mapify({
-			points: [
-				{
-					lat: 40.7143528,
-					lng: -74.0059731,
-					marker: true,
-					title: 'Marker title',
-					infoWindow: 'Live Dinner Restaurant'
-				}
-			]
-		});	
+		function showDialogAbonnez() {
+  			alert("Vous êtes abonné à notre courriel éléctronique ! Vous serez informés par chaque mise à jour");
+		}
 	</script>
 </body>
 </html>

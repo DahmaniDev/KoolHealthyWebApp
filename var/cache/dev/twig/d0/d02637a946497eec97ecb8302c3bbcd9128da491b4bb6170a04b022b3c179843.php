@@ -80,7 +80,7 @@ class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b
 \t<header class=\"top-navbar\">
 \t\t<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
 \t\t\t<div class=\"container\">
-\t\t\t\t<a class=\"navbar-brand\" href=\"index.html\">
+\t\t\t\t<a class=\"navbar-brand\" href=\"home\">
 \t\t\t\t\t<img src=\"images/logo.png\" alt=\"\" />
 \t\t\t\t</a>
 \t\t\t\t<button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbars-rs-food\" aria-controls=\"navbars-rs-food\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
@@ -128,30 +128,14 @@ class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b
 \t\t\t\t\t<form id=\"contactForm\">
 \t\t\t\t\t\t<div class=\"row\">
 \t\t\t\t\t\t\t<div class=\"col-md-12\">
-\t\t\t\t\t\t\t\t<div class=\"form-group\">
-\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" id=\"name\" name=\"name\" placeholder=\"Your Name\" required data-error=\"Please enter your name\">
-\t\t\t\t\t\t\t\t\t<div class=\"help-block with-errors\"></div>
-\t\t\t\t\t\t\t\t</div>                                 
-\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t<div class=\"col-md-12\">
-\t\t\t\t\t\t\t\t<div class=\"form-group\">
-\t\t\t\t\t\t\t\t\t<input type=\"text\" placeholder=\"Your Email\" id=\"email\" class=\"form-control\" name=\"name\" required data-error=\"Please enter your email\">
-\t\t\t\t\t\t\t\t\t<div class=\"help-block with-errors\"></div>
-\t\t\t\t\t\t\t\t</div> 
-\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<div class=\"col-md-12\">
 \t\t\t\t\t\t\t\t<div class=\"form-group\"> 
-\t\t\t\t\t\t\t\t\t<textarea class=\"form-control\" id=\"message\" placeholder=\"Your Message\" rows=\"4\" data-error=\"Write your message\" required></textarea>
+\t\t\t\t\t\t\t\t\t<textarea class=\"form-control\" id=\"message\" placeholder=\"Votre Message\" rows=\"4\" data-error=\"Écrire votre message\" required></textarea>
 \t\t\t\t\t\t\t\t\t<div class=\"help-block with-errors\"></div>
 \t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t<div class=\"submit-button text-center\">
 \t\t\t\t\t\t\t\t\t<button class=\"btn btn-common\" id=\"submit\" type=\"submit\">Contacter Nous</button>
 \t\t\t\t\t\t\t\t\t<div id=\"msgSubmit\" class=\"h3 text-center hidden\"></div> 
 \t\t\t\t\t\t\t\t\t<div class=\"clearfix\"></div> 
-\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t<div class=\"submit-button text-center\">
-\t\t\t\t\t\t\t\t\t<p><a class=\"btn btn-lg btn-circle btn-outline-new-white\" href=\"#\">Devenir un Partenaire ?</a></p> 
 \t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t</div>            
@@ -169,27 +153,25 @@ class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b
 \t\t\t\t<div class=\"col-md-4 arrow-right\">
 \t\t\t\t\t<i class=\"fa fa-volume-control-phone\"></i>
 \t\t\t\t\t<div class=\"overflow-hidden\">
-\t\t\t\t\t\t<h4>Phone</h4>
+\t\t\t\t\t\t<h4>Téléphone</h4>
 \t\t\t\t\t\t<p class=\"lead\">
-\t\t\t\t\t\t\t+01 123-456-4590
+\t\t\t\t\t\t\t+216 52-680-290
 \t\t\t\t\t\t</p>
 \t\t\t\t\t</div>
 \t\t\t\t</div>
-\t\t\t\t<div class=\"col-md-4 arrow-right\">
-\t\t\t\t\t<i class=\"fa fa-envelope\"></i>
+\t\t\t\t<i class=\"fa fa-envelope\"></i>
 \t\t\t\t\t<div class=\"overflow-hidden\">
 \t\t\t\t\t\t<h4>Email</h4>
 \t\t\t\t\t\t<p class=\"lead\">
-\t\t\t\t\t\t\tyourmail@gmail.com
+\t\t\t\t\t\t\tkool.healthy.contact@gmail.com
 \t\t\t\t\t\t</p>
 \t\t\t\t\t</div>
-\t\t\t\t</div>
 \t\t\t\t<div class=\"col-md-4\">
 \t\t\t\t\t<i class=\"fa fa-map-marker\"></i>
 \t\t\t\t\t<div class=\"overflow-hidden\">
-\t\t\t\t\t\t<h4>Location</h4>
+\t\t\t\t\t\t<h4>Localisation</h4>
 \t\t\t\t\t\t<p class=\"lead\">
-\t\t\t\t\t\t\t800, Lorem Street, US
+\t\t\t\t\t\t\t5000, Monastir, Tunisia
 \t\t\t\t\t\t</p>
 \t\t\t\t\t</div>
 \t\t\t\t</div>
@@ -207,13 +189,9 @@ class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b
 \t\t\t\t\t<p>Kool Healthy est un service de préparation de repas basé en Tunisie. Fondé en 2020 avec l'aide de: M. Sami Bhiri et OneDev</p>
 \t\t\t\t</div>
 \t\t\t\t<div class=\"col-lg-3 col-md-6\">
-\t\t\t\t\t<h3>Abonnez-Vous</h3>
+\t\t\t\t\t<h3>Courriel</h3>
 \t\t\t\t\t<div class=\"subscribe_form\">
-\t\t\t\t\t\t<form class=\"subscribe_form\">
-\t\t\t\t\t\t\t<input name=\"EMAIL\" id=\"subs-email\" class=\"form_input\" placeholder=\"Addresse Email...\" type=\"email\">
-\t\t\t\t\t\t\t<button type=\"submit\" class=\"submit\">Abonnez-Vous</button>
-\t\t\t\t\t\t\t<div class=\"clearfix\"></div>
-\t\t\t\t\t\t</form>
+\t\t\t\t\t\t<button type=\"submit\" class=\"submit\" onclick=\"showDialogAbonnez()\">Abonnez-Vous</button>
 \t\t\t\t\t</div>
 \t\t\t\t\t
 \t\t\t\t</div>
@@ -226,10 +204,10 @@ class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b
 \t\t\t\t<div class=\"col-lg-3 col-md-6\">
 \t\t\t\t\t<h3>Suivez-Nous</h3>
 \t\t\t\t\t<ul class=\"list-inline f-social\">
-\t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-facebook\" aria-hidden=\"true\"></i></a></li>
-\t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-linkedin\" aria-hidden=\"true\"></i></a></li>
-\t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-google-plus\" aria-hidden=\"true\"></i></a></li>
-\t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-instagram\" aria-hidden=\"true\"></i></a></li>
+\t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"https://facebook.com/DahmaniMhd/\"><i class=\"fa fa-facebook\" aria-hidden=\"true\"></i></a></li>
+\t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"https://linkedin.com/in/mohamed-hedi-dahmani/\"><i class=\"fa fa-linkedin\" aria-hidden=\"true\"></i></a></li>
+\t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"https://github.com/DahmaniDev\"><i class=\"fa fa-github\" aria-hidden=\"true\"></i></a></li>
+\t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"https://instagram.com/mohamedhedi.dahmani\"><i class=\"fa fa-instagram\" aria-hidden=\"true\"></i></a></li>
 \t\t\t\t\t</ul>
 \t\t\t\t</div>
 \t\t\t</div>
@@ -240,7 +218,8 @@ class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b
 \t\t\t\t<div class=\"row\">
 \t\t\t\t\t<div class=\"col-lg-12\">
 \t\t\t\t\t\t<p class=\"company-name\">Tous Droits Réservés &copy; 2020 <a href=\"#\">Kool Healthy</a> Développé par : 
-\t\t\t\t\t<a href=\"https://github.com/DahmaniDev\">DahmaniDev</a></p>
+\t\t\t\t\t\t\t<a href=\"https://github.com/DahmaniDev\">DahmaniDev <i class=\"fa fa-github\"></i></a>
+\t\t\t\t\t\t</p>
 \t\t\t\t\t</div>
 \t\t\t\t</div>
 \t\t\t</div>
@@ -266,17 +245,9 @@ class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b
     <script src=\"js/contact-form-script.js\"></script>
     <script src=\"js/custom.js\"></script>
 \t<script>
-\t\t\$('.map-full').mapify({
-\t\t\tpoints: [
-\t\t\t\t{
-\t\t\t\t\tlat: 40.7143528,
-\t\t\t\t\tlng: -74.0059731,
-\t\t\t\t\tmarker: true,
-\t\t\t\t\ttitle: 'Marker title',
-\t\t\t\t\tinfoWindow: 'Live Dinner Restaurant'
-\t\t\t\t}
-\t\t\t]
-\t\t});\t
+\t\tfunction showDialogAbonnez() {
+  \t\t\talert(\"Vous êtes abonné à notre courriel éléctronique ! Vous serez informés par chaque mise à jour\");
+\t\t}
 \t</script>
 </body>
 </html>";
@@ -340,7 +311,7 @@ class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b
 \t<header class=\"top-navbar\">
 \t\t<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
 \t\t\t<div class=\"container\">
-\t\t\t\t<a class=\"navbar-brand\" href=\"index.html\">
+\t\t\t\t<a class=\"navbar-brand\" href=\"home\">
 \t\t\t\t\t<img src=\"images/logo.png\" alt=\"\" />
 \t\t\t\t</a>
 \t\t\t\t<button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbars-rs-food\" aria-controls=\"navbars-rs-food\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
@@ -388,30 +359,14 @@ class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b
 \t\t\t\t\t<form id=\"contactForm\">
 \t\t\t\t\t\t<div class=\"row\">
 \t\t\t\t\t\t\t<div class=\"col-md-12\">
-\t\t\t\t\t\t\t\t<div class=\"form-group\">
-\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" id=\"name\" name=\"name\" placeholder=\"Your Name\" required data-error=\"Please enter your name\">
-\t\t\t\t\t\t\t\t\t<div class=\"help-block with-errors\"></div>
-\t\t\t\t\t\t\t\t</div>                                 
-\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t<div class=\"col-md-12\">
-\t\t\t\t\t\t\t\t<div class=\"form-group\">
-\t\t\t\t\t\t\t\t\t<input type=\"text\" placeholder=\"Your Email\" id=\"email\" class=\"form-control\" name=\"name\" required data-error=\"Please enter your email\">
-\t\t\t\t\t\t\t\t\t<div class=\"help-block with-errors\"></div>
-\t\t\t\t\t\t\t\t</div> 
-\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<div class=\"col-md-12\">
 \t\t\t\t\t\t\t\t<div class=\"form-group\"> 
-\t\t\t\t\t\t\t\t\t<textarea class=\"form-control\" id=\"message\" placeholder=\"Your Message\" rows=\"4\" data-error=\"Write your message\" required></textarea>
+\t\t\t\t\t\t\t\t\t<textarea class=\"form-control\" id=\"message\" placeholder=\"Votre Message\" rows=\"4\" data-error=\"Écrire votre message\" required></textarea>
 \t\t\t\t\t\t\t\t\t<div class=\"help-block with-errors\"></div>
 \t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t<div class=\"submit-button text-center\">
 \t\t\t\t\t\t\t\t\t<button class=\"btn btn-common\" id=\"submit\" type=\"submit\">Contacter Nous</button>
 \t\t\t\t\t\t\t\t\t<div id=\"msgSubmit\" class=\"h3 text-center hidden\"></div> 
 \t\t\t\t\t\t\t\t\t<div class=\"clearfix\"></div> 
-\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t<div class=\"submit-button text-center\">
-\t\t\t\t\t\t\t\t\t<p><a class=\"btn btn-lg btn-circle btn-outline-new-white\" href=\"#\">Devenir un Partenaire ?</a></p> 
 \t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t</div>            
@@ -429,27 +384,25 @@ class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b
 \t\t\t\t<div class=\"col-md-4 arrow-right\">
 \t\t\t\t\t<i class=\"fa fa-volume-control-phone\"></i>
 \t\t\t\t\t<div class=\"overflow-hidden\">
-\t\t\t\t\t\t<h4>Phone</h4>
+\t\t\t\t\t\t<h4>Téléphone</h4>
 \t\t\t\t\t\t<p class=\"lead\">
-\t\t\t\t\t\t\t+01 123-456-4590
+\t\t\t\t\t\t\t+216 52-680-290
 \t\t\t\t\t\t</p>
 \t\t\t\t\t</div>
 \t\t\t\t</div>
-\t\t\t\t<div class=\"col-md-4 arrow-right\">
-\t\t\t\t\t<i class=\"fa fa-envelope\"></i>
+\t\t\t\t<i class=\"fa fa-envelope\"></i>
 \t\t\t\t\t<div class=\"overflow-hidden\">
 \t\t\t\t\t\t<h4>Email</h4>
 \t\t\t\t\t\t<p class=\"lead\">
-\t\t\t\t\t\t\tyourmail@gmail.com
+\t\t\t\t\t\t\tkool.healthy.contact@gmail.com
 \t\t\t\t\t\t</p>
 \t\t\t\t\t</div>
-\t\t\t\t</div>
 \t\t\t\t<div class=\"col-md-4\">
 \t\t\t\t\t<i class=\"fa fa-map-marker\"></i>
 \t\t\t\t\t<div class=\"overflow-hidden\">
-\t\t\t\t\t\t<h4>Location</h4>
+\t\t\t\t\t\t<h4>Localisation</h4>
 \t\t\t\t\t\t<p class=\"lead\">
-\t\t\t\t\t\t\t800, Lorem Street, US
+\t\t\t\t\t\t\t5000, Monastir, Tunisia
 \t\t\t\t\t\t</p>
 \t\t\t\t\t</div>
 \t\t\t\t</div>
@@ -467,13 +420,9 @@ class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b
 \t\t\t\t\t<p>Kool Healthy est un service de préparation de repas basé en Tunisie. Fondé en 2020 avec l'aide de: M. Sami Bhiri et OneDev</p>
 \t\t\t\t</div>
 \t\t\t\t<div class=\"col-lg-3 col-md-6\">
-\t\t\t\t\t<h3>Abonnez-Vous</h3>
+\t\t\t\t\t<h3>Courriel</h3>
 \t\t\t\t\t<div class=\"subscribe_form\">
-\t\t\t\t\t\t<form class=\"subscribe_form\">
-\t\t\t\t\t\t\t<input name=\"EMAIL\" id=\"subs-email\" class=\"form_input\" placeholder=\"Addresse Email...\" type=\"email\">
-\t\t\t\t\t\t\t<button type=\"submit\" class=\"submit\">Abonnez-Vous</button>
-\t\t\t\t\t\t\t<div class=\"clearfix\"></div>
-\t\t\t\t\t\t</form>
+\t\t\t\t\t\t<button type=\"submit\" class=\"submit\" onclick=\"showDialogAbonnez()\">Abonnez-Vous</button>
 \t\t\t\t\t</div>
 \t\t\t\t\t
 \t\t\t\t</div>
@@ -486,10 +435,10 @@ class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b
 \t\t\t\t<div class=\"col-lg-3 col-md-6\">
 \t\t\t\t\t<h3>Suivez-Nous</h3>
 \t\t\t\t\t<ul class=\"list-inline f-social\">
-\t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-facebook\" aria-hidden=\"true\"></i></a></li>
-\t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-linkedin\" aria-hidden=\"true\"></i></a></li>
-\t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-google-plus\" aria-hidden=\"true\"></i></a></li>
-\t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-instagram\" aria-hidden=\"true\"></i></a></li>
+\t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"https://facebook.com/DahmaniMhd/\"><i class=\"fa fa-facebook\" aria-hidden=\"true\"></i></a></li>
+\t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"https://linkedin.com/in/mohamed-hedi-dahmani/\"><i class=\"fa fa-linkedin\" aria-hidden=\"true\"></i></a></li>
+\t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"https://github.com/DahmaniDev\"><i class=\"fa fa-github\" aria-hidden=\"true\"></i></a></li>
+\t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"https://instagram.com/mohamedhedi.dahmani\"><i class=\"fa fa-instagram\" aria-hidden=\"true\"></i></a></li>
 \t\t\t\t\t</ul>
 \t\t\t\t</div>
 \t\t\t</div>
@@ -500,7 +449,8 @@ class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b
 \t\t\t\t<div class=\"row\">
 \t\t\t\t\t<div class=\"col-lg-12\">
 \t\t\t\t\t\t<p class=\"company-name\">Tous Droits Réservés &copy; 2020 <a href=\"#\">Kool Healthy</a> Développé par : 
-\t\t\t\t\t<a href=\"https://github.com/DahmaniDev\">DahmaniDev</a></p>
+\t\t\t\t\t\t\t<a href=\"https://github.com/DahmaniDev\">DahmaniDev <i class=\"fa fa-github\"></i></a>
+\t\t\t\t\t\t</p>
 \t\t\t\t\t</div>
 \t\t\t\t</div>
 \t\t\t</div>
@@ -526,17 +476,9 @@ class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b
     <script src=\"js/contact-form-script.js\"></script>
     <script src=\"js/custom.js\"></script>
 \t<script>
-\t\t\$('.map-full').mapify({
-\t\t\tpoints: [
-\t\t\t\t{
-\t\t\t\t\tlat: 40.7143528,
-\t\t\t\t\tlng: -74.0059731,
-\t\t\t\t\tmarker: true,
-\t\t\t\t\ttitle: 'Marker title',
-\t\t\t\t\tinfoWindow: 'Live Dinner Restaurant'
-\t\t\t\t}
-\t\t\t]
-\t\t});\t
+\t\tfunction showDialogAbonnez() {
+  \t\t\talert(\"Vous êtes abonné à notre courriel éléctronique ! Vous serez informés par chaque mise à jour\");
+\t\t}
 \t</script>
 </body>
 </html>", "/contact/contact.html.twig", "C:\\Users\\tarza\\SymfonyProjects\\ProjetSymfony\\templates\\contact\\contact.html.twig");

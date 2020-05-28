@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<title>Register</title>
+
+{% block body %}
+    <h1>Register</h1>
+
+    {{ form_start(registrationForm) }}
+        {{ form_row(registrationForm.nom) }}
+        {{ form_row(registrationForm.username) }}
+        {{ form_row(registrationForm.plainPassword) }}
+        {{ form_row(registrationForm.sexe) }}
+        {{ form_row(registrationForm.age) }}
+        {{ form_row(registrationForm.height) }}
+        {{ form_row(registrationForm.weight) }}
+        {{ form_row(registrationForm.goal) }}
+        {{ form_row(registrationForm.activity_level) }}
+        {{ form_row(registrationForm.agreeTerms) }}
+
+        <button type="submit" class="btn">Register</button>
+    {{ form_end(registrationForm) }}
+{% endblock %}

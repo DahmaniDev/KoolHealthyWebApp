@@ -24,4 +24,7 @@ return [
     'Contact' => [[], ['_controller' => 'App\\Controller\\DefaultController::contact'], [], [['text', '/Contact']], [], []],
     'blog' => [[], ['_controller' => 'App\\Controller\\DefaultController::blog'], [], [['text', '/blog']], [], []],
     'blog-details' => [[], ['_controller' => 'App\\Controller\\DefaultController::blogdetail'], [], [['text', '/blog-details']], [], []],
+    'app_register' => [[], ['_controller' => 'App\\Controller\\RegistrationController::register'], [], [['text', '/register']], [], []],
+    'app_login' => [[], ['_controller' => 'App\\Controller\\SecurityController::login'], [], [['text', '/login']], [], []],
+    'app_logout' => [[], ['_controller' => 'App\\Controller\\SecurityController::logout'], [], [['text', '/logout']], [], []],
 ];
