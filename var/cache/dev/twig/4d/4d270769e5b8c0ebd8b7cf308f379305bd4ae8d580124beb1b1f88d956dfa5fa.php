@@ -80,7 +80,7 @@ class __TwigTemplate_5552c4b3b699db7bd9a2a589ba5c0059ecc7a426f20b501d4791828c010
 \t<header class=\"top-navbar\">
 \t\t<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
 \t\t\t<div class=\"container\">
-\t\t\t\t<a class=\"navbar-brand\" href=\"index.html\">
+\t\t\t\t<a class=\"navbar-brand\" href=\"home\">
 \t\t\t\t\t<img src=\"images/logo.png\" alt=\"\" />
 \t\t\t\t</a>
 \t\t\t\t<button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbars-rs-food\" aria-controls=\"navbars-rs-food\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
@@ -88,25 +88,12 @@ class __TwigTemplate_5552c4b3b699db7bd9a2a589ba5c0059ecc7a426f20b501d4791828c010
 \t\t\t\t</button>
 \t\t\t\t<div class=\"collapse navbar-collapse\" id=\"navbars-rs-food\">
 \t\t\t\t\t<ul class=\"navbar-nav ml-auto\">
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"/\">Home</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"menu\">Menu</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"about\">About</a></li>
-\t\t\t\t\t\t<li class=\"nav-item dropdown\">
-\t\t\t\t\t\t\t<a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"dropdown-a\" data-toggle=\"dropdown\">Pages</a>
-\t\t\t\t\t\t\t<div class=\"dropdown-menu\" aria-labelledby=\"dropdown-a\">
-\t\t\t\t\t\t\t\t<a class=\"dropdown-item\" href=\"reservation\">Reservation</a>
-\t\t\t\t\t\t\t\t<a class=\"dropdown-item\" href=\"stuff\">Stuff</a>
-\t\t\t\t\t\t\t\t<a class=\"dropdown-item\" href=\"gallery\">Gallery</a>
-\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t</li>
-\t\t\t\t\t\t<li class=\"nav-item active dropdown\">
-\t\t\t\t\t\t\t<a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"dropdown-a\" data-toggle=\"dropdown\">Blog</a>
-\t\t\t\t\t\t\t<div class=\"dropdown-menu\" aria-labelledby=\"dropdown-a\">
-\t\t\t\t\t\t\t\t<a class=\"dropdown-item\" href=\"blog\">blog</a>
-\t\t\t\t\t\t\t\t<a class=\"dropdown-item\" href=\"blog-details\">blog Single</a>
-\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t</li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"contact.html\">Contact</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"home\">Accueil</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"CalculateMyNeeds\">Calculer mes besoins</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"PreparedMeals\">Repas préparés</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"Articles\">Articles</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"Profile\">Profil</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"Contact\">Contact</a></li>
 \t\t\t\t\t</ul>
 \t\t\t\t</div>
 \t\t\t</div>
@@ -117,193 +104,41 @@ class __TwigTemplate_5552c4b3b699db7bd9a2a589ba5c0059ecc7a426f20b501d4791828c010
 \t<!-- Start All Pages -->
 \t<div class=\"all-page-title page-breadcrumb\">
 \t\t<div class=\"container text-center\">
-\t\t\t<div class=\"row\">
-\t\t\t\t<div class=\"col-lg-12\">
-\t\t\t\t\t<h1>Blog</h1>
-\t\t\t\t</div>
-\t\t\t</div>
 \t\t</div>
 \t</div>
 \t<!-- End All Pages -->
 \t
-\t<!-- Start blog -->
+\t<!-- Start blog details -->
 \t<div class=\"blog-box\">
 \t\t<div class=\"container\">
 \t\t\t<div class=\"row\">
 \t\t\t\t<div class=\"col-lg-12\">
 \t\t\t\t\t<div class=\"heading-title text-center\">
-\t\t\t\t\t\t<h2>Blog</h2>
-\t\t\t\t\t\t<p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+\t\t\t\t\t\t<h2>Titre</h2>
 \t\t\t\t\t</div>
 \t\t\t\t</div>
 \t\t\t</div>
 \t\t\t<div class=\"row\">
-\t\t\t\t<div class=\"col-lg-4 col-md-6 col-12\">
-\t\t\t\t\t<div class=\"blog-box-inner\">
-\t\t\t\t\t\t<div class=\"blog-img-box\">
-\t\t\t\t\t\t\t<img class=\"img-fluid\" src=\"images/blog-img-01.jpg\" alt=\"\">
-\t\t\t\t\t\t</div>
-\t\t\t\t\t\t<div class=\"blog-detail\">
-\t\t\t\t\t\t\t<h4>Duis feugiat neque sed dolor cursus.</h4>
-\t\t\t\t\t\t\t<ul>
-\t\t\t\t\t\t\t\t<li><span>Post by Admin</span></li>
-\t\t\t\t\t\t\t\t<li>|</li>
-\t\t\t\t\t\t\t\t<li><span>27 February 2018</span></li>
-\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit feugiat. Ut at pellentesque ante, sed convallis arcu. Nullam facilisis, eros in eleifend luctus, odio ante sodales augue, eget lacinia lectus erat et sem. </p>
-\t\t\t\t\t\t\t<p>Sed semper orci sit amet porta placerat. Etiam quis finibus eros. </p>
-\t\t\t\t\t\t\t<a class=\"btn btn-lg btn-circle btn-outline-new-white\" href=\"#\">Read More</a>
-\t\t\t\t\t\t</div>
-\t\t\t\t\t</div>
-\t\t\t\t</div>
-\t\t\t\t<div class=\"col-lg-4 col-md-6 col-12\">
-\t\t\t\t\t<div class=\"blog-box-inner\">
-\t\t\t\t\t\t<div class=\"blog-img-box\">
-\t\t\t\t\t\t\t<img class=\"img-fluid\" src=\"images/blog-img-02.jpg\" alt=\"\">
-\t\t\t\t\t\t</div>
-\t\t\t\t\t\t<div class=\"blog-detail\">
-\t\t\t\t\t\t\t<h4>Duis feugiat neque sed dolor cursus.</h4>
-\t\t\t\t\t\t\t<ul>
-\t\t\t\t\t\t\t\t<li><span>Post by Admin</span></li>
-\t\t\t\t\t\t\t\t<li>|</li>
-\t\t\t\t\t\t\t\t<li><span>27 February 2018</span></li>
-\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit feugiat. Ut at pellentesque ante, sed convallis arcu. Nullam facilisis, eros in eleifend luctus, odio ante sodales augue, eget lacinia lectus erat et sem. </p>
-\t\t\t\t\t\t\t<p>Sed semper orci sit amet porta placerat. Etiam quis finibus eros. </p>
-\t\t\t\t\t\t\t<a class=\"btn btn-lg btn-circle btn-outline-new-white\" href=\"#\">Read More</a>
-\t\t\t\t\t\t</div>
-\t\t\t\t\t</div>
-\t\t\t\t</div>
-\t\t\t\t<div class=\"col-lg-4 col-md-6 col-12\">
-\t\t\t\t\t<div class=\"blog-box-inner\">
-\t\t\t\t\t\t<div class=\"blog-img-box\">
-\t\t\t\t\t\t\t<img class=\"img-fluid\" src=\"images/blog-img-03.jpg\" alt=\"\">
-\t\t\t\t\t\t</div>
-\t\t\t\t\t\t<div class=\"blog-detail\">
-\t\t\t\t\t\t\t<h4>Duis feugiat neque sed dolor cursus.</h4>
-\t\t\t\t\t\t\t<ul>
-\t\t\t\t\t\t\t\t<li><span>Post by Admin</span></li>
-\t\t\t\t\t\t\t\t<li>|</li>
-\t\t\t\t\t\t\t\t<li><span>27 February 2018</span></li>
-\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit feugiat. Ut at pellentesque ante, sed convallis arcu. Nullam facilisis, eros in eleifend luctus, odio ante sodales augue, eget lacinia lectus erat et sem. </p>
-\t\t\t\t\t\t\t<p>Sed semper orci sit amet porta placerat. Etiam quis finibus eros. </p>
-\t\t\t\t\t\t\t<a class=\"btn btn-lg btn-circle btn-outline-new-white\" href=\"#\">Read More</a>
-\t\t\t\t\t\t</div>
-\t\t\t\t\t</div>
-\t\t\t\t</div>
-\t\t\t\t<div class=\"col-lg-4 col-md-6 col-12\">
-\t\t\t\t\t<div class=\"blog-box-inner\">
-\t\t\t\t\t\t<div class=\"blog-img-box\">
-\t\t\t\t\t\t\t<img class=\"img-fluid\" src=\"images/blog-img-04.jpg\" alt=\"\">
-\t\t\t\t\t\t</div>
-\t\t\t\t\t\t<div class=\"blog-detail\">
-\t\t\t\t\t\t\t<h4>Duis feugiat neque sed dolor cursus.</h4>
-\t\t\t\t\t\t\t<ul>
-\t\t\t\t\t\t\t\t<li><span>Post by Admin</span></li>
-\t\t\t\t\t\t\t\t<li>|</li>
-\t\t\t\t\t\t\t\t<li><span>27 February 2018</span></li>
-\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit feugiat. Ut at pellentesque ante, sed convallis arcu. Nullam facilisis, eros in eleifend luctus, odio ante sodales augue, eget lacinia lectus erat et sem. </p>
-\t\t\t\t\t\t\t<p>Sed semper orci sit amet porta placerat. Etiam quis finibus eros. </p>
-\t\t\t\t\t\t\t<a class=\"btn btn-lg btn-circle btn-outline-new-white\" href=\"#\">Read More</a>
-\t\t\t\t\t\t</div>
-\t\t\t\t\t</div>
-\t\t\t\t</div>
-\t\t\t\t<div class=\"col-lg-4 col-md-6 col-12\">
-\t\t\t\t\t<div class=\"blog-box-inner\">
-\t\t\t\t\t\t<div class=\"blog-img-box\">
-\t\t\t\t\t\t\t<img class=\"img-fluid\" src=\"images/blog-img-05.jpg\" alt=\"\">
-\t\t\t\t\t\t</div>
-\t\t\t\t\t\t<div class=\"blog-detail\">
-\t\t\t\t\t\t\t<h4>Duis feugiat neque sed dolor cursus.</h4>
-\t\t\t\t\t\t\t<ul>
-\t\t\t\t\t\t\t\t<li><span>Post by Admin</span></li>
-\t\t\t\t\t\t\t\t<li>|</li>
-\t\t\t\t\t\t\t\t<li><span>27 February 2018</span></li>
-\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit feugiat. Ut at pellentesque ante, sed convallis arcu. Nullam facilisis, eros in eleifend luctus, odio ante sodales augue, eget lacinia lectus erat et sem. </p>
-\t\t\t\t\t\t\t<p>Sed semper orci sit amet porta placerat. Etiam quis finibus eros. </p>
-\t\t\t\t\t\t\t<a class=\"btn btn-lg btn-circle btn-outline-new-white\" href=\"#\">Read More</a>
-\t\t\t\t\t\t</div>
-\t\t\t\t\t</div>
-\t\t\t\t</div>
-\t\t\t\t<div class=\"col-lg-4 col-md-6 col-12\">
-\t\t\t\t\t<div class=\"blog-box-inner\">
-\t\t\t\t\t\t<div class=\"blog-img-box\">
-\t\t\t\t\t\t\t<img class=\"img-fluid\" src=\"images/blog-img-06.jpg\" alt=\"\">
-\t\t\t\t\t\t</div>
-\t\t\t\t\t\t<div class=\"blog-detail\">
-\t\t\t\t\t\t\t<h4>Duis feugiat neque sed dolor cursus.</h4>
-\t\t\t\t\t\t\t<ul>
-\t\t\t\t\t\t\t\t<li><span>Post by Admin</span></li>
-\t\t\t\t\t\t\t\t<li>|</li>
-\t\t\t\t\t\t\t\t<li><span>27 February 2018</span></li>
-\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit feugiat. Ut at pellentesque ante, sed convallis arcu. Nullam facilisis, eros in eleifend luctus, odio ante sodales augue, eget lacinia lectus erat et sem. </p>
-\t\t\t\t\t\t\t<p>Sed semper orci sit amet porta placerat. Etiam quis finibus eros. </p>
-\t\t\t\t\t\t\t<a class=\"btn btn-lg btn-circle btn-outline-new-white\" href=\"#\">Read More</a>
-\t\t\t\t\t\t</div>
-\t\t\t\t\t</div>
-\t\t\t\t</div>
-\t\t\t\t<div class=\"col-lg-4 col-md-6 col-12\">
-\t\t\t\t\t<div class=\"blog-box-inner\">
-\t\t\t\t\t\t<div class=\"blog-img-box\">
-\t\t\t\t\t\t\t<img class=\"img-fluid\" src=\"images/blog-img-07.jpg\" alt=\"\">
-\t\t\t\t\t\t</div>
-\t\t\t\t\t\t<div class=\"blog-detail\">
-\t\t\t\t\t\t\t<h4>Duis feugiat neque sed dolor cursus.</h4>
-\t\t\t\t\t\t\t<ul>
-\t\t\t\t\t\t\t\t<li><span>Post by Admin</span></li>
-\t\t\t\t\t\t\t\t<li>|</li>
-\t\t\t\t\t\t\t\t<li><span>27 February 2018</span></li>
-\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit feugiat. Ut at pellentesque ante, sed convallis arcu. Nullam facilisis, eros in eleifend luctus, odio ante sodales augue, eget lacinia lectus erat et sem. </p>
-\t\t\t\t\t\t\t<p>Sed semper orci sit amet porta placerat. Etiam quis finibus eros. </p>
-\t\t\t\t\t\t\t<a class=\"btn btn-lg btn-circle btn-outline-new-white\" href=\"#\">Read More</a>
-\t\t\t\t\t\t</div>
-\t\t\t\t\t</div>
-\t\t\t\t</div>
-\t\t\t\t<div class=\"col-lg-4 col-md-6 col-12\">
-\t\t\t\t\t<div class=\"blog-box-inner\">
-\t\t\t\t\t\t<div class=\"blog-img-box\">
-\t\t\t\t\t\t\t<img class=\"img-fluid\" src=\"images/blog-img-08.jpg\" alt=\"\">
-\t\t\t\t\t\t</div>
-\t\t\t\t\t\t<div class=\"blog-detail\">
-\t\t\t\t\t\t\t<h4>Duis feugiat neque sed dolor cursus.</h4>
-\t\t\t\t\t\t\t<ul>
-\t\t\t\t\t\t\t\t<li><span>Post by Admin</span></li>
-\t\t\t\t\t\t\t\t<li>|</li>
-\t\t\t\t\t\t\t\t<li><span>27 February 2018</span></li>
-\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit feugiat. Ut at pellentesque ante, sed convallis arcu. Nullam facilisis, eros in eleifend luctus, odio ante sodales augue, eget lacinia lectus erat et sem. </p>
-\t\t\t\t\t\t\t<p>Sed semper orci sit amet porta placerat. Etiam quis finibus eros. </p>
-\t\t\t\t\t\t\t<a class=\"btn btn-lg btn-circle btn-outline-new-white\" href=\"#\">Read More</a>
-\t\t\t\t\t\t</div>
-\t\t\t\t\t</div>
-\t\t\t\t</div>
-\t\t\t\t<div class=\"col-lg-4 col-md-6 col-12\">
-\t\t\t\t\t<div class=\"blog-box-inner\">
-\t\t\t\t\t\t<div class=\"blog-img-box\">
-\t\t\t\t\t\t\t<img class=\"img-fluid\" src=\"images/blog-img-09.jpg\" alt=\"\">
-\t\t\t\t\t\t</div>
-\t\t\t\t\t\t<div class=\"blog-detail\">
-\t\t\t\t\t\t\t<h4>Duis feugiat neque sed dolor cursus.</h4>
-\t\t\t\t\t\t\t<ul>
-\t\t\t\t\t\t\t\t<li><span>Post by Admin</span></li>
-\t\t\t\t\t\t\t\t<li>|</li>
-\t\t\t\t\t\t\t\t<li><span>27 February 2018</span></li>
-\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit feugiat. Ut at pellentesque ante, sed convallis arcu. Nullam facilisis, eros in eleifend luctus, odio ante sodales augue, eget lacinia lectus erat et sem. </p>
-\t\t\t\t\t\t\t<p>Sed semper orci sit amet porta placerat. Etiam quis finibus eros. </p>
-\t\t\t\t\t\t\t<a class=\"btn btn-lg btn-circle btn-outline-new-white\" href=\"#\">Read More</a>
+\t\t\t\t<div class=\"col-xl-8 col-lg-8 col-12\">
+\t\t\t\t\t<div class=\"blog-inner-details-page\">
+\t\t\t\t\t\t<div class=\"blog-inner-box\">
+\t\t\t\t\t\t\t<div class=\"side-blog-img\">
+\t\t\t\t\t\t\t\t<img class=\"img-fluid\" src=\"images/inner-blog-img.jpg\" alt=\"\">
+\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t<div class=\"inner-blog-detail details-page\">
+\t\t\t\t\t\t\t\t<h3>Titre</h3>
+\t\t\t\t\t\t\t\t<ul>
+\t\t\t\t\t\t\t\t\t<li><i class=\"zmdi zmdi-account\"></i>Posted By : <span>Admin</span></li>
+\t\t\t\t\t\t\t\t</ul>
+\t\t\t\t\t\t\t\t<p>Contenu d'article</p>
+\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t</div>
 \t\t\t\t\t</div>
 \t\t\t\t</div>
 \t\t\t</div>
 \t\t</div>
 \t</div>
-\t<!-- End blog -->
+\t<!-- End details -->
 \t
 \t<!-- Start Contact info -->
 \t<div class=\"contact-imfo-box\">
@@ -312,27 +147,25 @@ class __TwigTemplate_5552c4b3b699db7bd9a2a589ba5c0059ecc7a426f20b501d4791828c010
 \t\t\t\t<div class=\"col-md-4 arrow-right\">
 \t\t\t\t\t<i class=\"fa fa-volume-control-phone\"></i>
 \t\t\t\t\t<div class=\"overflow-hidden\">
-\t\t\t\t\t\t<h4>Phone</h4>
+\t\t\t\t\t\t<h4>Téléphone</h4>
 \t\t\t\t\t\t<p class=\"lead\">
-\t\t\t\t\t\t\t+01 123-456-4590
+\t\t\t\t\t\t\t+216 52-680-290
 \t\t\t\t\t\t</p>
 \t\t\t\t\t</div>
 \t\t\t\t</div>
-\t\t\t\t<div class=\"col-md-4 arrow-right\">
-\t\t\t\t\t<i class=\"fa fa-envelope\"></i>
+\t\t\t\t<i class=\"fa fa-envelope\"></i>
 \t\t\t\t\t<div class=\"overflow-hidden\">
 \t\t\t\t\t\t<h4>Email</h4>
 \t\t\t\t\t\t<p class=\"lead\">
-\t\t\t\t\t\t\tyourmail@gmail.com
+\t\t\t\t\t\t\tkool.healthy.contact@gmail.com
 \t\t\t\t\t\t</p>
 \t\t\t\t\t</div>
-\t\t\t\t</div>
 \t\t\t\t<div class=\"col-md-4\">
 \t\t\t\t\t<i class=\"fa fa-map-marker\"></i>
 \t\t\t\t\t<div class=\"overflow-hidden\">
-\t\t\t\t\t\t<h4>Location</h4>
+\t\t\t\t\t\t<h4>Localisation</h4>
 \t\t\t\t\t\t<p class=\"lead\">
-\t\t\t\t\t\t\t800, Lorem Street, US
+\t\t\t\t\t\t\t5000, Monastir, Tunisia
 \t\t\t\t\t\t</p>
 \t\t\t\t\t</div>
 \t\t\t\t</div>
@@ -346,38 +179,30 @@ class __TwigTemplate_5552c4b3b699db7bd9a2a589ba5c0059ecc7a426f20b501d4791828c010
 \t\t<div class=\"container\">
 \t\t\t<div class=\"row\">
 \t\t\t\t<div class=\"col-lg-3 col-md-6\">
-\t\t\t\t\t<h3>About Us</h3>
-\t\t\t\t\t<p>Integer cursus scelerisque ipsum id efficitur. Donec a dui fringilla, gravida lorem ac, semper magna. Aenean rhoncus ac lectus a interdum. Vivamus semper posuere dui.</p>
+\t\t\t\t\t<h3>à propos</h3>
+\t\t\t\t\t<p>Kool Healthy est un service de préparation de repas basé en Tunisie. Fondé en 2020 avec l'aide de: M. Sami Bhiri et OneDev</p>
 \t\t\t\t</div>
 \t\t\t\t<div class=\"col-lg-3 col-md-6\">
-\t\t\t\t\t<h3>Subscribe</h3>
+\t\t\t\t\t<h3>Courriel</h3>
 \t\t\t\t\t<div class=\"subscribe_form\">
-\t\t\t\t\t\t<form class=\"subscribe_form\">
-\t\t\t\t\t\t\t<input name=\"EMAIL\" id=\"subs-email\" class=\"form_input\" placeholder=\"Email Address...\" type=\"email\">
-\t\t\t\t\t\t\t<button type=\"submit\" class=\"submit\">SUBSCRIBE</button>
-\t\t\t\t\t\t\t<div class=\"clearfix\"></div>
-\t\t\t\t\t\t</form>
+\t\t\t\t\t\t<button type=\"submit\" class=\"submit\" onclick=\"showDialogAbonnez()\">Abonnez-Vous</button>
 \t\t\t\t\t</div>
+\t\t\t\t\t
+\t\t\t\t</div>
+\t\t\t\t<div class=\"col-lg-3 col-md-6\">
+\t\t\t\t\t<h3>Contact</h3>
+\t\t\t\t\t<p class=\"lead\">Monastir</p>
+\t\t\t\t\t<p class=\"lead\">+216 52 680 290</p>
+\t\t\t\t\t<p>kool.healthy.contact@gmail.com</p>
+\t\t\t\t</div>
+\t\t\t\t<div class=\"col-lg-3 col-md-6\">
+\t\t\t\t\t<h3>Suivez-Nous</h3>
 \t\t\t\t\t<ul class=\"list-inline f-social\">
-\t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-facebook\" aria-hidden=\"true\"></i></a></li>
-\t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-twitter\" aria-hidden=\"true\"></i></a></li>
-\t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-linkedin\" aria-hidden=\"true\"></i></a></li>
-\t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-google-plus\" aria-hidden=\"true\"></i></a></li>
-\t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-instagram\" aria-hidden=\"true\"></i></a></li>
+\t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"https://facebook.com/DahmaniMhd/\"><i class=\"fa fa-facebook\" aria-hidden=\"true\"></i></a></li>
+\t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"https://linkedin.com/in/mohamed-hedi-dahmani/\"><i class=\"fa fa-linkedin\" aria-hidden=\"true\"></i></a></li>
+\t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"https://github.com/DahmaniDev\"><i class=\"fa fa-github\" aria-hidden=\"true\"></i></a></li>
+\t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"https://instagram.com/mohamedhedi.dahmani\"><i class=\"fa fa-instagram\" aria-hidden=\"true\"></i></a></li>
 \t\t\t\t\t</ul>
-\t\t\t\t</div>
-\t\t\t\t<div class=\"col-lg-3 col-md-6\">
-\t\t\t\t\t<h3>Contact information</h3>
-\t\t\t\t\t<p class=\"lead\">Ipsum Street, Lorem Tower, MO, Columbia, 508000</p>
-\t\t\t\t\t<p class=\"lead\"><a href=\"#\">+01 2000 800 9999</a></p>
-\t\t\t\t\t<p><a href=\"#\"> info@admin.com</a></p>
-\t\t\t\t</div>
-\t\t\t\t<div class=\"col-lg-3 col-md-6\">
-\t\t\t\t\t<h3>Opening hours</h3>
-\t\t\t\t\t<p><span class=\"text-color\">Monday: </span>Closed</p>
-\t\t\t\t\t<p><span class=\"text-color\">Tue-Wed :</span> 9:Am - 10PM</p>
-\t\t\t\t\t<p><span class=\"text-color\">Thu-Fri :</span> 9:Am - 10PM</p>
-\t\t\t\t\t<p><span class=\"text-color\">Sat-Sun :</span> 5:PM - 10PM</p>
 \t\t\t\t</div>
 \t\t\t</div>
 \t\t</div>
@@ -386,8 +211,8 @@ class __TwigTemplate_5552c4b3b699db7bd9a2a589ba5c0059ecc7a426f20b501d4791828c010
 \t\t\t<div class=\"container\">
 \t\t\t\t<div class=\"row\">
 \t\t\t\t\t<div class=\"col-lg-12\">
-\t\t\t\t\t\t<p class=\"company-name\">All Rights Reserved. &copy; 2018 <a href=\"#\">Live Dinner Restaurant</a> Design By : 
-\t\t\t\t\t<a href=\"https://html.design/\">html design</a></p>
+\t\t\t\t\t\t<p class=\"company-name\">Tous Droits Réservés &copy; 2020 <a href=\"#\">Kool Healthy</a> Développé par : 
+\t\t\t\t\t<a href=\"https://github.com/DahmaniDev\">DahmaniDev<i class=\"fa fa-github\"></i></a></p>
 \t\t\t\t\t</div>
 \t\t\t\t</div>
 \t\t\t</div>
@@ -473,7 +298,7 @@ class __TwigTemplate_5552c4b3b699db7bd9a2a589ba5c0059ecc7a426f20b501d4791828c010
 \t<header class=\"top-navbar\">
 \t\t<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
 \t\t\t<div class=\"container\">
-\t\t\t\t<a class=\"navbar-brand\" href=\"index.html\">
+\t\t\t\t<a class=\"navbar-brand\" href=\"home\">
 \t\t\t\t\t<img src=\"images/logo.png\" alt=\"\" />
 \t\t\t\t</a>
 \t\t\t\t<button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbars-rs-food\" aria-controls=\"navbars-rs-food\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
@@ -481,25 +306,12 @@ class __TwigTemplate_5552c4b3b699db7bd9a2a589ba5c0059ecc7a426f20b501d4791828c010
 \t\t\t\t</button>
 \t\t\t\t<div class=\"collapse navbar-collapse\" id=\"navbars-rs-food\">
 \t\t\t\t\t<ul class=\"navbar-nav ml-auto\">
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"/\">Home</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"menu\">Menu</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"about\">About</a></li>
-\t\t\t\t\t\t<li class=\"nav-item dropdown\">
-\t\t\t\t\t\t\t<a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"dropdown-a\" data-toggle=\"dropdown\">Pages</a>
-\t\t\t\t\t\t\t<div class=\"dropdown-menu\" aria-labelledby=\"dropdown-a\">
-\t\t\t\t\t\t\t\t<a class=\"dropdown-item\" href=\"reservation\">Reservation</a>
-\t\t\t\t\t\t\t\t<a class=\"dropdown-item\" href=\"stuff\">Stuff</a>
-\t\t\t\t\t\t\t\t<a class=\"dropdown-item\" href=\"gallery\">Gallery</a>
-\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t</li>
-\t\t\t\t\t\t<li class=\"nav-item active dropdown\">
-\t\t\t\t\t\t\t<a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"dropdown-a\" data-toggle=\"dropdown\">Blog</a>
-\t\t\t\t\t\t\t<div class=\"dropdown-menu\" aria-labelledby=\"dropdown-a\">
-\t\t\t\t\t\t\t\t<a class=\"dropdown-item\" href=\"blog\">blog</a>
-\t\t\t\t\t\t\t\t<a class=\"dropdown-item\" href=\"blog-details\">blog Single</a>
-\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t</li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"contact.html\">Contact</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"home\">Accueil</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"CalculateMyNeeds\">Calculer mes besoins</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"PreparedMeals\">Repas préparés</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"Articles\">Articles</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"Profile\">Profil</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"Contact\">Contact</a></li>
 \t\t\t\t\t</ul>
 \t\t\t\t</div>
 \t\t\t</div>
@@ -510,193 +322,41 @@ class __TwigTemplate_5552c4b3b699db7bd9a2a589ba5c0059ecc7a426f20b501d4791828c010
 \t<!-- Start All Pages -->
 \t<div class=\"all-page-title page-breadcrumb\">
 \t\t<div class=\"container text-center\">
-\t\t\t<div class=\"row\">
-\t\t\t\t<div class=\"col-lg-12\">
-\t\t\t\t\t<h1>Blog</h1>
-\t\t\t\t</div>
-\t\t\t</div>
 \t\t</div>
 \t</div>
 \t<!-- End All Pages -->
 \t
-\t<!-- Start blog -->
+\t<!-- Start blog details -->
 \t<div class=\"blog-box\">
 \t\t<div class=\"container\">
 \t\t\t<div class=\"row\">
 \t\t\t\t<div class=\"col-lg-12\">
 \t\t\t\t\t<div class=\"heading-title text-center\">
-\t\t\t\t\t\t<h2>Blog</h2>
-\t\t\t\t\t\t<p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+\t\t\t\t\t\t<h2>Titre</h2>
 \t\t\t\t\t</div>
 \t\t\t\t</div>
 \t\t\t</div>
 \t\t\t<div class=\"row\">
-\t\t\t\t<div class=\"col-lg-4 col-md-6 col-12\">
-\t\t\t\t\t<div class=\"blog-box-inner\">
-\t\t\t\t\t\t<div class=\"blog-img-box\">
-\t\t\t\t\t\t\t<img class=\"img-fluid\" src=\"images/blog-img-01.jpg\" alt=\"\">
-\t\t\t\t\t\t</div>
-\t\t\t\t\t\t<div class=\"blog-detail\">
-\t\t\t\t\t\t\t<h4>Duis feugiat neque sed dolor cursus.</h4>
-\t\t\t\t\t\t\t<ul>
-\t\t\t\t\t\t\t\t<li><span>Post by Admin</span></li>
-\t\t\t\t\t\t\t\t<li>|</li>
-\t\t\t\t\t\t\t\t<li><span>27 February 2018</span></li>
-\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit feugiat. Ut at pellentesque ante, sed convallis arcu. Nullam facilisis, eros in eleifend luctus, odio ante sodales augue, eget lacinia lectus erat et sem. </p>
-\t\t\t\t\t\t\t<p>Sed semper orci sit amet porta placerat. Etiam quis finibus eros. </p>
-\t\t\t\t\t\t\t<a class=\"btn btn-lg btn-circle btn-outline-new-white\" href=\"#\">Read More</a>
-\t\t\t\t\t\t</div>
-\t\t\t\t\t</div>
-\t\t\t\t</div>
-\t\t\t\t<div class=\"col-lg-4 col-md-6 col-12\">
-\t\t\t\t\t<div class=\"blog-box-inner\">
-\t\t\t\t\t\t<div class=\"blog-img-box\">
-\t\t\t\t\t\t\t<img class=\"img-fluid\" src=\"images/blog-img-02.jpg\" alt=\"\">
-\t\t\t\t\t\t</div>
-\t\t\t\t\t\t<div class=\"blog-detail\">
-\t\t\t\t\t\t\t<h4>Duis feugiat neque sed dolor cursus.</h4>
-\t\t\t\t\t\t\t<ul>
-\t\t\t\t\t\t\t\t<li><span>Post by Admin</span></li>
-\t\t\t\t\t\t\t\t<li>|</li>
-\t\t\t\t\t\t\t\t<li><span>27 February 2018</span></li>
-\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit feugiat. Ut at pellentesque ante, sed convallis arcu. Nullam facilisis, eros in eleifend luctus, odio ante sodales augue, eget lacinia lectus erat et sem. </p>
-\t\t\t\t\t\t\t<p>Sed semper orci sit amet porta placerat. Etiam quis finibus eros. </p>
-\t\t\t\t\t\t\t<a class=\"btn btn-lg btn-circle btn-outline-new-white\" href=\"#\">Read More</a>
-\t\t\t\t\t\t</div>
-\t\t\t\t\t</div>
-\t\t\t\t</div>
-\t\t\t\t<div class=\"col-lg-4 col-md-6 col-12\">
-\t\t\t\t\t<div class=\"blog-box-inner\">
-\t\t\t\t\t\t<div class=\"blog-img-box\">
-\t\t\t\t\t\t\t<img class=\"img-fluid\" src=\"images/blog-img-03.jpg\" alt=\"\">
-\t\t\t\t\t\t</div>
-\t\t\t\t\t\t<div class=\"blog-detail\">
-\t\t\t\t\t\t\t<h4>Duis feugiat neque sed dolor cursus.</h4>
-\t\t\t\t\t\t\t<ul>
-\t\t\t\t\t\t\t\t<li><span>Post by Admin</span></li>
-\t\t\t\t\t\t\t\t<li>|</li>
-\t\t\t\t\t\t\t\t<li><span>27 February 2018</span></li>
-\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit feugiat. Ut at pellentesque ante, sed convallis arcu. Nullam facilisis, eros in eleifend luctus, odio ante sodales augue, eget lacinia lectus erat et sem. </p>
-\t\t\t\t\t\t\t<p>Sed semper orci sit amet porta placerat. Etiam quis finibus eros. </p>
-\t\t\t\t\t\t\t<a class=\"btn btn-lg btn-circle btn-outline-new-white\" href=\"#\">Read More</a>
-\t\t\t\t\t\t</div>
-\t\t\t\t\t</div>
-\t\t\t\t</div>
-\t\t\t\t<div class=\"col-lg-4 col-md-6 col-12\">
-\t\t\t\t\t<div class=\"blog-box-inner\">
-\t\t\t\t\t\t<div class=\"blog-img-box\">
-\t\t\t\t\t\t\t<img class=\"img-fluid\" src=\"images/blog-img-04.jpg\" alt=\"\">
-\t\t\t\t\t\t</div>
-\t\t\t\t\t\t<div class=\"blog-detail\">
-\t\t\t\t\t\t\t<h4>Duis feugiat neque sed dolor cursus.</h4>
-\t\t\t\t\t\t\t<ul>
-\t\t\t\t\t\t\t\t<li><span>Post by Admin</span></li>
-\t\t\t\t\t\t\t\t<li>|</li>
-\t\t\t\t\t\t\t\t<li><span>27 February 2018</span></li>
-\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit feugiat. Ut at pellentesque ante, sed convallis arcu. Nullam facilisis, eros in eleifend luctus, odio ante sodales augue, eget lacinia lectus erat et sem. </p>
-\t\t\t\t\t\t\t<p>Sed semper orci sit amet porta placerat. Etiam quis finibus eros. </p>
-\t\t\t\t\t\t\t<a class=\"btn btn-lg btn-circle btn-outline-new-white\" href=\"#\">Read More</a>
-\t\t\t\t\t\t</div>
-\t\t\t\t\t</div>
-\t\t\t\t</div>
-\t\t\t\t<div class=\"col-lg-4 col-md-6 col-12\">
-\t\t\t\t\t<div class=\"blog-box-inner\">
-\t\t\t\t\t\t<div class=\"blog-img-box\">
-\t\t\t\t\t\t\t<img class=\"img-fluid\" src=\"images/blog-img-05.jpg\" alt=\"\">
-\t\t\t\t\t\t</div>
-\t\t\t\t\t\t<div class=\"blog-detail\">
-\t\t\t\t\t\t\t<h4>Duis feugiat neque sed dolor cursus.</h4>
-\t\t\t\t\t\t\t<ul>
-\t\t\t\t\t\t\t\t<li><span>Post by Admin</span></li>
-\t\t\t\t\t\t\t\t<li>|</li>
-\t\t\t\t\t\t\t\t<li><span>27 February 2018</span></li>
-\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit feugiat. Ut at pellentesque ante, sed convallis arcu. Nullam facilisis, eros in eleifend luctus, odio ante sodales augue, eget lacinia lectus erat et sem. </p>
-\t\t\t\t\t\t\t<p>Sed semper orci sit amet porta placerat. Etiam quis finibus eros. </p>
-\t\t\t\t\t\t\t<a class=\"btn btn-lg btn-circle btn-outline-new-white\" href=\"#\">Read More</a>
-\t\t\t\t\t\t</div>
-\t\t\t\t\t</div>
-\t\t\t\t</div>
-\t\t\t\t<div class=\"col-lg-4 col-md-6 col-12\">
-\t\t\t\t\t<div class=\"blog-box-inner\">
-\t\t\t\t\t\t<div class=\"blog-img-box\">
-\t\t\t\t\t\t\t<img class=\"img-fluid\" src=\"images/blog-img-06.jpg\" alt=\"\">
-\t\t\t\t\t\t</div>
-\t\t\t\t\t\t<div class=\"blog-detail\">
-\t\t\t\t\t\t\t<h4>Duis feugiat neque sed dolor cursus.</h4>
-\t\t\t\t\t\t\t<ul>
-\t\t\t\t\t\t\t\t<li><span>Post by Admin</span></li>
-\t\t\t\t\t\t\t\t<li>|</li>
-\t\t\t\t\t\t\t\t<li><span>27 February 2018</span></li>
-\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit feugiat. Ut at pellentesque ante, sed convallis arcu. Nullam facilisis, eros in eleifend luctus, odio ante sodales augue, eget lacinia lectus erat et sem. </p>
-\t\t\t\t\t\t\t<p>Sed semper orci sit amet porta placerat. Etiam quis finibus eros. </p>
-\t\t\t\t\t\t\t<a class=\"btn btn-lg btn-circle btn-outline-new-white\" href=\"#\">Read More</a>
-\t\t\t\t\t\t</div>
-\t\t\t\t\t</div>
-\t\t\t\t</div>
-\t\t\t\t<div class=\"col-lg-4 col-md-6 col-12\">
-\t\t\t\t\t<div class=\"blog-box-inner\">
-\t\t\t\t\t\t<div class=\"blog-img-box\">
-\t\t\t\t\t\t\t<img class=\"img-fluid\" src=\"images/blog-img-07.jpg\" alt=\"\">
-\t\t\t\t\t\t</div>
-\t\t\t\t\t\t<div class=\"blog-detail\">
-\t\t\t\t\t\t\t<h4>Duis feugiat neque sed dolor cursus.</h4>
-\t\t\t\t\t\t\t<ul>
-\t\t\t\t\t\t\t\t<li><span>Post by Admin</span></li>
-\t\t\t\t\t\t\t\t<li>|</li>
-\t\t\t\t\t\t\t\t<li><span>27 February 2018</span></li>
-\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit feugiat. Ut at pellentesque ante, sed convallis arcu. Nullam facilisis, eros in eleifend luctus, odio ante sodales augue, eget lacinia lectus erat et sem. </p>
-\t\t\t\t\t\t\t<p>Sed semper orci sit amet porta placerat. Etiam quis finibus eros. </p>
-\t\t\t\t\t\t\t<a class=\"btn btn-lg btn-circle btn-outline-new-white\" href=\"#\">Read More</a>
-\t\t\t\t\t\t</div>
-\t\t\t\t\t</div>
-\t\t\t\t</div>
-\t\t\t\t<div class=\"col-lg-4 col-md-6 col-12\">
-\t\t\t\t\t<div class=\"blog-box-inner\">
-\t\t\t\t\t\t<div class=\"blog-img-box\">
-\t\t\t\t\t\t\t<img class=\"img-fluid\" src=\"images/blog-img-08.jpg\" alt=\"\">
-\t\t\t\t\t\t</div>
-\t\t\t\t\t\t<div class=\"blog-detail\">
-\t\t\t\t\t\t\t<h4>Duis feugiat neque sed dolor cursus.</h4>
-\t\t\t\t\t\t\t<ul>
-\t\t\t\t\t\t\t\t<li><span>Post by Admin</span></li>
-\t\t\t\t\t\t\t\t<li>|</li>
-\t\t\t\t\t\t\t\t<li><span>27 February 2018</span></li>
-\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit feugiat. Ut at pellentesque ante, sed convallis arcu. Nullam facilisis, eros in eleifend luctus, odio ante sodales augue, eget lacinia lectus erat et sem. </p>
-\t\t\t\t\t\t\t<p>Sed semper orci sit amet porta placerat. Etiam quis finibus eros. </p>
-\t\t\t\t\t\t\t<a class=\"btn btn-lg btn-circle btn-outline-new-white\" href=\"#\">Read More</a>
-\t\t\t\t\t\t</div>
-\t\t\t\t\t</div>
-\t\t\t\t</div>
-\t\t\t\t<div class=\"col-lg-4 col-md-6 col-12\">
-\t\t\t\t\t<div class=\"blog-box-inner\">
-\t\t\t\t\t\t<div class=\"blog-img-box\">
-\t\t\t\t\t\t\t<img class=\"img-fluid\" src=\"images/blog-img-09.jpg\" alt=\"\">
-\t\t\t\t\t\t</div>
-\t\t\t\t\t\t<div class=\"blog-detail\">
-\t\t\t\t\t\t\t<h4>Duis feugiat neque sed dolor cursus.</h4>
-\t\t\t\t\t\t\t<ul>
-\t\t\t\t\t\t\t\t<li><span>Post by Admin</span></li>
-\t\t\t\t\t\t\t\t<li>|</li>
-\t\t\t\t\t\t\t\t<li><span>27 February 2018</span></li>
-\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit feugiat. Ut at pellentesque ante, sed convallis arcu. Nullam facilisis, eros in eleifend luctus, odio ante sodales augue, eget lacinia lectus erat et sem. </p>
-\t\t\t\t\t\t\t<p>Sed semper orci sit amet porta placerat. Etiam quis finibus eros. </p>
-\t\t\t\t\t\t\t<a class=\"btn btn-lg btn-circle btn-outline-new-white\" href=\"#\">Read More</a>
+\t\t\t\t<div class=\"col-xl-8 col-lg-8 col-12\">
+\t\t\t\t\t<div class=\"blog-inner-details-page\">
+\t\t\t\t\t\t<div class=\"blog-inner-box\">
+\t\t\t\t\t\t\t<div class=\"side-blog-img\">
+\t\t\t\t\t\t\t\t<img class=\"img-fluid\" src=\"images/inner-blog-img.jpg\" alt=\"\">
+\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t<div class=\"inner-blog-detail details-page\">
+\t\t\t\t\t\t\t\t<h3>Titre</h3>
+\t\t\t\t\t\t\t\t<ul>
+\t\t\t\t\t\t\t\t\t<li><i class=\"zmdi zmdi-account\"></i>Posted By : <span>Admin</span></li>
+\t\t\t\t\t\t\t\t</ul>
+\t\t\t\t\t\t\t\t<p>Contenu d'article</p>
+\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t</div>
 \t\t\t\t\t</div>
 \t\t\t\t</div>
 \t\t\t</div>
 \t\t</div>
 \t</div>
-\t<!-- End blog -->
+\t<!-- End details -->
 \t
 \t<!-- Start Contact info -->
 \t<div class=\"contact-imfo-box\">
@@ -705,27 +365,25 @@ class __TwigTemplate_5552c4b3b699db7bd9a2a589ba5c0059ecc7a426f20b501d4791828c010
 \t\t\t\t<div class=\"col-md-4 arrow-right\">
 \t\t\t\t\t<i class=\"fa fa-volume-control-phone\"></i>
 \t\t\t\t\t<div class=\"overflow-hidden\">
-\t\t\t\t\t\t<h4>Phone</h4>
+\t\t\t\t\t\t<h4>Téléphone</h4>
 \t\t\t\t\t\t<p class=\"lead\">
-\t\t\t\t\t\t\t+01 123-456-4590
+\t\t\t\t\t\t\t+216 52-680-290
 \t\t\t\t\t\t</p>
 \t\t\t\t\t</div>
 \t\t\t\t</div>
-\t\t\t\t<div class=\"col-md-4 arrow-right\">
-\t\t\t\t\t<i class=\"fa fa-envelope\"></i>
+\t\t\t\t<i class=\"fa fa-envelope\"></i>
 \t\t\t\t\t<div class=\"overflow-hidden\">
 \t\t\t\t\t\t<h4>Email</h4>
 \t\t\t\t\t\t<p class=\"lead\">
-\t\t\t\t\t\t\tyourmail@gmail.com
+\t\t\t\t\t\t\tkool.healthy.contact@gmail.com
 \t\t\t\t\t\t</p>
 \t\t\t\t\t</div>
-\t\t\t\t</div>
 \t\t\t\t<div class=\"col-md-4\">
 \t\t\t\t\t<i class=\"fa fa-map-marker\"></i>
 \t\t\t\t\t<div class=\"overflow-hidden\">
-\t\t\t\t\t\t<h4>Location</h4>
+\t\t\t\t\t\t<h4>Localisation</h4>
 \t\t\t\t\t\t<p class=\"lead\">
-\t\t\t\t\t\t\t800, Lorem Street, US
+\t\t\t\t\t\t\t5000, Monastir, Tunisia
 \t\t\t\t\t\t</p>
 \t\t\t\t\t</div>
 \t\t\t\t</div>
@@ -739,38 +397,30 @@ class __TwigTemplate_5552c4b3b699db7bd9a2a589ba5c0059ecc7a426f20b501d4791828c010
 \t\t<div class=\"container\">
 \t\t\t<div class=\"row\">
 \t\t\t\t<div class=\"col-lg-3 col-md-6\">
-\t\t\t\t\t<h3>About Us</h3>
-\t\t\t\t\t<p>Integer cursus scelerisque ipsum id efficitur. Donec a dui fringilla, gravida lorem ac, semper magna. Aenean rhoncus ac lectus a interdum. Vivamus semper posuere dui.</p>
+\t\t\t\t\t<h3>à propos</h3>
+\t\t\t\t\t<p>Kool Healthy est un service de préparation de repas basé en Tunisie. Fondé en 2020 avec l'aide de: M. Sami Bhiri et OneDev</p>
 \t\t\t\t</div>
 \t\t\t\t<div class=\"col-lg-3 col-md-6\">
-\t\t\t\t\t<h3>Subscribe</h3>
+\t\t\t\t\t<h3>Courriel</h3>
 \t\t\t\t\t<div class=\"subscribe_form\">
-\t\t\t\t\t\t<form class=\"subscribe_form\">
-\t\t\t\t\t\t\t<input name=\"EMAIL\" id=\"subs-email\" class=\"form_input\" placeholder=\"Email Address...\" type=\"email\">
-\t\t\t\t\t\t\t<button type=\"submit\" class=\"submit\">SUBSCRIBE</button>
-\t\t\t\t\t\t\t<div class=\"clearfix\"></div>
-\t\t\t\t\t\t</form>
+\t\t\t\t\t\t<button type=\"submit\" class=\"submit\" onclick=\"showDialogAbonnez()\">Abonnez-Vous</button>
 \t\t\t\t\t</div>
+\t\t\t\t\t
+\t\t\t\t</div>
+\t\t\t\t<div class=\"col-lg-3 col-md-6\">
+\t\t\t\t\t<h3>Contact</h3>
+\t\t\t\t\t<p class=\"lead\">Monastir</p>
+\t\t\t\t\t<p class=\"lead\">+216 52 680 290</p>
+\t\t\t\t\t<p>kool.healthy.contact@gmail.com</p>
+\t\t\t\t</div>
+\t\t\t\t<div class=\"col-lg-3 col-md-6\">
+\t\t\t\t\t<h3>Suivez-Nous</h3>
 \t\t\t\t\t<ul class=\"list-inline f-social\">
-\t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-facebook\" aria-hidden=\"true\"></i></a></li>
-\t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-twitter\" aria-hidden=\"true\"></i></a></li>
-\t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-linkedin\" aria-hidden=\"true\"></i></a></li>
-\t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-google-plus\" aria-hidden=\"true\"></i></a></li>
-\t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"#\"><i class=\"fa fa-instagram\" aria-hidden=\"true\"></i></a></li>
+\t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"https://facebook.com/DahmaniMhd/\"><i class=\"fa fa-facebook\" aria-hidden=\"true\"></i></a></li>
+\t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"https://linkedin.com/in/mohamed-hedi-dahmani/\"><i class=\"fa fa-linkedin\" aria-hidden=\"true\"></i></a></li>
+\t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"https://github.com/DahmaniDev\"><i class=\"fa fa-github\" aria-hidden=\"true\"></i></a></li>
+\t\t\t\t\t\t<li class=\"list-inline-item\"><a href=\"https://instagram.com/mohamedhedi.dahmani\"><i class=\"fa fa-instagram\" aria-hidden=\"true\"></i></a></li>
 \t\t\t\t\t</ul>
-\t\t\t\t</div>
-\t\t\t\t<div class=\"col-lg-3 col-md-6\">
-\t\t\t\t\t<h3>Contact information</h3>
-\t\t\t\t\t<p class=\"lead\">Ipsum Street, Lorem Tower, MO, Columbia, 508000</p>
-\t\t\t\t\t<p class=\"lead\"><a href=\"#\">+01 2000 800 9999</a></p>
-\t\t\t\t\t<p><a href=\"#\"> info@admin.com</a></p>
-\t\t\t\t</div>
-\t\t\t\t<div class=\"col-lg-3 col-md-6\">
-\t\t\t\t\t<h3>Opening hours</h3>
-\t\t\t\t\t<p><span class=\"text-color\">Monday: </span>Closed</p>
-\t\t\t\t\t<p><span class=\"text-color\">Tue-Wed :</span> 9:Am - 10PM</p>
-\t\t\t\t\t<p><span class=\"text-color\">Thu-Fri :</span> 9:Am - 10PM</p>
-\t\t\t\t\t<p><span class=\"text-color\">Sat-Sun :</span> 5:PM - 10PM</p>
 \t\t\t\t</div>
 \t\t\t</div>
 \t\t</div>
@@ -779,8 +429,8 @@ class __TwigTemplate_5552c4b3b699db7bd9a2a589ba5c0059ecc7a426f20b501d4791828c010
 \t\t\t<div class=\"container\">
 \t\t\t\t<div class=\"row\">
 \t\t\t\t\t<div class=\"col-lg-12\">
-\t\t\t\t\t\t<p class=\"company-name\">All Rights Reserved. &copy; 2018 <a href=\"#\">Live Dinner Restaurant</a> Design By : 
-\t\t\t\t\t<a href=\"https://html.design/\">html design</a></p>
+\t\t\t\t\t\t<p class=\"company-name\">Tous Droits Réservés &copy; 2020 <a href=\"#\">Kool Healthy</a> Développé par : 
+\t\t\t\t\t<a href=\"https://github.com/DahmaniDev\">DahmaniDev<i class=\"fa fa-github\"></i></a></p>
 \t\t\t\t\t</div>
 \t\t\t\t</div>
 \t\t\t</div>
@@ -805,6 +455,6 @@ class __TwigTemplate_5552c4b3b699db7bd9a2a589ba5c0059ecc7a426f20b501d4791828c010
     <script src=\"js/contact-form-script.js\"></script>
     <script src=\"js/custom.js\"></script>
 </body>
-</html>", "/blog/blog.html.twig", "C:\\Users\\Dahmani\\SymfonyProjects\\ProjetFE\\templates\\blog\\blog.html.twig");
+</html>", "/blog/blog.html.twig", "C:\\Users\\tarza\\SymfonyProjects\\ProjetSymfony\\templates\\blog\\blog.html.twig");
     }
 }
