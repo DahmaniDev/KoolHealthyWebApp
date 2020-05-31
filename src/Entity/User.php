@@ -228,7 +228,7 @@ class User implements UserInterface, \Serializable
     {
         return serialize(array(
             $this->id,
-            $this->email,
+            $this->username,
             $this->password,
         ));
     }
@@ -238,8 +238,11 @@ class User implements UserInterface, \Serializable
     {
         list (
             $this->id,
-            $this->email,
+            $this->username,
             $this->password,
         ) = unserialize($serialized, array('allowed_classes' => false));
     }
+
+
+    
 }

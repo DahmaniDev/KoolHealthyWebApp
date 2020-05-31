@@ -115,6 +115,7 @@ class __TwigTemplate_5552c4b3b699db7bd9a2a589ba5c0059ecc7a426f20b501d4791828c010
 \t\t\t\t<div class=\"col-lg-12\">
 \t\t\t\t\t<div class=\"heading-title text-center\">
 \t\t\t\t\t\t<h2>Titre</h2>
+\t\t\t\t\t\t
 \t\t\t\t\t</div>
 \t\t\t\t</div>
 \t\t\t</div>
@@ -128,7 +129,7 @@ class __TwigTemplate_5552c4b3b699db7bd9a2a589ba5c0059ecc7a426f20b501d4791828c010
 \t\t\t\t\t\t\t<div class=\"inner-blog-detail details-page\">
 \t\t\t\t\t\t\t\t<h3>Titre</h3>
 \t\t\t\t\t\t\t\t<ul>
-\t\t\t\t\t\t\t\t\t<li><i class=\"zmdi zmdi-account\"></i>Posted By : <span>Admin</span></li>
+\t\t\t\t\t\t\t\t\t<li><i class=\"zmdi zmdi-account\"></i>Publié Par : <span>Admin</span></li>
 \t\t\t\t\t\t\t\t</ul>
 \t\t\t\t\t\t\t\t<p>Contenu d'article</p>
 \t\t\t\t\t\t\t</div>
@@ -333,6 +334,7 @@ class __TwigTemplate_5552c4b3b699db7bd9a2a589ba5c0059ecc7a426f20b501d4791828c010
 \t\t\t\t<div class=\"col-lg-12\">
 \t\t\t\t\t<div class=\"heading-title text-center\">
 \t\t\t\t\t\t<h2>Titre</h2>
+\t\t\t\t\t\t
 \t\t\t\t\t</div>
 \t\t\t\t</div>
 \t\t\t</div>
@@ -346,7 +348,7 @@ class __TwigTemplate_5552c4b3b699db7bd9a2a589ba5c0059ecc7a426f20b501d4791828c010
 \t\t\t\t\t\t\t<div class=\"inner-blog-detail details-page\">
 \t\t\t\t\t\t\t\t<h3>Titre</h3>
 \t\t\t\t\t\t\t\t<ul>
-\t\t\t\t\t\t\t\t\t<li><i class=\"zmdi zmdi-account\"></i>Posted By : <span>Admin</span></li>
+\t\t\t\t\t\t\t\t\t<li><i class=\"zmdi zmdi-account\"></i>Publié Par : <span>Admin</span></li>
 \t\t\t\t\t\t\t\t</ul>
 \t\t\t\t\t\t\t\t<p>Contenu d'article</p>
 \t\t\t\t\t\t\t</div>

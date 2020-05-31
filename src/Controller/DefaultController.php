@@ -53,7 +53,19 @@ class DefaultController extends AbstractController
   /**
    * @Route("/blog", name="blog")
    */
-  public function blogdetail():Response{
+  public function blog():Response{
     return $this->render('/blog/blog.html.twig');
+  }
+  /**
+   * @Route("/partenariat", name="partenariat")
+   */
+  public function partenariat():Response{
+    return $this->render('/partenariat/partenariat.html.twig');
+  }
+  /**
+   * @Route("/repas", name="repas")
+   */
+  public function repas():Response{
+    return $this->render('/repas/repas.html.twig');
   }
 }
