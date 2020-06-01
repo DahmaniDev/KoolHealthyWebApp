@@ -1,8 +1,13 @@
 <!DOCTYPE html>
-
-<title>Register</title>
+<html>
+<head>
+<title>Kool Healthy PFE</title>
+    <link rel="stylesheet" type="text/css" href="css/register.css">
+</head>
 
 {% block body %}
+<div class="loginbox">
+<img src="images/avatar.png" class="avatar">
     <h1>Register</h1>
 
     {{ form_start(registrationForm) }}
@@ -17,6 +22,8 @@
         {{ form_row(registrationForm.activity_level) }}
         {{ form_row(registrationForm.agreeTerms) }}
 
-        <button type="submit" class="btn">Register</button>
+        <input type="submit" name="" value="Register">
     {{ form_end(registrationForm) }}
+    </div>
 {% endblock %}
+</html>

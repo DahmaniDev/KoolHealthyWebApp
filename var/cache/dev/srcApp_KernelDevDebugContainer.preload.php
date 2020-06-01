@@ -6,7 +6,7 @@
 use Symfony\Component\DependencyInjection\Dumper\Preloader;
 
 require dirname(__DIR__, 3).'\\vendor/autoload.php';
-require __DIR__.'/ContainerYcKRKzq/srcApp_KernelDevDebugContainer.php';
+require __DIR__.'/ContainerK8uDWNA/srcApp_KernelDevDebugContainer.php';
 
 $classes = [];
 $classes[] = 'Symfony\Bundle\FrameworkBundle\FrameworkBundle';
@@ -160,7 +160,7 @@ $classes[] = 'Doctrine\Bundle\DoctrineBundle\Command\ImportMappingDoctrineComman
 $classes[] = 'Doctrine\Bundle\DoctrineBundle\Command\Proxy\InfoDoctrineCommand';
 $classes[] = 'Doctrine\ORM\EntityManager';
 $classes[] = 'Doctrine\ORM\Configuration';
-$classes[] = 'Doctrine\Common\Persistence\Mapping\Driver\MappingDriverChain';
+$classes[] = 'Doctrine\Persistence\Mapping\Driver\MappingDriverChain';
 $classes[] = 'Doctrine\ORM\Mapping\Driver\AnnotationDriver';
 $classes[] = 'Doctrine\ORM\Mapping\UnderscoreNamingStrategy';
 $classes[] = 'Doctrine\ORM\Mapping\DefaultQuoteStrategy';
@@ -354,6 +354,7 @@ $classes[] = 'Symfony\Component\Security\Http\RememberMe\ResponseListener';
 $classes[] = 'Symfony\Component\Security\Core\Role\RoleHierarchy';
 $classes[] = 'Symfony\Component\Security\Core\Authentication\Token\Storage\UsageTrackingTokenStorage';
 $classes[] = 'Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorage';
+$classes[] = 'Symfony\Bridge\Doctrine\Security\User\EntityUserProvider';
 $classes[] = 'Symfony\Component\Security\Core\User\InMemoryUserProvider';
 $classes[] = 'Symfony\Component\Security\Core\Validator\Constraints\UserPasswordValidator';
 $classes[] = 'Sensio\Bundle\FrameworkExtraBundle\EventListener\HttpCacheListener';

@@ -5,15 +5,10 @@ namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\Response;
+use App\Entity\User;
 
 class DefaultController extends AbstractController
 {
-    /**
-   * @Route("/", name="signin")
-   */
-   public function home_():Response{
-    return $this->render('/signin/signin.html.twig');
-  }
    /**
    * @Route("/home", name="home")
    */
@@ -21,10 +16,24 @@ class DefaultController extends AbstractController
     return $this->render('home.html.twig');
   }
   /**
-   * @Route("/CalculateMyNeeds", name="CalculateMyNeeds")
+   * @Route("/CalculateMyNeeds/{id}", name="CalculateMyNeeds")
    */
-  public function CalculateMyNeeds():Response{
-    return $this->render('/CalculateMyNeeds/CalculateMyNeeds.html.twig');
+  public function CalculateMyNeeds($id):Response{
+    $user=$this->getDoctrine()->getRepository(User::class)->find($id);
+    $bmr;
+    $weight=$user->getWeight();
+    $height=$user->getHeight();
+    $age=$user->getAge();
+
+    if($user->getSexe() == 'Homme')
+    {
+      $bmr= 10 * $weight + 6.25 * $height - 5 * $age - 161;
+    }
+    return $this->render('/CalculateMyNeeds/CalculateMyNeeds.html.twig',[
+      'controller_name' => 'DefaultController',
+      'user'=>$user,
+      'bmr'=>$bmr
+    ]);
   }
   /**
    * @Route("/PreparedMeals", name="PreparedMeals")

@@ -13,9 +13,7 @@ return [
         '/_profiler/search_bar' => [[['_route' => '_profiler_search_bar', '_controller' => 'web_profiler.controller.profiler::searchBarAction'], null, null, null, false, false, null]],
         '/_profiler/phpinfo' => [[['_route' => '_profiler_phpinfo', '_controller' => 'web_profiler.controller.profiler::phpinfoAction'], null, null, null, false, false, null]],
         '/_profiler/open' => [[['_route' => '_profiler_open_file', '_controller' => 'web_profiler.controller.profiler::openAction'], null, null, null, false, false, null]],
-        '/' => [[['_route' => 'signin', '_controller' => 'App\\Controller\\DefaultController::home_'], null, null, null, false, false, null]],
         '/home' => [[['_route' => 'home', '_controller' => 'App\\Controller\\DefaultController::home'], null, null, null, false, false, null]],
-        '/CalculateMyNeeds' => [[['_route' => 'CalculateMyNeeds', '_controller' => 'App\\Controller\\DefaultController::CalculateMyNeeds'], null, null, null, false, false, null]],
         '/PreparedMeals' => [[['_route' => 'PreparedMeals', '_controller' => 'App\\Controller\\DefaultController::PreparedMeals'], null, null, null, false, false, null]],
         '/Articles' => [[['_route' => 'Articles', '_controller' => 'App\\Controller\\DefaultController::Articles'], null, null, null, false, false, null]],
         '/Profile' => [[['_route' => 'Profile', '_controller' => 'App\\Controller\\DefaultController::Profile'], null, null, null, false, false, null]],
@@ -24,7 +22,7 @@ return [
         '/partenariat' => [[['_route' => 'partenariat', '_controller' => 'App\\Controller\\DefaultController::partenariat'], null, null, null, false, false, null]],
         '/repas' => [[['_route' => 'repas', '_controller' => 'App\\Controller\\DefaultController::repas'], null, null, null, false, false, null]],
         '/register' => [[['_route' => 'app_register', '_controller' => 'App\\Controller\\RegistrationController::register'], null, null, null, false, false, null]],
-        '/login' => [[['_route' => 'app_login', '_controller' => 'App\\Controller\\SecurityController::login'], null, null, null, false, false, null]],
+        '/' => [[['_route' => 'app_login', '_controller' => 'App\\Controller\\SecurityController::login'], null, null, null, false, false, null]],
         '/logout' => [[['_route' => 'app_logout', '_controller' => 'App\\Controller\\SecurityController::logout'], null, null, null, false, false, null]],
     ],
     [ // $regexpList
@@ -44,6 +42,7 @@ return [
                         .'|(*:159)'
                     .')'
                 .')'
+                .'|/CalculateMyNeeds/([^/]++)(*:195)'
             .')/?$}sD',
     ],
     [ // $dynamicRoutes
@@ -53,8 +52,9 @@ return [
         116 => [[['_route' => '_profiler_router', '_controller' => 'web_profiler.controller.router::panelAction'], ['token'], null, null, false, false, null]],
         136 => [[['_route' => '_profiler_exception', '_controller' => 'web_profiler.controller.exception_panel::body'], ['token'], null, null, false, false, null]],
         149 => [[['_route' => '_profiler_exception_css', '_controller' => 'web_profiler.controller.exception_panel::stylesheet'], ['token'], null, null, false, false, null]],
-        159 => [
-            [['_route' => '_profiler', '_controller' => 'web_profiler.controller.profiler::panelAction'], ['token'], null, null, false, true, null],
+        159 => [[['_route' => '_profiler', '_controller' => 'web_profiler.controller.profiler::panelAction'], ['token'], null, null, false, true, null]],
+        195 => [
+            [['_route' => 'CalculateMyNeeds', '_controller' => 'App\\Controller\\DefaultController::CalculateMyNeeds'], ['id'], null, null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],
     ],

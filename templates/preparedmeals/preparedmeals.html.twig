@@ -47,11 +47,11 @@
 				<div class="collapse navbar-collapse" id="navbars-rs-food">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item"><a class="nav-link" href="home">Accueil</a></li>
-						<li class="nav-item"><a class="nav-link" href="CalculateMyNeeds">Calculer mes besoins</a></li>
-						<li class="nav-item active"><a class="nav-link" href="PreparedMeals">Repas préparés</a></li>
+						{% if app.user %}<li class="nav-item"><a class="nav-link" href="CalculateMyNeeds/{{app.user.getId}}">Calculer Mes Besoins</a></li> {% endif %}
+						<li class="nav-item active"><a class="nav-link" href="PreparedMeals">Repas Préparés</a></li>
 						<li class="nav-item"><a class="nav-link" href="Articles">Articles</a></li>
-						<li class="nav-item"><a class="nav-link" href="Profile">Profil</a></li>
-						<li class="nav-item"><a class="nav-link" href="Contact">Contact</a></li>
+						{% if app.user %}<li class="nav-item"><a class="nav-link" href="Profile">Profil</a></li> {% endif %}
+						{% if app.user %}<li class="nav-item"><a class="nav-link" href="Contact">Contact</a></li> {% endif %}
 					</ul>
 				</div>
 			</div>

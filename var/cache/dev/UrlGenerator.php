@@ -15,9 +15,8 @@ return [
     '_profiler_router' => [['token'], ['_controller' => 'web_profiler.controller.router::panelAction'], [], [['text', '/router'], ['variable', '/', '[^/]++', 'token'], ['text', '/_profiler']], [], []],
     '_profiler_exception' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::body'], [], [['text', '/exception'], ['variable', '/', '[^/]++', 'token'], ['text', '/_profiler']], [], []],
     '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::stylesheet'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token'], ['text', '/_profiler']], [], []],
-    'signin' => [[], ['_controller' => 'App\\Controller\\DefaultController::home_'], [], [['text', '/']], [], []],
     'home' => [[], ['_controller' => 'App\\Controller\\DefaultController::home'], [], [['text', '/home']], [], []],
-    'CalculateMyNeeds' => [[], ['_controller' => 'App\\Controller\\DefaultController::CalculateMyNeeds'], [], [['text', '/CalculateMyNeeds']], [], []],
+    'CalculateMyNeeds' => [['id'], ['_controller' => 'App\\Controller\\DefaultController::CalculateMyNeeds'], [], [['variable', '/', '[^/]++', 'id'], ['text', '/CalculateMyNeeds']], [], []],
     'PreparedMeals' => [[], ['_controller' => 'App\\Controller\\DefaultController::PreparedMeals'], [], [['text', '/PreparedMeals']], [], []],
     'Articles' => [[], ['_controller' => 'App\\Controller\\DefaultController::Articles'], [], [['text', '/Articles']], [], []],
     'Profile' => [[], ['_controller' => 'App\\Controller\\DefaultController::Profile'], [], [['text', '/Profile']], [], []],
@@ -26,6 +25,6 @@ return [
     'partenariat' => [[], ['_controller' => 'App\\Controller\\DefaultController::partenariat'], [], [['text', '/partenariat']], [], []],
     'repas' => [[], ['_controller' => 'App\\Controller\\DefaultController::repas'], [], [['text', '/repas']], [], []],
     'app_register' => [[], ['_controller' => 'App\\Controller\\RegistrationController::register'], [], [['text', '/register']], [], []],
-    'app_login' => [[], ['_controller' => 'App\\Controller\\SecurityController::login'], [], [['text', '/login']], [], []],
+    'app_login' => [[], ['_controller' => 'App\\Controller\\SecurityController::login'], [], [['text', '/']], [], []],
     'app_logout' => [[], ['_controller' => 'App\\Controller\\SecurityController::logout'], [], [['text', '/logout']], [], []],
 ];
