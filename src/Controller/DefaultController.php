@@ -7,6 +7,7 @@ use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\Response;
 use App\Entity\User;
 use App\Entity\Article;
+use App\Entity\Recette;
 
 class DefaultController extends AbstractController
 {
@@ -85,14 +86,22 @@ class DefaultController extends AbstractController
    */
   public function Articles():Response{
     $articles=$this->getDoctrine()->getRepository(Article::class)->findAll();
+    $recettes=$this->getDoctrine()->getRepository(Recette::class)->findAll();
     foreach($articles as $key=>$value)
+    {
+      $value->setImage(base64_encode(stream_get_contents($value->getImage())));
+    }
+    foreach($recettes as $key=>$value)
     {
       $value->setImage(base64_encode(stream_get_contents($value->getImage())));
     }
     return $this->render('/articles/articles.html.twig',[
       'actualité1'=>$articles[0],
       'actualité2'=>$articles[1],
-      'actualité3'=>$articles[2]
+      'actualité3'=>$articles[2],
+      'recette1'=>$recettes[0],
+      'recette2'=>$recettes[1],
+      'recette3'=>$recettes[2]
     ]);
   }
   /**
@@ -115,10 +124,24 @@ class DefaultController extends AbstractController
     return $this->render('/contact/contact.html.twig');
   }
   /**
-   * @Route("/blog", name="blog")
+   * @Route("/blog/{id}", name="blog")
    */
-  public function blog():Response{
-    return $this->render('/blog/blog.html.twig');
+  public function blog($id):Response{
+    $article=$this->getDoctrine()->getRepository(Article::class)->find($id);
+    $article->setImage(base64_encode(stream_get_contents($article->getImage())));
+    return $this->render('/blog/blog.html.twig',[
+      'article'=>$article
+    ]);
+  }
+  /**
+   * @Route("/recette/{id}", name="recette")
+   */
+  public function recette($id):Response{
+    $recette=$this->getDoctrine()->getRepository(Recette::class)->find($id);
+    $recette->setImage(base64_encode(stream_get_contents($recette->getImage())));
+    return $this->render('/recette/recette.html.twig',[
+      'recette'=>$recette
+    ]);
   }
   /**
    * @Route("/partenariat", name="partenariat")

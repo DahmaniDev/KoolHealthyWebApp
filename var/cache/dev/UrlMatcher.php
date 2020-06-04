@@ -18,7 +18,6 @@ return [
         '/PreparedMeals' => [[['_route' => 'PreparedMeals', '_controller' => 'App\\Controller\\DefaultController::PreparedMeals'], null, null, null, false, false, null]],
         '/Profile' => [[['_route' => 'Profile', '_controller' => 'App\\Controller\\DefaultController::Profile'], null, null, null, false, false, null]],
         '/Contact' => [[['_route' => 'Contact', '_controller' => 'App\\Controller\\DefaultController::contact'], null, null, null, false, false, null]],
-        '/blog' => [[['_route' => 'blog', '_controller' => 'App\\Controller\\DefaultController::blog'], null, null, null, false, false, null]],
         '/partenariat' => [[['_route' => 'partenariat', '_controller' => 'App\\Controller\\DefaultController::partenariat'], null, null, null, false, false, null]],
         '/repas' => [[['_route' => 'repas', '_controller' => 'App\\Controller\\DefaultController::repas'], null, null, null, false, false, null]],
         '/register' => [[['_route' => 'app_register', '_controller' => 'App\\Controller\\RegistrationController::register'], null, null, null, false, false, null]],
@@ -43,6 +42,8 @@ return [
                     .')'
                 .')'
                 .'|/CalculateMyNeeds/([^/]++)(*:195)'
+                .'|/blog/([^/]++)(*:217)'
+                .'|/recette/([^/]++)(*:242)'
             .')/?$}sD',
     ],
     [ // $dynamicRoutes
@@ -53,8 +54,10 @@ return [
         136 => [[['_route' => '_profiler_exception', '_controller' => 'web_profiler.controller.exception_panel::body'], ['token'], null, null, false, false, null]],
         149 => [[['_route' => '_profiler_exception_css', '_controller' => 'web_profiler.controller.exception_panel::stylesheet'], ['token'], null, null, false, false, null]],
         159 => [[['_route' => '_profiler', '_controller' => 'web_profiler.controller.profiler::panelAction'], ['token'], null, null, false, true, null]],
-        195 => [
-            [['_route' => 'CalculateMyNeeds', '_controller' => 'App\\Controller\\DefaultController::CalculateMyNeeds'], ['id'], null, null, false, true, null],
+        195 => [[['_route' => 'CalculateMyNeeds', '_controller' => 'App\\Controller\\DefaultController::CalculateMyNeeds'], ['id'], null, null, false, true, null]],
+        217 => [[['_route' => 'blog', '_controller' => 'App\\Controller\\DefaultController::blog'], ['id'], null, null, false, true, null]],
+        242 => [
+            [['_route' => 'recette', '_controller' => 'App\\Controller\\DefaultController::recette'], ['id'], null, null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],
     ],

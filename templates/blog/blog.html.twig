@@ -14,17 +14,18 @@
     <meta name="author" content="">
 
     <!-- Site Icons -->
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="shortcut icon" href={{asset("images/favicon.ico")}} type="image/x-icon">
+    <link rel="apple-touch-icon" href={{asset("images/apple-touch-icon.png")}}>
+	<link rel="icon" href={{asset("images/logo.png")}}>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">    
+    <link rel="stylesheet" href={{asset("css/bootstrap.min.css")}}>    
 	<!-- Site CSS -->
-    <link rel="stylesheet" href="css/style.css">    
+    <link rel="stylesheet" href={{asset("css/style.css")}}>    
     <!-- Responsive CSS -->
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href={{asset("css/responsive.css")}}>
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href={{asset("css/custom.css")}}>
 
 
 </head>
@@ -35,19 +36,19 @@
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<div class="container">
 				<a class="navbar-brand" href="home">
-					<img src="images/logo.png" alt="" />
+					<img src={{asset("images/logo.png")}} alt="" />
 				</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-rs-food" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
 				  <span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbars-rs-food">
 					<ul class="navbar-nav ml-auto">
-						<li class="nav-item"><a class="nav-link" href="home">Accueil</a></li>
-						{% if app.user %}<li class="nav-item"><a class="nav-link" href="CalculateMyNeeds/{{app.user.getId}}">Calculer Mes Besoins</a></li> {% endif %}
-						<li class="nav-item"><a class="nav-link" href="PreparedMeals">Repas Préparés</a></li>
-						<li class="nav-item"><a class="nav-link" href="Articles">Articles</a></li>
-						{% if app.user %}<li class="nav-item"><a class="nav-link" href="Profile">Profil</a></li> {% endif %}
-						{% if app.user %}<li class="nav-item"><a class="nav-link" href="Contact">Contact</a></li> {% endif %}
+						<li class="nav-item"><a class="nav-link" href="/home">Accueil</a></li>
+						{% if app.user %}<li class="nav-item"><a class="nav-link" href="/CalculateMyNeeds/{{app.user.getId}}">Calculer Mes Besoins</a></li> {% endif %}
+						<li class="nav-item"><a class="nav-link" href="/PreparedMeals">Repas Préparés</a></li>
+						<li class="nav-item"><a class="nav-link" href="/Articles">Articles</a></li>
+						{% if app.user %}<li class="nav-item"><a class="nav-link" href="/Profile">Profil</a></li> {% endif %}
+						{% if app.user %}<li class="nav-item"><a class="nav-link" href="/Contact">Contact</a></li> {% endif %}
 						{% if not app.user %}<li class="nav-item"><a class="nav-link" href="/">Connecter</a></li> {% endif %}
 					</ul>
 				</div>
@@ -69,7 +70,7 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="heading-title text-center">
-						<h2>Titre</h2>
+						<h2>{{article.titre}}</h2>
 						
 					</div>
 				</div>
@@ -79,14 +80,14 @@
 					<div class="blog-inner-details-page">
 						<div class="blog-inner-box">
 							<div class="side-blog-img">
-								<img class="img-fluid" src="images/inner-blog-img.jpg" alt="">
+								<img class="img-fluid" src="data:article/png;base64, {{article.image}}">
 							</div>
 							<div class="inner-blog-detail details-page">
-								<h3>Titre</h3>
+								<h3>{{article.titre}}</h3>
 								<ul>
 									<li><i class="zmdi zmdi-account"></i>Publié Par : <span>Admin</span></li>
 								</ul>
-								<p>Contenu d'article</p>
+								<p>{{article.contenu}}</p>
 							</div>
 						</div>
 					</div>

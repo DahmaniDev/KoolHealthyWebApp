@@ -91,7 +91,7 @@
 						<div class="blog-detail">
 							<h4>{{actualité1.titre}}</h4>
 							<p>{{actualité1.heading}}</p>
-							<a class="btn btn-lg btn-circle btn-outline-new-white" style="position: absolute; bottom: 0; margin-bottom: 20px;" href="blog">Voir plus</a>
+							<a class="btn btn-lg btn-circle btn-outline-new-white" style="position: absolute; bottom: 0; margin-bottom: 20px;" href="blog/{{actualité1.getId}}">Voir plus</a>
 						</div>
 					</div>
 				</div>
@@ -103,19 +103,19 @@
 						<div class="blog-detail">
 							<h4>{{actualité2.titre}}</h4>
 							<p>{{actualité1.heading}}</p>
-							<a class="btn btn-lg btn-circle btn-outline-new-white" style="position: absolute; bottom: 0; margin-bottom: 20px;" href="#">Voir plus</a>
+							<a class="btn btn-lg btn-circle btn-outline-new-white" style="position: absolute; bottom: 0; margin-bottom: 20px;" href="blog/{{actualité2.getId}}">Voir plus</a>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 col-12">
 					<div class="blog-box-inner">
 						<div class="blog-img-box">
-							<img class="img-fluid" src="data:actualité1/png;base64, {{actualité2.image}}">
+							<img class="img-fluid" src="data:actualité1/png;base64, {{actualité3.image}}">
 						</div>
 						<div class="blog-detail">
 							<h4>{{actualité3.titre}}</h4>
 							<p>{{actualité3.heading}}</p>
-							<a class="btn btn-lg btn-circle btn-outline-new-white" style="position: absolute; bottom: 0; margin-bottom: 20px;" href="#">Voir plus</a>
+							<a class="btn btn-lg btn-circle btn-outline-new-white" style="position: absolute; bottom: 0; margin-bottom: 20px;" href="blog/{{actualité3.getId}}">Voir plus</a>
 						</div>
 					</div>
 				</div>
@@ -131,54 +131,36 @@
 				<div class="col-lg-4 col-md-6 col-12">
 					<div class="blog-box-inner">
 						<div class="blog-img-box">
-							<img class="img-fluid" src="images/blog-img-04.jpg" alt="">
+							<img class="img-fluid" src="data:recette1/png;base64, {{recette1.image}}">
 						</div>
 						<div class="blog-detail">
-							<h4>Duis feugiat neque sed dolor cursus.</h4>
-							<ul>
-								<li><span>Post by Admin</span></li>
-								<li>|</li>
-								<li><span>27 February 2018</span></li>
-							</ul>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit feugiat. Ut at pellentesque ante, sed convallis arcu. Nullam facilisis, eros in eleifend luctus, odio ante sodales augue, eget lacinia lectus erat et sem. </p>
-							<p>Sed semper orci sit amet porta placerat. Etiam quis finibus eros. </p>
-							<a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Read More</a>
+							<h4>{{recette1.titre}}</h4>
+							<p>{{recette1.heading}}</p>
+							<a class="btn btn-lg btn-circle btn-outline-new-white" style="position: absolute; bottom: 0; margin-bottom: 20px;" href="/recette/{{recette1.getId}}">Voir plus</a>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 col-12">
 					<div class="blog-box-inner">
 						<div class="blog-img-box">
-							<img class="img-fluid" src="images/blog-img-05.jpg" alt="">
+							<img class="img-fluid" src="data:recette2/png;base64, {{recette2.image}}">
 						</div>
 						<div class="blog-detail">
-							<h4>Duis feugiat neque sed dolor cursus.</h4>
-							<ul>
-								<li><span>Post by Admin</span></li>
-								<li>|</li>
-								<li><span>27 February 2018</span></li>
-							</ul>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit feugiat. Ut at pellentesque ante, sed convallis arcu. Nullam facilisis, eros in eleifend luctus, odio ante sodales augue, eget lacinia lectus erat et sem. </p>
-							<p>Sed semper orci sit amet porta placerat. Etiam quis finibus eros. </p>
-							<a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Read More</a>
+							<h4>{{recette2.titre}}</h4>
+							<p>{{recette2.heading}}</p>
+							<a class="btn btn-lg btn-circle btn-outline-new-white" style="position: absolute; bottom: 0; margin-bottom: 20px;" href="/recette/{{recette2.getId}}">Voir plus</a>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 col-12">
 					<div class="blog-box-inner">
 						<div class="blog-img-box">
-							<img class="img-fluid" src="images/blog-img-06.jpg" alt="">
+							<img class="img-fluid" src="data:recette3/png;base64, {{recette3.image}}">
 						</div>
 						<div class="blog-detail">
-							<h4>Duis feugiat neque sed dolor cursus.</h4>
-							<ul>
-								<li><span>Post by Admin</span></li>
-								<li>|</li>
-								<li><span>27 February 2018</span></li>
-							</ul>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit feugiat. Ut at pellentesque ante, sed convallis arcu. Nullam facilisis, eros in eleifend luctus, odio ante sodales augue, eget lacinia lectus erat et sem. </p>
-							<p>Sed semper orci sit amet porta placerat. Etiam quis finibus eros. </p>
-							<a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Read More</a>
+							<h4>{{recette3.titre}}</h4>
+							<p>{{recette3.heading}}</p>
+							<a class="btn btn-lg btn-circle btn-outline-new-white" style="position: absolute; bottom: 0; margin-bottom: 20px;" href="/recette/{{recette3.getId}}">Voir plus</a>
 						</div>
 					</div>
 				</div>

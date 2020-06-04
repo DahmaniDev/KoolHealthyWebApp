@@ -56,17 +56,39 @@ class __TwigTemplate_5552c4b3b699db7bd9a2a589ba5c0059ecc7a426f20b501d4791828c010
     <meta name=\"author\" content=\"\">
 
     <!-- Site Icons -->
-    <link rel=\"shortcut icon\" href=\"images/favicon.ico\" type=\"image/x-icon\">
-    <link rel=\"apple-touch-icon\" href=\"images/apple-touch-icon.png\">
+    <link rel=\"shortcut icon\" href=";
+        // line 17
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/favicon.ico"), "html", null, true);
+        echo " type=\"image/x-icon\">
+    <link rel=\"apple-touch-icon\" href=";
+        // line 18
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/apple-touch-icon.png"), "html", null, true);
+        echo ">
+\t<link rel=\"icon\" href=";
+        // line 19
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/logo.png"), "html", null, true);
+        echo ">
 
     <!-- Bootstrap CSS -->
-    <link rel=\"stylesheet\" href=\"css/bootstrap.min.css\">    
+    <link rel=\"stylesheet\" href=";
+        // line 22
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("css/bootstrap.min.css"), "html", null, true);
+        echo ">    
 \t<!-- Site CSS -->
-    <link rel=\"stylesheet\" href=\"css/style.css\">    
+    <link rel=\"stylesheet\" href=";
+        // line 24
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("css/style.css"), "html", null, true);
+        echo ">    
     <!-- Responsive CSS -->
-    <link rel=\"stylesheet\" href=\"css/responsive.css\">
+    <link rel=\"stylesheet\" href=";
+        // line 26
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("css/responsive.css"), "html", null, true);
+        echo ">
     <!-- Custom CSS -->
-    <link rel=\"stylesheet\" href=\"css/custom.css\">
+    <link rel=\"stylesheet\" href=";
+        // line 28
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("css/custom.css"), "html", null, true);
+        echo ">
 
 
 </head>
@@ -77,40 +99,43 @@ class __TwigTemplate_5552c4b3b699db7bd9a2a589ba5c0059ecc7a426f20b501d4791828c010
 \t\t<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
 \t\t\t<div class=\"container\">
 \t\t\t\t<a class=\"navbar-brand\" href=\"home\">
-\t\t\t\t\t<img src=\"images/logo.png\" alt=\"\" />
+\t\t\t\t\t<img src=";
+        // line 39
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/logo.png"), "html", null, true);
+        echo " alt=\"\" />
 \t\t\t\t</a>
 \t\t\t\t<button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbars-rs-food\" aria-controls=\"navbars-rs-food\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
 \t\t\t\t  <span class=\"navbar-toggler-icon\"></span>
 \t\t\t\t</button>
 \t\t\t\t<div class=\"collapse navbar-collapse\" id=\"navbars-rs-food\">
 \t\t\t\t\t<ul class=\"navbar-nav ml-auto\">
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"home\">Accueil</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"/home\">Accueil</a></li>
 \t\t\t\t\t\t";
-        // line 46
-        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 46, $this->source); })()), "user", [], "any", false, false, false, 46)) {
-            echo "<li class=\"nav-item\"><a class=\"nav-link\" href=\"CalculateMyNeeds/";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 46, $this->source); })()), "user", [], "any", false, false, false, 46), "getId", [], "any", false, false, false, 46), "html", null, true);
+        // line 47
+        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 47, $this->source); })()), "user", [], "any", false, false, false, 47)) {
+            echo "<li class=\"nav-item\"><a class=\"nav-link\" href=\"/CalculateMyNeeds/";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 47, $this->source); })()), "user", [], "any", false, false, false, 47), "getId", [], "any", false, false, false, 47), "html", null, true);
             echo "\">Calculer Mes Besoins</a></li> ";
         }
-        // line 47
-        echo "\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"PreparedMeals\">Repas Préparés</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"Articles\">Articles</a></li>
+        // line 48
+        echo "\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"/PreparedMeals\">Repas Préparés</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"/Articles\">Articles</a></li>
 \t\t\t\t\t\t";
-        // line 49
-        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 49, $this->source); })()), "user", [], "any", false, false, false, 49)) {
-            echo "<li class=\"nav-item\"><a class=\"nav-link\" href=\"Profile\">Profil</a></li> ";
-        }
         // line 50
-        echo "\t\t\t\t\t\t";
         if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 50, $this->source); })()), "user", [], "any", false, false, false, 50)) {
-            echo "<li class=\"nav-item\"><a class=\"nav-link\" href=\"Contact\">Contact</a></li> ";
+            echo "<li class=\"nav-item\"><a class=\"nav-link\" href=\"/Profile\">Profil</a></li> ";
         }
         // line 51
         echo "\t\t\t\t\t\t";
-        if ( !twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 51, $this->source); })()), "user", [], "any", false, false, false, 51)) {
-            echo "<li class=\"nav-item\"><a class=\"nav-link\" href=\"/\">Connecter</a></li> ";
+        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 51, $this->source); })()), "user", [], "any", false, false, false, 51)) {
+            echo "<li class=\"nav-item\"><a class=\"nav-link\" href=\"/Contact\">Contact</a></li> ";
         }
         // line 52
+        echo "\t\t\t\t\t\t";
+        if ( !twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 52, $this->source); })()), "user", [], "any", false, false, false, 52)) {
+            echo "<li class=\"nav-item\"><a class=\"nav-link\" href=\"/\">Connecter</a></li> ";
+        }
+        // line 53
         echo "\t\t\t\t\t</ul>
 \t\t\t\t</div>
 \t\t\t</div>
@@ -131,7 +156,10 @@ class __TwigTemplate_5552c4b3b699db7bd9a2a589ba5c0059ecc7a426f20b501d4791828c010
 \t\t\t<div class=\"row\">
 \t\t\t\t<div class=\"col-lg-12\">
 \t\t\t\t\t<div class=\"heading-title text-center\">
-\t\t\t\t\t\t<h2>Titre</h2>
+\t\t\t\t\t\t<h2>";
+        // line 73
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["article"]) || array_key_exists("article", $context) ? $context["article"] : (function () { throw new RuntimeError('Variable "article" does not exist.', 73, $this->source); })()), "titre", [], "any", false, false, false, 73), "html", null, true);
+        echo "</h2>
 \t\t\t\t\t\t
 \t\t\t\t\t</div>
 \t\t\t\t</div>
@@ -141,14 +169,23 @@ class __TwigTemplate_5552c4b3b699db7bd9a2a589ba5c0059ecc7a426f20b501d4791828c010
 \t\t\t\t\t<div class=\"blog-inner-details-page\">
 \t\t\t\t\t\t<div class=\"blog-inner-box\">
 \t\t\t\t\t\t\t<div class=\"side-blog-img\">
-\t\t\t\t\t\t\t\t<img class=\"img-fluid\" src=\"images/inner-blog-img.jpg\" alt=\"\">
+\t\t\t\t\t\t\t\t<img class=\"img-fluid\" src=\"data:article/png;base64, ";
+        // line 83
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["article"]) || array_key_exists("article", $context) ? $context["article"] : (function () { throw new RuntimeError('Variable "article" does not exist.', 83, $this->source); })()), "image", [], "any", false, false, false, 83), "html", null, true);
+        echo "\">
 \t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t<div class=\"inner-blog-detail details-page\">
-\t\t\t\t\t\t\t\t<h3>Titre</h3>
+\t\t\t\t\t\t\t\t<h3>";
+        // line 86
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["article"]) || array_key_exists("article", $context) ? $context["article"] : (function () { throw new RuntimeError('Variable "article" does not exist.', 86, $this->source); })()), "titre", [], "any", false, false, false, 86), "html", null, true);
+        echo "</h3>
 \t\t\t\t\t\t\t\t<ul>
 \t\t\t\t\t\t\t\t\t<li><i class=\"zmdi zmdi-account\"></i>Publié Par : <span>Admin</span></li>
 \t\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t\t<p>Contenu d'article</p>
+\t\t\t\t\t\t\t\t<p>";
+        // line 90
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["article"]) || array_key_exists("article", $context) ? $context["article"] : (function () { throw new RuntimeError('Variable "article" does not exist.', 90, $this->source); })()), "contenu", [], "any", false, false, false, 90), "html", null, true);
+        echo "</p>
 \t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t</div>
 \t\t\t\t\t</div>
@@ -201,9 +238,9 @@ class __TwigTemplate_5552c4b3b699db7bd9a2a589ba5c0059ecc7a426f20b501d4791828c010
 \t\t\t\t\t<p>Kool Healthy est un service de préparation de repas basé en Tunisie. Fondé en 2020 avec l'aide de: M. Sami Bhiri et OneDev</p>
 \t\t\t\t</div>
 \t\t\t\t";
-        // line 141
-        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 141, $this->source); })()), "user", [], "any", false, false, false, 141)) {
-            // line 142
+        // line 142
+        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 142, $this->source); })()), "user", [], "any", false, false, false, 142)) {
+            // line 143
             echo "\t\t\t\t<div class=\"col-lg-3 col-md-6\">
 \t\t\t\t\t<h3>Courriel</h3>
 \t\t\t\t\t<div class=\"subscribe_form\">
@@ -212,7 +249,7 @@ class __TwigTemplate_5552c4b3b699db7bd9a2a589ba5c0059ecc7a426f20b501d4791828c010
 \t\t\t\t</div>
 \t\t\t\t";
         }
-        // line 149
+        // line 150
         echo "\t\t\t\t<div class=\"col-lg-3 col-md-6\">
 \t\t\t\t\t<h3>Contact</h3>
 \t\t\t\t\t<p class=\"lead\">Monastir</p>
@@ -282,7 +319,7 @@ class __TwigTemplate_5552c4b3b699db7bd9a2a589ba5c0059ecc7a426f20b501d4791828c010
 
     public function getDebugInfo()
     {
-        return array (  216 => 149,  207 => 142,  205 => 141,  114 => 52,  109 => 51,  104 => 50,  100 => 49,  96 => 47,  90 => 46,  43 => 1,);
+        return array (  253 => 150,  244 => 143,  242 => 142,  187 => 90,  180 => 86,  174 => 83,  161 => 73,  139 => 53,  134 => 52,  129 => 51,  125 => 50,  121 => 48,  115 => 47,  104 => 39,  90 => 28,  85 => 26,  80 => 24,  75 => 22,  69 => 19,  65 => 18,  61 => 17,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -303,17 +340,18 @@ class __TwigTemplate_5552c4b3b699db7bd9a2a589ba5c0059ecc7a426f20b501d4791828c010
     <meta name=\"author\" content=\"\">
 
     <!-- Site Icons -->
-    <link rel=\"shortcut icon\" href=\"images/favicon.ico\" type=\"image/x-icon\">
-    <link rel=\"apple-touch-icon\" href=\"images/apple-touch-icon.png\">
+    <link rel=\"shortcut icon\" href={{asset(\"images/favicon.ico\")}} type=\"image/x-icon\">
+    <link rel=\"apple-touch-icon\" href={{asset(\"images/apple-touch-icon.png\")}}>
+\t<link rel=\"icon\" href={{asset(\"images/logo.png\")}}>
 
     <!-- Bootstrap CSS -->
-    <link rel=\"stylesheet\" href=\"css/bootstrap.min.css\">    
+    <link rel=\"stylesheet\" href={{asset(\"css/bootstrap.min.css\")}}>    
 \t<!-- Site CSS -->
-    <link rel=\"stylesheet\" href=\"css/style.css\">    
+    <link rel=\"stylesheet\" href={{asset(\"css/style.css\")}}>    
     <!-- Responsive CSS -->
-    <link rel=\"stylesheet\" href=\"css/responsive.css\">
+    <link rel=\"stylesheet\" href={{asset(\"css/responsive.css\")}}>
     <!-- Custom CSS -->
-    <link rel=\"stylesheet\" href=\"css/custom.css\">
+    <link rel=\"stylesheet\" href={{asset(\"css/custom.css\")}}>
 
 
 </head>
@@ -324,19 +362,19 @@ class __TwigTemplate_5552c4b3b699db7bd9a2a589ba5c0059ecc7a426f20b501d4791828c010
 \t\t<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
 \t\t\t<div class=\"container\">
 \t\t\t\t<a class=\"navbar-brand\" href=\"home\">
-\t\t\t\t\t<img src=\"images/logo.png\" alt=\"\" />
+\t\t\t\t\t<img src={{asset(\"images/logo.png\")}} alt=\"\" />
 \t\t\t\t</a>
 \t\t\t\t<button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbars-rs-food\" aria-controls=\"navbars-rs-food\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
 \t\t\t\t  <span class=\"navbar-toggler-icon\"></span>
 \t\t\t\t</button>
 \t\t\t\t<div class=\"collapse navbar-collapse\" id=\"navbars-rs-food\">
 \t\t\t\t\t<ul class=\"navbar-nav ml-auto\">
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"home\">Accueil</a></li>
-\t\t\t\t\t\t{% if app.user %}<li class=\"nav-item\"><a class=\"nav-link\" href=\"CalculateMyNeeds/{{app.user.getId}}\">Calculer Mes Besoins</a></li> {% endif %}
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"PreparedMeals\">Repas Préparés</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"Articles\">Articles</a></li>
-\t\t\t\t\t\t{% if app.user %}<li class=\"nav-item\"><a class=\"nav-link\" href=\"Profile\">Profil</a></li> {% endif %}
-\t\t\t\t\t\t{% if app.user %}<li class=\"nav-item\"><a class=\"nav-link\" href=\"Contact\">Contact</a></li> {% endif %}
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"/home\">Accueil</a></li>
+\t\t\t\t\t\t{% if app.user %}<li class=\"nav-item\"><a class=\"nav-link\" href=\"/CalculateMyNeeds/{{app.user.getId}}\">Calculer Mes Besoins</a></li> {% endif %}
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"/PreparedMeals\">Repas Préparés</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"/Articles\">Articles</a></li>
+\t\t\t\t\t\t{% if app.user %}<li class=\"nav-item\"><a class=\"nav-link\" href=\"/Profile\">Profil</a></li> {% endif %}
+\t\t\t\t\t\t{% if app.user %}<li class=\"nav-item\"><a class=\"nav-link\" href=\"/Contact\">Contact</a></li> {% endif %}
 \t\t\t\t\t\t{% if not app.user %}<li class=\"nav-item\"><a class=\"nav-link\" href=\"/\">Connecter</a></li> {% endif %}
 \t\t\t\t\t</ul>
 \t\t\t\t</div>
@@ -358,7 +396,7 @@ class __TwigTemplate_5552c4b3b699db7bd9a2a589ba5c0059ecc7a426f20b501d4791828c010
 \t\t\t<div class=\"row\">
 \t\t\t\t<div class=\"col-lg-12\">
 \t\t\t\t\t<div class=\"heading-title text-center\">
-\t\t\t\t\t\t<h2>Titre</h2>
+\t\t\t\t\t\t<h2>{{article.titre}}</h2>
 \t\t\t\t\t\t
 \t\t\t\t\t</div>
 \t\t\t\t</div>
@@ -368,14 +406,14 @@ class __TwigTemplate_5552c4b3b699db7bd9a2a589ba5c0059ecc7a426f20b501d4791828c010
 \t\t\t\t\t<div class=\"blog-inner-details-page\">
 \t\t\t\t\t\t<div class=\"blog-inner-box\">
 \t\t\t\t\t\t\t<div class=\"side-blog-img\">
-\t\t\t\t\t\t\t\t<img class=\"img-fluid\" src=\"images/inner-blog-img.jpg\" alt=\"\">
+\t\t\t\t\t\t\t\t<img class=\"img-fluid\" src=\"data:article/png;base64, {{article.image}}\">
 \t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t<div class=\"inner-blog-detail details-page\">
-\t\t\t\t\t\t\t\t<h3>Titre</h3>
+\t\t\t\t\t\t\t\t<h3>{{article.titre}}</h3>
 \t\t\t\t\t\t\t\t<ul>
 \t\t\t\t\t\t\t\t\t<li><i class=\"zmdi zmdi-account\"></i>Publié Par : <span>Admin</span></li>
 \t\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t\t<p>Contenu d'article</p>
+\t\t\t\t\t\t\t\t<p>{{article.contenu}}</p>
 \t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t</div>
 \t\t\t\t\t</div>
