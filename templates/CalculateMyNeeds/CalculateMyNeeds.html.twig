@@ -16,6 +16,7 @@
     <!-- Site Icons -->
     <link rel="shortcut icon" href={{asset("images/favicon.ico")}} type="image/x-icon">
     <link rel="apple-touch-icon" href={{asset("images/apple-touch-icon.png")}}>
+	<link rel="icon" href="images/logo.png">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href={{asset("css/bootstrap.min.css")}}>    
@@ -35,10 +36,9 @@
 
         var data = google.visualization.arrayToDataTable([
           ['Needs','Value'],
-          ['Calories',     20],
-          ['Protein',      50],
-          ['Fats',  10],
-          ['Carbs', 30],
+          ['Protein',{{proteinPercentage}}],
+          ['Fats',{{fatsPercentage}}],
+          ['Carbs',{{carbsPercentage}}],
         ]);
 
         var options = {
@@ -59,7 +59,7 @@
 	<header class="top-navbar">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<div class="container">
-				<a class="navbar-brand" href="home">
+				<a class="navbar-brand" href="/home">
 					<img src={{asset("images/logo.png")}} alt="" />
 				</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-rs-food" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,11 +68,11 @@
 				<div class="collapse navbar-collapse" id="navbars-rs-food">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item"><a class="nav-link" href="/home">Accueil</a></li>
-						<li class="nav-item active"><a class="nav-link" href="CalculateMyNeeds">Calculer Mes Besoins</a></li>
-						<li class="nav-item"><a class="nav-link" href="PreparedMeals">Repas Préparés</a></li>
-						<li class="nav-item"><a class="nav-link" href="Articles">Articles</a></li>
-						<li class="nav-item"><a class="nav-link" href="Profile">Profil</a></li>
-						<li class="nav-item"><a class="nav-link" href="Contact">Contact</a></li>
+						<li class="nav-item active"><a class="nav-link" href="/CalculateMyNeeds/{{app.user.getId}}">Calculer Mes Besoins</a></li>
+						<li class="nav-item"><a class="nav-link" href="/PreparedMeals">Repas Préparés</a></li>
+						<li class="nav-item"><a class="nav-link" href="/Articles">Articles</a></li>
+						<li class="nav-item"><a class="nav-link" href="/Profile">Profil</a></li>
+						<li class="nav-item"><a class="nav-link" href="/Contact">Contact</a></li>
 					</ul>
 				</div>
 			</div>
@@ -108,11 +108,11 @@
 				<div class="row">
 					<div class="col-lg-6 col-md-6 col-sm-12 text-center">
 						<div class="inner-column">
-							<h1>Vos <span>Besoins</span></h1>
-							<h4>Calories : <span> {{bmr}}</span></h4>
-							<h4>Protéines : <span> 50g</span></h4>
-							<h4>Graisses : <span> 250.0 Kcal</span></h4>
-							<h4>Glucides : <span> 250.0 Kcal</span></h4>
+							<h1>Vos <span>Besoins</span> : {{user.nom}}</h1>
+							<h4>Calories : <span> {{calories | number_format(2, '.')}} Kcal</span></h4>
+							<h4>Protéines : <span> {{protein | number_format(2, '.')}} g</span></h4>
+							<h4>Graisses : <span> {{fats | number_format(2, '.')}} g</span></h4>
+							<h4>Glucides : <span> {{carbs | number_format(2, '.')}} g</span></h4>
 							<div id="piechart" style="width: 600px; height: 400px;"></div>
 						</div>
 					</div>
@@ -249,8 +249,8 @@
 				<div class="col-lg-3 col-md-6">
 					<h3>Contact</h3>
 					<p class="lead">Monastir</p>
-					<p class="lead"><a href="#">+216 52 680 290</a></p>
-					<p><a href="#"> kool.healthy.contact@gmail.com</a></p>
+					<p class="lead">+216 52 680 290</p>
+					<p>kool.healthy.contact@gmail.com</p>
 				</div>
 				<div class="col-lg-3 col-md-6">
 					<h3>Suivez-Nous</h3>

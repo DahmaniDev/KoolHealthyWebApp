@@ -15,22 +15,18 @@
 	
 
     <!-- Site Icons -->
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="shortcut icon" href={{asset("images/favicon.ico")}} type="image/x-icon">
+    <link rel="apple-touch-icon" href={{asset("images/apple-touch-icon.png")}}>
+	<link rel="icon" href="images/logo.png">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">    
+    <link rel="stylesheet" href={{asset("css/bootstrap.min.css")}}>    
 	<!-- Site CSS -->
-    <link rel="stylesheet" href="css/style.css">    
+    <link rel="stylesheet" href={{asset("css/style.css")}}>    
     <!-- Responsive CSS -->
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href={{asset("css/responsive.css")}}>
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/custom.css">
-
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" href={{asset("css/custom.css")}}>
 
 	<style>
 	.avatar{
@@ -50,20 +46,20 @@
 	<header class="top-navbar">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<div class="container">
-				<a class="navbar-brand" href="home">
-					<img src="images/logo.png" alt="" />
+				<a class="navbar-brand" href="/home">
+					<img src={{asset("images/logo.png")}} alt="" />
 				</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-rs-food" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
 				  <span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbars-rs-food">
 					<ul class="navbar-nav ml-auto">
-						<li class="nav-item"><a class="nav-link" href="home">Accueil</a></li>
-						<li class="nav-item"><a class="nav-link" href="CalculateMyNeeds">Calculer Mes besoins</a></li>
-						<li class="nav-item"><a class="nav-link" href="PreparedMeals">Repas préparés</a></li>
-						<li class="nav-item"><a class="nav-link" href="Articles">Articles</a></li>
-						<li class="nav-item active"><a class="nav-link" href="Profile">Profil</a></li>
-						<li class="nav-item"><a class="nav-link" href="Contact">Contact</a></li>
+						<li class="nav-item"><a class="nav-link" href="/home">Accueil</a></li>
+						<li class="nav-item"><a class="nav-link" href="/CalculateMyNeeds/{{app.user.getId}}">Calculer Mes besoins</a></li>
+						<li class="nav-item"><a class="nav-link" href="/PreparedMeals">Repas préparés</a></li>
+						<li class="nav-item"><a class="nav-link" href="/Articles">Articles</a></li>
+						<li class="nav-item active"><a class="nav-link" href="/Profile">Profil</a></li>
+						<li class="nav-item"><a class="nav-link" href="/Contact">Contact</a></li>
 					</ul>
 				</div>
 			</div>
@@ -91,7 +87,7 @@
 					<div class="contact-block">
 						<form id="contactForm">
 							<div class="heading-title text-center">
-								<img src="images/avatar.png" class="avatar">
+								<img src={{asset("images/avatar.png")}} class="avatar">
 								<br>
 							</div>
 							<div class="row">
@@ -182,6 +178,7 @@
 						</form>
 					</div>
 				</div>
+				<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="/logout">Déconnecter</a></p>
 			</div>
 		</div>
 	</div>
@@ -235,7 +232,6 @@
 					<div class="subscribe_form">
 						<button type="submit" class="submit" onclick="showDialogAbonnez()">Abonnez-Vous</button>
 					</div>
-					
 				</div>
 				<div class="col-lg-3 col-md-6">
 					<h3>Contact</h3>

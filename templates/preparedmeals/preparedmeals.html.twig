@@ -16,6 +16,7 @@
     <!-- Site Icons -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="icon" href="images/logo.png">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">    
@@ -52,6 +53,7 @@
 						<li class="nav-item"><a class="nav-link" href="Articles">Articles</a></li>
 						{% if app.user %}<li class="nav-item"><a class="nav-link" href="Profile">Profil</a></li> {% endif %}
 						{% if app.user %}<li class="nav-item"><a class="nav-link" href="Contact">Contact</a></li> {% endif %}
+						{% if not app.user %}<li class="nav-item"><a class="nav-link" href="/">Connecter</a></li> {% endif %}
 					</ul>
 				</div>
 			</div>
@@ -359,18 +361,19 @@
 					<h3>à propos</h3>
 					<p>Kool Healthy est un service de préparation de repas basé en Tunisie. Fondé en 2020 avec l'aide de: M. Sami Bhiri et OneDev</p>
 				</div>
+				{% if app.user %}
 				<div class="col-lg-3 col-md-6">
 					<h3>Courriel</h3>
 					<div class="subscribe_form">
 						<button type="submit" class="submit" onclick="showDialogAbonnez()">Abonnez-Vous</button>
 					</div>
-					
 				</div>
+				{% endif %}
 				<div class="col-lg-3 col-md-6">
 					<h3>Contact</h3>
 					<p class="lead">Monastir</p>
-					<p class="lead"><a href="#">+216 52 680 290</a></p>
-					<p><a href="#"> kool.healthy.contact@gmail.com</a></p>
+					<p class="lead">+216 52 680 290</p>
+					<p>kool.healthy.contact@gmail.com</p>
 				</div>
 				<div class="col-lg-3 col-md-6">
 					<h3>Suivez-Nous</h3>

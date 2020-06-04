@@ -16,6 +16,7 @@
     <!-- Site Icons -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="icon" href="images/logo.png">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">    
@@ -26,10 +27,6 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css">
 
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 
 </head>
 
@@ -46,12 +43,12 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbars-rs-food">
 					<ul class="navbar-nav ml-auto">
-						<li class="nav-item"><a class="nav-link" href="home">Accueil</a></li>
-						<li class="nav-item"><a class="nav-link" href="CalculateMyNeeds">Calculer Mes Besoins</a></li>
-						<li class="nav-item"><a class="nav-link" href="PreparedMeals">repas préparés</a></li>
-						<li class="nav-item"><a class="nav-link" href="Articles">Articles</a></li>
-						<li class="nav-item"><a class="nav-link" href="Profile">Profil</a></li>
-						<li class="nav-item active"><a class="nav-link" href="Contact">Contact</a></li>
+						<li class="nav-item"><a class="nav-link" href="/home">Accueil</a></li>
+						<li class="nav-item"><a class="nav-link" href="/CalculateMyNeeds/{{app.user.getId}}">Calculer Mes Besoins</a></li>
+						<li class="nav-item"><a class="nav-link" href="/PreparedMeals">repas préparés</a></li>
+						<li class="nav-item"><a class="nav-link" href="/Articles">Articles</a></li>
+						<li class="nav-item"><a class="nav-link" href="/Profile">Profil</a></li>
+						<li class="nav-item active"><a class="nav-link" href="/Contact">Contact</a></li>
 					</ul>
 				</div>
 			</div>

@@ -2,18 +2,19 @@
 <html>
 <head>
 <title>Kool Healthy PFE</title>
+    <link rel="icon" href="images/logo.png">
     <link rel="stylesheet" type="text/css" href="css/register.css">
 </head>
 
 {% block body %}
 <div class="loginbox">
-<img src="images/avatar.png" class="avatar">
+<img src="images/register.png" class="avatar">
     <h1>Register</h1>
 
     {{ form_start(registrationForm) }}
         {{ form_row(registrationForm.nom) }}
         {{ form_row(registrationForm.username) }}
-        {{ form_row(registrationForm.plainPassword) }}
+        {{ form_row(registrationForm.motDePasse) }}
         {{ form_row(registrationForm.sexe) }}
         {{ form_row(registrationForm.age) }}
         {{ form_row(registrationForm.height) }}
@@ -22,7 +23,8 @@
         {{ form_row(registrationForm.activity_level) }}
         {{ form_row(registrationForm.agreeTerms) }}
 
-        <input type="submit" name="" value="Register">
+        <input type="submit" name="" value="Register"><br>
+        <a href="/" class="connexionbtn">Se connecter?</a>
     {{ form_end(registrationForm) }}
     </div>
 {% endblock %}

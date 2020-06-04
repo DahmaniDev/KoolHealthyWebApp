@@ -2,6 +2,7 @@
 <head>
 <title>Kool Healthy PFE</title>
     <link rel="stylesheet" type="text/css" href="css/signin.css">
+    <link rel="icon" href="images/logo.png">
 </head>
 
 {% block body %}
@@ -16,11 +17,11 @@
         </div>
     {% endif %}
 
-    <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-    <label for="inputUsername">Username</label>
-    <input type="text" value="{{ last_username }}" name="username" id="inputUsername" class="form-control" required autofocus placeholder="Enter E-mail">
-    <label for="inputPassword">Password</label>
-    <input type="password" name="password" id="inputPassword" class="form-control" required placeholder="Enter Password">
+    <h1 class="h3 mb-3 font-weight-normal">Connectez-Vous</h1>
+    <label for="inputUsername">Nom d'utilisateur</label>
+    <input type="text" value="{{ last_username }}" name="username" id="inputUsername" class="form-control" required autofocus placeholder="Entrez votre Nom d'utilisateur">
+    <label for="inputPassword">Mot de Passe</label>
+    <input type="password" name="password" id="inputPassword" class="form-control" required placeholder="Entrez votre Mot de passe">
     {% if error %}
         <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
     {% endif %}
@@ -33,8 +34,9 @@
             </label>
         </div> -->
     <br>
-    <input type="submit" name="" value="Login">
+    <input type="submit" name="" value="Se Connecter">
 </form>
-<a href="home">Login later?</a>
+<a href="home">Se connecter ultérieurement?</a><br>
+<a href="register">S'inscrire</a>
 </div>
 {% endblock %}

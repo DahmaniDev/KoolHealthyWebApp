@@ -58,6 +58,7 @@ class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b
     <!-- Site Icons -->
     <link rel=\"shortcut icon\" href=\"images/favicon.ico\" type=\"image/x-icon\">
     <link rel=\"apple-touch-icon\" href=\"images/apple-touch-icon.png\">
+\t<link rel=\"icon\" href=\"images/logo.png\">
 
     <!-- Bootstrap CSS -->
     <link rel=\"stylesheet\" href=\"css/bootstrap.min.css\">    
@@ -68,10 +69,6 @@ class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b
     <!-- Custom CSS -->
     <link rel=\"stylesheet\" href=\"css/custom.css\">
 
-    <!--[if lt IE 9]>
-      <script src=\"https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js\"></script>
-      <script src=\"https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js\"></script>
-    <![endif]-->
 
 </head>
 
@@ -88,12 +85,15 @@ class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b
 \t\t\t\t</button>
 \t\t\t\t<div class=\"collapse navbar-collapse\" id=\"navbars-rs-food\">
 \t\t\t\t\t<ul class=\"navbar-nav ml-auto\">
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"home\">Accueil</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"CalculateMyNeeds\">Calculer Mes Besoins</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"PreparedMeals\">repas préparés</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"Articles\">Articles</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"Profile\">Profil</a></li>
-\t\t\t\t\t\t<li class=\"nav-item active\"><a class=\"nav-link\" href=\"Contact\">Contact</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"/home\">Accueil</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"/CalculateMyNeeds/";
+        // line 47
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 47, $this->source); })()), "user", [], "any", false, false, false, 47), "getId", [], "any", false, false, false, 47), "html", null, true);
+        echo "\">Calculer Mes Besoins</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"/PreparedMeals\">repas préparés</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"/Articles\">Articles</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"/Profile\">Profil</a></li>
+\t\t\t\t\t\t<li class=\"nav-item active\"><a class=\"nav-link\" href=\"/Contact\">Contact</a></li>
 \t\t\t\t\t</ul>
 \t\t\t\t</div>
 \t\t\t</div>
@@ -264,9 +264,14 @@ class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b
         return "/contact/contact.html.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  43 => 1,);
+        return array (  91 => 47,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -289,6 +294,7 @@ class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b
     <!-- Site Icons -->
     <link rel=\"shortcut icon\" href=\"images/favicon.ico\" type=\"image/x-icon\">
     <link rel=\"apple-touch-icon\" href=\"images/apple-touch-icon.png\">
+\t<link rel=\"icon\" href=\"images/logo.png\">
 
     <!-- Bootstrap CSS -->
     <link rel=\"stylesheet\" href=\"css/bootstrap.min.css\">    
@@ -299,10 +305,6 @@ class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b
     <!-- Custom CSS -->
     <link rel=\"stylesheet\" href=\"css/custom.css\">
 
-    <!--[if lt IE 9]>
-      <script src=\"https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js\"></script>
-      <script src=\"https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js\"></script>
-    <![endif]-->
 
 </head>
 
@@ -319,12 +321,12 @@ class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b
 \t\t\t\t</button>
 \t\t\t\t<div class=\"collapse navbar-collapse\" id=\"navbars-rs-food\">
 \t\t\t\t\t<ul class=\"navbar-nav ml-auto\">
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"home\">Accueil</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"CalculateMyNeeds\">Calculer Mes Besoins</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"PreparedMeals\">repas préparés</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"Articles\">Articles</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"Profile\">Profil</a></li>
-\t\t\t\t\t\t<li class=\"nav-item active\"><a class=\"nav-link\" href=\"Contact\">Contact</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"/home\">Accueil</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"/CalculateMyNeeds/{{app.user.getId}}\">Calculer Mes Besoins</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"/PreparedMeals\">repas préparés</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"/Articles\">Articles</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"/Profile\">Profil</a></li>
+\t\t\t\t\t\t<li class=\"nav-item active\"><a class=\"nav-link\" href=\"/Contact\">Contact</a></li>
 \t\t\t\t\t</ul>
 \t\t\t\t</div>
 \t\t\t</div>

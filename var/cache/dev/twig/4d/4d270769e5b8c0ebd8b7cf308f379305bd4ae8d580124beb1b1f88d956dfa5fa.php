@@ -68,10 +68,6 @@ class __TwigTemplate_5552c4b3b699db7bd9a2a589ba5c0059ecc7a426f20b501d4791828c010
     <!-- Custom CSS -->
     <link rel=\"stylesheet\" href=\"css/custom.css\">
 
-    <!--[if lt IE 9]>
-      <script src=\"https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js\"></script>
-      <script src=\"https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js\"></script>
-    <![endif]-->
 
 </head>
 
@@ -89,12 +85,33 @@ class __TwigTemplate_5552c4b3b699db7bd9a2a589ba5c0059ecc7a426f20b501d4791828c010
 \t\t\t\t<div class=\"collapse navbar-collapse\" id=\"navbars-rs-food\">
 \t\t\t\t\t<ul class=\"navbar-nav ml-auto\">
 \t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"home\">Accueil</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"CalculateMyNeeds\">Calculer mes besoins</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"PreparedMeals\">Repas préparés</a></li>
+\t\t\t\t\t\t";
+        // line 46
+        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 46, $this->source); })()), "user", [], "any", false, false, false, 46)) {
+            echo "<li class=\"nav-item\"><a class=\"nav-link\" href=\"CalculateMyNeeds/";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 46, $this->source); })()), "user", [], "any", false, false, false, 46), "getId", [], "any", false, false, false, 46), "html", null, true);
+            echo "\">Calculer Mes Besoins</a></li> ";
+        }
+        // line 47
+        echo "\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"PreparedMeals\">Repas Préparés</a></li>
 \t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"Articles\">Articles</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"Profile\">Profil</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"Contact\">Contact</a></li>
-\t\t\t\t\t</ul>
+\t\t\t\t\t\t";
+        // line 49
+        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 49, $this->source); })()), "user", [], "any", false, false, false, 49)) {
+            echo "<li class=\"nav-item\"><a class=\"nav-link\" href=\"Profile\">Profil</a></li> ";
+        }
+        // line 50
+        echo "\t\t\t\t\t\t";
+        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 50, $this->source); })()), "user", [], "any", false, false, false, 50)) {
+            echo "<li class=\"nav-item\"><a class=\"nav-link\" href=\"Contact\">Contact</a></li> ";
+        }
+        // line 51
+        echo "\t\t\t\t\t\t";
+        if ( !twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 51, $this->source); })()), "user", [], "any", false, false, false, 51)) {
+            echo "<li class=\"nav-item\"><a class=\"nav-link\" href=\"/\">Connecter</a></li> ";
+        }
+        // line 52
+        echo "\t\t\t\t\t</ul>
 \t\t\t\t</div>
 \t\t\t</div>
 \t\t</nav>
@@ -183,14 +200,20 @@ class __TwigTemplate_5552c4b3b699db7bd9a2a589ba5c0059ecc7a426f20b501d4791828c010
 \t\t\t\t\t<h3>à propos</h3>
 \t\t\t\t\t<p>Kool Healthy est un service de préparation de repas basé en Tunisie. Fondé en 2020 avec l'aide de: M. Sami Bhiri et OneDev</p>
 \t\t\t\t</div>
-\t\t\t\t<div class=\"col-lg-3 col-md-6\">
+\t\t\t\t";
+        // line 141
+        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 141, $this->source); })()), "user", [], "any", false, false, false, 141)) {
+            // line 142
+            echo "\t\t\t\t<div class=\"col-lg-3 col-md-6\">
 \t\t\t\t\t<h3>Courriel</h3>
 \t\t\t\t\t<div class=\"subscribe_form\">
 \t\t\t\t\t\t<button type=\"submit\" class=\"submit\" onclick=\"showDialogAbonnez()\">Abonnez-Vous</button>
 \t\t\t\t\t</div>
-\t\t\t\t\t
 \t\t\t\t</div>
-\t\t\t\t<div class=\"col-lg-3 col-md-6\">
+\t\t\t\t";
+        }
+        // line 149
+        echo "\t\t\t\t<div class=\"col-lg-3 col-md-6\">
 \t\t\t\t\t<h3>Contact</h3>
 \t\t\t\t\t<p class=\"lead\">Monastir</p>
 \t\t\t\t\t<p class=\"lead\">+216 52 680 290</p>
@@ -252,9 +275,14 @@ class __TwigTemplate_5552c4b3b699db7bd9a2a589ba5c0059ecc7a426f20b501d4791828c010
         return "/blog/blog.html.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  43 => 1,);
+        return array (  216 => 149,  207 => 142,  205 => 141,  114 => 52,  109 => 51,  104 => 50,  100 => 49,  96 => 47,  90 => 46,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -287,10 +315,6 @@ class __TwigTemplate_5552c4b3b699db7bd9a2a589ba5c0059ecc7a426f20b501d4791828c010
     <!-- Custom CSS -->
     <link rel=\"stylesheet\" href=\"css/custom.css\">
 
-    <!--[if lt IE 9]>
-      <script src=\"https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js\"></script>
-      <script src=\"https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js\"></script>
-    <![endif]-->
 
 </head>
 
@@ -308,11 +332,12 @@ class __TwigTemplate_5552c4b3b699db7bd9a2a589ba5c0059ecc7a426f20b501d4791828c010
 \t\t\t\t<div class=\"collapse navbar-collapse\" id=\"navbars-rs-food\">
 \t\t\t\t\t<ul class=\"navbar-nav ml-auto\">
 \t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"home\">Accueil</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"CalculateMyNeeds\">Calculer mes besoins</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"PreparedMeals\">Repas préparés</a></li>
+\t\t\t\t\t\t{% if app.user %}<li class=\"nav-item\"><a class=\"nav-link\" href=\"CalculateMyNeeds/{{app.user.getId}}\">Calculer Mes Besoins</a></li> {% endif %}
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"PreparedMeals\">Repas Préparés</a></li>
 \t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"Articles\">Articles</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"Profile\">Profil</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"Contact\">Contact</a></li>
+\t\t\t\t\t\t{% if app.user %}<li class=\"nav-item\"><a class=\"nav-link\" href=\"Profile\">Profil</a></li> {% endif %}
+\t\t\t\t\t\t{% if app.user %}<li class=\"nav-item\"><a class=\"nav-link\" href=\"Contact\">Contact</a></li> {% endif %}
+\t\t\t\t\t\t{% if not app.user %}<li class=\"nav-item\"><a class=\"nav-link\" href=\"/\">Connecter</a></li> {% endif %}
 \t\t\t\t\t</ul>
 \t\t\t\t</div>
 \t\t\t</div>
@@ -402,13 +427,14 @@ class __TwigTemplate_5552c4b3b699db7bd9a2a589ba5c0059ecc7a426f20b501d4791828c010
 \t\t\t\t\t<h3>à propos</h3>
 \t\t\t\t\t<p>Kool Healthy est un service de préparation de repas basé en Tunisie. Fondé en 2020 avec l'aide de: M. Sami Bhiri et OneDev</p>
 \t\t\t\t</div>
+\t\t\t\t{% if app.user %}
 \t\t\t\t<div class=\"col-lg-3 col-md-6\">
 \t\t\t\t\t<h3>Courriel</h3>
 \t\t\t\t\t<div class=\"subscribe_form\">
 \t\t\t\t\t\t<button type=\"submit\" class=\"submit\" onclick=\"showDialogAbonnez()\">Abonnez-Vous</button>
 \t\t\t\t\t</div>
-\t\t\t\t\t
 \t\t\t\t</div>
+\t\t\t\t{% endif %}
 \t\t\t\t<div class=\"col-lg-3 col-md-6\">
 \t\t\t\t\t<h3>Contact</h3>
 \t\t\t\t\t<p class=\"lead\">Monastir</p>

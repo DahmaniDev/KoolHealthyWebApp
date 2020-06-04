@@ -16,6 +16,7 @@
     <!-- Site Icons -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="icon" href="images/logo.png">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">    
@@ -41,12 +42,13 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbars-rs-food">
 					<ul class="navbar-nav ml-auto">
-						<li class="nav-item active"><a class="nav-link" href="home">Accueil</a></li>
-						{% if app.user %}<li class="nav-item"><a class="nav-link" href="CalculateMyNeeds/{{app.user.getId}}">Calculer Mes Besoins</a></li> {% endif %}
-						<li class="nav-item"><a class="nav-link" href="PreparedMeals">Repas Préparés</a></li>
-						<li class="nav-item"><a class="nav-link" href="Articles">Articles</a></li>
-						{% if app.user %}<li class="nav-item"><a class="nav-link" href="Profile">Profil</a></li> {% endif %}
-						{% if app.user %}<li class="nav-item"><a class="nav-link" href="Contact">Contact</a></li> {% endif %}
+						<li class="nav-item active"><a class="nav-link" href="/home">Accueil</a></li>
+						{% if app.user %}<li class="nav-item"><a class="nav-link" href="/CalculateMyNeeds/{{app.user.getId}}">Calculer Mes Besoins</a></li> {% endif %}
+						<li class="nav-item"><a class="nav-link" href="/PreparedMeals">Repas Préparés</a></li>
+						<li class="nav-item"><a class="nav-link" href="/Articles">Articles</a></li>
+						{% if app.user %}<li class="nav-item"><a class="nav-link" href="/Profile">Profil</a></li> {% endif %}
+						{% if app.user %}<li class="nav-item"><a class="nav-link" href="/Contact">Contact</a></li> {% endif %}
+						{% if not app.user %}<li class="nav-item"><a class="nav-link" href="/">Connecter</a></li> {% endif %}
 					</ul>
 				</div>
 			</div>
@@ -65,7 +67,7 @@
 							<h1 class="m-b-20"><strong>Bienvenue à <br> Kool Healthy</strong></h1>
 							<p class="m-b-40">Préparez votre repas en fonction de vos besoins nutritionnels,  <br> 
 							bien cuit, bien calculé et surtout ... Sain</p>
-							<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="PreparedMeals">Commander</a></p>
+							<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="/PreparedMeals">Commander</a></p>
 						</div>
 					</div>
 				</div>
@@ -78,7 +80,7 @@
 							<h1 class="m-b-20"><strong>Bienvenue à<br> Kool Healthy</strong></h1>
 							<p class="m-b-40">Préparez votre repas en fonction de vos besoins nutritionnels,  <br> 
 							bien cuit, bien calculé et surtout ... Sain</p>
-							<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="PreparedMeals">Commander</a></p>
+							<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="/reparedMeals">Commander</a></p>
 						</div>
 					</div>
 				</div>
@@ -91,7 +93,7 @@
 							<h1 class="m-b-20"><strong>Bienvenue à<br> Kool Healthy</strong></h1>
 							<p class="m-b-40">Préparez votre repas en fonction de vos besoins nutritionnels,  <br> 
 							bien cuit, bien calculé et surtout ... Sain</p>
-							<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="PreparedMeals">Commander</a></p>
+							<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="/PreparedMeals">Commander</a></p>
 						</div>
 					</div>
 				</div>
@@ -111,7 +113,7 @@
 						<p>C'est un service qui calcule vos besoins caloriques, nous l'adaptons à vos préférences alimentaires que vous choisissez et ensuite nous préparons et livrons vos repas sains et équilibrés. </p>
 						<h4>Comment ça marche?</h4>
 						<p>1- Nous calculons vos besoins<br>2- Vous choisissez vos préférences alimentaires et confirmez votre commande<br>3- Nous le préparons et le livrons à vous</p>
-						<a class="btn btn-lg btn-circle btn-outline-new-white" href="PreparedMeals">Commander</a>
+						<a class="btn btn-lg btn-circle btn-outline-new-white" href="/PreparedMeals">Commander</a>
 					</div>
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-12">
@@ -246,7 +248,7 @@
 	</div>
 	<!-- End Customer Reviews -->
 	<div class="submit-button text-center">
-		<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="partenariat">Devenir un Partenaire ?</a></p> 
+		<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="/partenariat">Devenir un Partenaire ?</a></p> 
 	</div>
 	<!-- Start Contact info -->
 	<div class="contact-imfo-box">
@@ -301,8 +303,8 @@
 				<div class="col-lg-3 col-md-6">
 					<h3>Contact</h3>
 					<p class="lead">Monastir</p>
-					<p class="lead"><a href="#">+216 52 680 290</a></p>
-					<p><a href="#"> kool.healthy.contact@gmail.com</a></p>
+					<p class="lead">+216 52 680 290</p>
+					<p>kool.healthy.contact@gmail.com</p>
 				</div>
 				<div class="col-lg-3 col-md-6">
 					<h3>Suivez-Nous</h3>
@@ -348,6 +350,29 @@
 		function showDialogAbonnez() {
   			alert("Vous êtes abonné à notre courriel éléctronique ! Vous serez informés par chaque mise à jour");
 		}
+	</script>
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-analytics.js"></script>
+
+	<script>
+  		// Your web app's Firebase configuration
+  		var firebaseConfig = {
+    	apiKey: "AIzaSyCGNm7YXw-hzKTEhhx3nmG2IfgYnilA7Lc",
+    	authDomain: "kool-healthy-pfe.firebaseapp.com",
+    	databaseURL: "https://kool-healthy-pfe.firebaseio.com",
+    	projectId: "kool-healthy-pfe",
+    	storageBucket: "kool-healthy-pfe.appspot.com",
+    	messagingSenderId: "668168151925",
+    	appId: "1:668168151925:web:787b39603b46d8d48ca93c",
+    	measurementId: "G-TFY60YSXMB"
+  		};
+  	// Initialize Firebase
+  	firebase.initializeApp(firebaseConfig);
+  	firebase.analytics();
 	</script>
 	
 </body>

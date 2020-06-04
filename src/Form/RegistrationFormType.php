@@ -29,19 +29,32 @@ class RegistrationFormType extends AbstractType
             ->add('age')
             ->add('height')
             ->add('weight')
-            ->add('goal')
-            ->add('activity_level')
-            ->add('plainPassword', PasswordType::class, [
+            ->add('goal',ChoiceType::class, [
+                'choices'  => [
+                    'Prendre du poids' => 'Prendre du poids',
+                    'Maintenir le poids' => 'Maintenir le poids',
+                    'Perdre du poids' => 'Perdre du poids',
+                ],
+            ])
+            ->add('activity_level',ChoiceType::class, [
+                'choices'  => [
+                    'Pas Actif' => 'Pas Actif',
+                    'Un Peu Actif' => 'Un Peu Actif',
+                    'Actif' => 'Actif',
+                    'Super Actif' => 'Super Actif',
+                ],
+            ])
+            ->add('motDePasse', PasswordType::class, [
                 // instead of being set onto the object directly,
                 // this is read and encoded in the controller
                 'mapped' => false,
                 'constraints' => [
                     new NotBlank([
-                        'message' => 'Please enter a password',
+                        'message' => 'Entrer une mot de passe',
                     ]),
                     new Length([
                         'min' => 6,
-                        'minMessage' => 'Your password should be at least {{ limit }} characters',
+                        'minMessage' => 'Votre mot de passe doit avoir {{ limit }} characters minimum',
                         // max length allowed by Symfony for security reasons
                         'max' => 4096,
                     ]),
