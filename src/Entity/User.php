@@ -18,7 +18,7 @@ class User implements UserInterface, \Serializable
      * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
      */
-    private $id;
+    public $id;
 
     /**
      * @ORM\Column(type="string", length=30)

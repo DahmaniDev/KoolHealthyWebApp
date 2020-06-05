@@ -38,12 +38,12 @@ class Besoins
      */
     private $fats;
 
-    public function getUser(): ?integer
+    public function getUserID(): ?integer
     {
         return $this->user;
     }
 
-    public function setUser(User $user): self
+    public function setUserID(User $user): self
     {
         $this->user_id = $user->id;
 

@@ -20,6 +20,7 @@ return [
     'Articles' => [[], ['_controller' => 'App\\Controller\\DefaultController::Articles'], [], [['text', '/Articles']], [], []],
     'PreparedMeals' => [[], ['_controller' => 'App\\Controller\\DefaultController::PreparedMeals'], [], [['text', '/PreparedMeals']], [], []],
     'Profile' => [[], ['_controller' => 'App\\Controller\\DefaultController::Profile'], [], [['text', '/Profile']], [], []],
+    'Commandes' => [[], ['_controller' => 'App\\Controller\\DefaultController::Commandes'], [], [['text', '/Commandes']], [], []],
     'Contact' => [[], ['_controller' => 'App\\Controller\\DefaultController::contact'], [], [['text', '/Contact']], [], []],
     'blog' => [['id'], ['_controller' => 'App\\Controller\\DefaultController::blog'], [], [['variable', '/', '[^/]++', 'id'], ['text', '/blog']], [], []],
     'recette' => [['id'], ['_controller' => 'App\\Controller\\DefaultController::recette'], [], [['variable', '/', '[^/]++', 'id'], ['text', '/recette']], [], []],

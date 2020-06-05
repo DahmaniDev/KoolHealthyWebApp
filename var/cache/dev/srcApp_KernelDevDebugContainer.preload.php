@@ -6,7 +6,7 @@
 use Symfony\Component\DependencyInjection\Dumper\Preloader;
 
 require dirname(__DIR__, 3).'\\vendor/autoload.php';
-require __DIR__.'/ContainerQUxKSjg/srcApp_KernelDevDebugContainer.php';
+require __DIR__.'/ContainerECtt93x/srcApp_KernelDevDebugContainer.php';
 
 $classes = [];
 $classes[] = 'Symfony\Bundle\FrameworkBundle\FrameworkBundle';
@@ -21,6 +21,7 @@ $classes[] = 'Symfony\Bundle\MonologBundle\MonologBundle';
 $classes[] = 'Symfony\Bundle\DebugBundle\DebugBundle';
 $classes[] = 'Symfony\Bundle\MakerBundle\MakerBundle';
 $classes[] = 'Symfony\Bundle\WebServerBundle\WebServerBundle';
+$classes[] = 'Kreait\Firebase\Symfony\Bundle\FirebaseBundle';
 $classes[] = 'Symfony\Component\HttpClient\TraceableHttpClient';
 $classes[] = 'Symfony\Contracts\HttpClient\HttpClientInterface';
 $classes[] = 'Symfony\Component\HttpClient\HttpClient';

@@ -8,6 +8,8 @@ use Symfony\Component\HttpFoundation\Response;
 use App\Entity\User;
 use App\Entity\Article;
 use App\Entity\Recette;
+use App\Entity\Message;
+use App\Entity\Besoins;
 
 class DefaultController extends AbstractController
 {
@@ -21,7 +23,9 @@ class DefaultController extends AbstractController
    * @Route("/CalculateMyNeeds/{id}", name="CalculateMyNeeds")
    */
   public function CalculateMyNeeds($id):Response{
+    $em=$this->getDoctrine()->getManager();
     $user=$this->getDoctrine()->getRepository(User::class)->find($id);
+    $besoins_test=$this->getDoctrine()->getRepository(Besoins::class)->find($id);
     $bmr;
     $bmrResult;
     $weight=$user->getWeight();
@@ -69,6 +73,23 @@ class DefaultController extends AbstractController
       default : $calories = $bmrResult; $fats= (0.3 * $calories)/9 ;$protein=($calories * 0.3)/4; $carbs = ($calories * 0.4)/4;
       break;
     }
+    
+    if($besoins_test == NULL)
+    {
+      $besoins = new Besoins();
+      $besoins->setUserId($user);
+    }
+    else
+    {
+      $besoins=$besoins_test;
+    }
+    $besoins->setProtein((int) $protein);
+    $besoins->setCalories((int) $calories);
+    $besoins->setFats((int) $fats);
+    $besoins->setCarbs((int) $carbs);
+
+    $em->persist($besoins);
+    $em->flush();
     return $this->render('/CalculateMyNeeds/CalculateMyNeeds.html.twig',[
       'controller_name' => 'DefaultController',
       'user'=>$user,
@@ -78,7 +99,8 @@ class DefaultController extends AbstractController
       'carbs'=>$carbs,
       'proteinPercentage'=>$proteinPercentage,
       'fatsPercentage'=>$fatsPercentage,
-      'carbsPercentage'=>$carbsPercentage
+      'carbsPercentage'=>$carbsPercentage,
+      'besoins'=>$besoins
     ]);
   }
   /**
@@ -116,6 +138,12 @@ class DefaultController extends AbstractController
    */
   public function Profile():Response{
     return $this->render('/profile/profile.html.twig');
+  }
+  /**
+   * @Route("/Commandes", name="Commandes")
+   */
+  public function Commandes():Response{
+    return $this->render('/commandes/commandes.html.twig');
   }
   /**
    * @Route("/Contact", name="Contact")

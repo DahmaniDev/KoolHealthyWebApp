@@ -21,6 +21,7 @@
       <parameter key="DebugBundle">Symfony\Bundle\DebugBundle\DebugBundle</parameter>
       <parameter key="MakerBundle">Symfony\Bundle\MakerBundle\MakerBundle</parameter>
       <parameter key="WebServerBundle">Symfony\Bundle\WebServerBundle\WebServerBundle</parameter>
+      <parameter key="FirebaseBundle">Kreait\Firebase\Symfony\Bundle\FirebaseBundle</parameter>
     </parameter>
     <parameter key="kernel.bundles_metadata" type="collection">
       <parameter key="FrameworkBundle" type="collection">
@@ -70,6 +71,10 @@
       <parameter key="WebServerBundle" type="collection">
         <parameter key="path">C:\Users\tarza\SymfonyProjects\ProjetSymfony\vendor\symfony\web-server-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\WebServerBundle</parameter>
+      </parameter>
+      <parameter key="FirebaseBundle" type="collection">
+        <parameter key="path">C:\Users\tarza\SymfonyProjects\ProjetSymfony\vendor\kreait\firebase-bundle\src</parameter>
+        <parameter key="namespace">Kreait\Firebase\Symfony\Bundle</parameter>
       </parameter>
     </parameter>
     <parameter key="kernel.charset">UTF-8</parameter>
@@ -258,6 +263,8 @@
       </parameter>
     </parameter>
     <parameter key="env(VAR_DUMPER_SERVER)">127.0.0.1:9912</parameter>
+    <parameter key="kreait.firebase.factory">Kreait\Firebase\Factory</parameter>
+    <parameter key="kreait.firebase.bundle.project_factory">Kreait\Firebase\Symfony\Bundle\DependencyInjection\Factory\ProjectFactory</parameter>
     <parameter key="data_collector.templates" type="collection">
       <parameter key="data_collector.request" type="collection">
         <parameter>request</parameter>
@@ -1729,6 +1736,8 @@
           <argument>C:\Users\tarza\SymfonyProjects\ProjetSymfony\src/Resources/MakerBundle/translations</argument>
           <argument>C:\Users\tarza\SymfonyProjects\ProjetSymfony\vendor\symfony\web-server-bundle/translations</argument>
           <argument>C:\Users\tarza\SymfonyProjects\ProjetSymfony\src/Resources/WebServerBundle/translations</argument>
+          <argument>C:\Users\tarza\SymfonyProjects\ProjetSymfony\vendor\kreait\firebase-bundle\src/translations</argument>
+          <argument>C:\Users\tarza\SymfonyProjects\ProjetSymfony\src/Resources/FirebaseBundle/translations</argument>
           <argument>C:\Users\tarza\SymfonyProjects\ProjetSymfony\src/Resources/translations</argument>
         </argument>
         <argument key="cache_vary" type="collection">
@@ -1761,6 +1770,8 @@
             <argument>C:\Users\tarza\SymfonyProjects\ProjetSymfony\src/Resources/MakerBundle/translations</argument>
             <argument>C:\Users\tarza\SymfonyProjects\ProjetSymfony\vendor\symfony\web-server-bundle/translations</argument>
             <argument>C:\Users\tarza\SymfonyProjects\ProjetSymfony\src/Resources/WebServerBundle/translations</argument>
+            <argument>C:\Users\tarza\SymfonyProjects\ProjetSymfony\vendor\kreait\firebase-bundle\src/translations</argument>
+            <argument>C:\Users\tarza\SymfonyProjects\ProjetSymfony\src/Resources/FirebaseBundle/translations</argument>
             <argument>C:\Users\tarza\SymfonyProjects\ProjetSymfony\src/Resources/translations</argument>
           </argument>
         </argument>
@@ -4811,6 +4822,10 @@
       <call method="setName">
         <argument>server:status</argument>
       </call>
+    </service>
+    <service id="Kreait\Firebase\Factory" class="Kreait\Firebase\Factory"/>
+    <service id="Kreait\Firebase\Symfony\Bundle\DependencyInjection\Factory\ProjectFactory" class="Kreait\Firebase\Symfony\Bundle\DependencyInjection\Factory\ProjectFactory">
+      <argument type="service" id="Kreait\Firebase\Factory"/>
     </service>
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\DefaultController" class="App\Controller\DefaultController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\DefaultController" class="App\Controller\DefaultController" autowire="true" abstract="true"/>

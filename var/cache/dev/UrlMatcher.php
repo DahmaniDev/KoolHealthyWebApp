@@ -17,6 +17,7 @@ return [
         '/Articles' => [[['_route' => 'Articles', '_controller' => 'App\\Controller\\DefaultController::Articles'], null, null, null, false, false, null]],
         '/PreparedMeals' => [[['_route' => 'PreparedMeals', '_controller' => 'App\\Controller\\DefaultController::PreparedMeals'], null, null, null, false, false, null]],
         '/Profile' => [[['_route' => 'Profile', '_controller' => 'App\\Controller\\DefaultController::Profile'], null, null, null, false, false, null]],
+        '/Commandes' => [[['_route' => 'Commandes', '_controller' => 'App\\Controller\\DefaultController::Commandes'], null, null, null, false, false, null]],
         '/Contact' => [[['_route' => 'Contact', '_controller' => 'App\\Controller\\DefaultController::contact'], null, null, null, false, false, null]],
         '/partenariat' => [[['_route' => 'partenariat', '_controller' => 'App\\Controller\\DefaultController::partenariat'], null, null, null, false, false, null]],
         '/repas' => [[['_route' => 'repas', '_controller' => 'App\\Controller\\DefaultController::repas'], null, null, null, false, false, null]],

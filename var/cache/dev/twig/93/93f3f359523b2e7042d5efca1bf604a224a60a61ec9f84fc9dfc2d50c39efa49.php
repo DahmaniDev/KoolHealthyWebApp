@@ -83,6 +83,6 @@ class __TwigTemplate_ec6ac88eae7eb704ec0977c2b2206377366a4f2f17819842158f2a0ca66
 {{ status_code }} {{ status_text }}
 
 */
-", "@Twig/Exception/error.js.twig", "C:\\Users\\Dahmani\\SymfonyProjects\\ProjetFE\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\error.js.twig");
+", "@Twig/Exception/error.js.twig", "C:\\Users\\tarza\\SymfonyProjects\\ProjetSymfony\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\error.js.twig");
     }
 }
