@@ -47,12 +47,12 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbars-rs-food">
 					<ul class="navbar-nav ml-auto">
-						<li class="nav-item"><a class="nav-link" href="home">Accueil</a></li>
-						{% if app.user %}<li class="nav-item"><a class="nav-link" href="CalculateMyNeeds/{{app.user.getId}}">Calculer Mes Besoins</a></li> {% endif %}
-						<li class="nav-item"><a class="nav-link" href="PreparedMeals">Repas Préparés</a></li>
-						<li class="nav-item active"><a class="nav-link" href="Articles">Articles</a></li>
-						{% if app.user %}<li class="nav-item"><a class="nav-link" href="Profile">Profil</a></li> {% endif %}
-						{% if app.user %}<li class="nav-item"><a class="nav-link" href="Contact">Contact</a></li> {% endif %}
+						<li class="nav-item"><a class="nav-link" href="/home">Accueil</a></li>
+						{% if app.user %}<li class="nav-item"><a class="nav-link" href="/CalculateMyNeeds/{{app.user.getId}}">Calculer Mes Besoins</a></li> {% endif %}
+						<li class="nav-item"><a class="nav-link" href="/PreparedMeals">Repas Préparés</a></li>
+						<li class="nav-item active"><a class="nav-link" href="/Articles">Articles</a></li>
+						{% if app.user %}<li class="nav-item"><a class="nav-link" href="/Profile/{{app.user.getId}}">Profil</a></li> {% endif %}
+						{% if app.user %}<li class="nav-item"><a class="nav-link" href="/Contact">Contact</a></li> {% endif %}
 						{% if not app.user %}<li class="nav-item"><a class="nav-link" href="/">Connecter</a></li> {% endif %}
 					</ul>
 				</div>

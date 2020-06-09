@@ -17,7 +17,7 @@
     <!-- Site Icons -->
     <link rel="shortcut icon" href={{asset("images/favicon.ico")}} type="image/x-icon">
     <link rel="apple-touch-icon" href={{asset("images/apple-touch-icon.png")}}>
-	<link rel="icon" href="images/logo.png">
+	<link rel="icon" href={{asset("images/logo.png")}}>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href={{asset("css/bootstrap.min.css")}}>    
@@ -58,7 +58,7 @@
 						<li class="nav-item"><a class="nav-link" href="/CalculateMyNeeds/{{app.user.getId}}">Calculer Mes besoins</a></li>
 						<li class="nav-item"><a class="nav-link" href="/PreparedMeals">Repas préparés</a></li>
 						<li class="nav-item"><a class="nav-link" href="/Articles">Articles</a></li>
-						<li class="nav-item active"><a class="nav-link" href="/Profile">Profil</a></li>
+						<li class="nav-item active"><a class="nav-link" href="/Profile/{{app.user.getId}}">Profil</a></li>
 						<li class="nav-item"><a class="nav-link" href="/Contact">Contact</a></li>
 					</ul>
 				</div>
@@ -81,53 +81,40 @@
 	
 	<div class="reservation-box">
 		<div class="container">
-			<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="/Commandes">Mes commandes</a></p>
+			<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="/Profile/{{user.getId}}/Commandes">Mes commandes</a></p>
+			<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="/Profile/{{user.getId}}/ModifierProfile"><i class="fa fa-edit"></i> Modifier Profil</a></p>
 			<div class="row">
 				<div class="col-lg-12 col-sm-12 col-xs-12">
 					<div class="contact-block">
-						<form id="contactForm">
 							<div class="heading-title text-center">
-								<img src={{asset("images/avatar.png")}} class="avatar">
+								<img src="data:article/png;base64, {{user.image}}" class="avatar">
 								<br>
+								
 							</div>
 							<div class="row">
 								<div class="col-md-6">
 									<h3>Nom</h3>
 									<div class="col-md-12">
 										<div class="form-group">
-											<input type="text" class="form-control" id="name" name="name" placeholder="Votre nom" required data-error="S'il vous plaît entrez votre nom">
-											<div class="help-block with-errors"></div>
+											<h4>{{user.nom}}</h4>
 										</div>                                
 									</div>
-									<h3>E-mail</h3>
+									<h3>Nom d'utilisateur</h3>
 									<div class="col-md-12">
 										<div class="form-group">
-											<input type="text" class="form-control" id="name" name="name" placeholder="Votre E-mail" required data-error="S'il vous plaît entrez votre E-mail">
-											<div class="help-block with-errors"></div>
+											<h4>{{user.username}}</h4>
 										</div>                                
 									</div>
 									<h3>Sexe</h3>
 									<div class="col-md-12">
 										<div class="form-group">
-											<select class="custom-select d-block form-control" id="person" required data-error="S'il vous plaît sélectionner votre sexe">
-											  <option disabled selected>Sélectionner votre sexe</option>
-											  <option value="1">Homme</option>
-											  <option value="2">Femme</option>
-											</select>
-											<div class="help-block with-errors"></div>
+											<h4>{{user.sexe}}</h4>
 										</div> 
 									</div>
 									<h3>À quel point êtes-vous physiquement actif</h3>
 									<div class="col-md-12">
 										<div class="form-group">
-											<select class="custom-select d-block form-control" id="person" required data-error="S'il vous plaît sélectionner votre niveau">
-											  <option disabled selected>Sélectionner votre niveau</option>
-											  <option value="1">Inactif</option>
-											  <option value="2">Peu Actif</option>
-											  <option value="3">Actif</option>
-											  <option value="4">Super Actif</option>
-											</select>
-											<div class="help-block with-errors"></div>
+											<h4>{{user.getActivityLevel()}}</h4>
 										</div> 
 									</div>
 									
@@ -136,46 +123,29 @@
 									<h3>Âge</h3>
 									<div class="col-md-12">
 										<div class="form-group">
-											<input type="text" class="form-control" id="name" name="name" placeholder="Votre âge" required data-error="S'il vous plaît entrer votre âge">
-											<div class="help-block with-errors"></div>
+											<h4>{{user.age}}</h4>
 										</div>                                 
 									</div>
 									<h3>Poids</h3>
 									<div class="col-md-12">
 										<div class="form-group">
-											<input type="text" placeholder="Votre poids" id="email" class="form-control" name="email" required data-error="S'il vous plaît entrer votre poids">
-											<div class="help-block with-errors"></div>
+											<h4>{{user.weight}}</h4>
 										</div> 
 									</div>
 									<h3>Taille</h3>
 									<div class="col-md-12">
 										<div class="form-group">
-											<input type="text" placeholder="Votre taille" id="phone" class="form-control" name="phone" required data-error="S'il vous plaît entrer votre taille">
-											<div class="help-block with-errors"></div>
+											<h4>{{user.height}}</h4>
 										</div> 
 									</div>
 									<h3>Objectif</h3>
 									<div class="col-md-12">
 										<div class="form-group">
-											<select class="custom-select d-block form-control" id="person" required data-error="S'il vous plaît sélectionner votre objectif">
-											  <option disabled selected>Sélectionner votre objectif</option>
-											  <option value="1">Perdre du poids</option>
-											  <option value="2">Maintenir le poids</option>
-											  <option value="3">Prendre du poids (Bulk)</option>
-											</select>
-											<div class="help-block with-errors"></div>
+											<h4>{{user.goal}}</h4>
 										</div> 
 									</div>
 								</div>
-								<div class="col-md-12">
-									<div class="submit-button text-center">
-										<button class="btn btn-common" id="submit" type="submit">Sauvegarder</button>
-										<div id="msgSubmit" class="h3 text-center hidden"></div> 
-										<div class="clearfix"></div> 
-									</div>
-								</div>
-							</div>            
-						</form>
+							</div>
 					</div>
 				</div>
 				<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="/logout">Déconnecter</a></p>
@@ -236,8 +206,8 @@
 				<div class="col-lg-3 col-md-6">
 					<h3>Contact</h3>
 					<p class="lead">Monastir</p>
-					<p class="lead"><a href="#">+216 52 680 290</a></p>
-					<p><a href="#"> kool.healthy.contact@gmail.com</a></p>
+					<p class="lead">+216 52 680 290</p>
+					<p class="lead">kool.healthy.contact@gmail.com</p>
 				</div>
 				<div class="col-lg-3 col-md-6">
 					<h3>Suivez-Nous</h3>

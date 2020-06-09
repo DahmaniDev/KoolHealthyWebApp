@@ -12,7 +12,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* contact/contact.html.twig */
+/* /contact/contact.html.twig */
 class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b36bec extends Template
 {
     private $source;
@@ -34,10 +34,10 @@ class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b
     {
         $macros = $this->macros;
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "contact/contact.html.twig"));
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "/contact/contact.html.twig"));
 
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "contact/contact.html.twig"));
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "/contact/contact.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -92,7 +92,10 @@ class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b
         echo "\">Calculer Mes Besoins</a></li>
 \t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"/PreparedMeals\">repas préparés</a></li>
 \t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"/Articles\">Articles</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"/Profile\">Profil</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"/Profile/";
+        // line 50
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 50, $this->source); })()), "user", [], "any", false, false, false, 50), "getId", [], "any", false, false, false, 50), "html", null, true);
+        echo "\">Profil</a></li>
 \t\t\t\t\t\t<li class=\"nav-item active\"><a class=\"nav-link\" href=\"/Contact\">Contact</a></li>
 \t\t\t\t\t</ul>
 \t\t\t\t</div>
@@ -119,7 +122,7 @@ class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b
 \t\t\t<div class=\"row\">
 \t\t\t\t<div class=\"col-lg-12\">
 \t\t\t\t\t<div class=\"heading-title text-center\">
-\t\t\t\t\t\t<p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+\t\t\t\t\t\t<p>Si vous avez des questions ou si vous voulez réclamer à une problème, n'hésitez pas à nous laisser un message.</p>
 \t\t\t\t\t</div>
 \t\t\t\t</div>
 \t\t\t</div>
@@ -261,7 +264,7 @@ class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b
 
     public function getTemplateName()
     {
-        return "contact/contact.html.twig";
+        return "/contact/contact.html.twig";
     }
 
     public function isTraitable()
@@ -271,7 +274,7 @@ class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b
 
     public function getDebugInfo()
     {
-        return array (  91 => 47,  43 => 1,);
+        return array (  97 => 50,  91 => 47,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -325,7 +328,7 @@ class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b
 \t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"/CalculateMyNeeds/{{app.user.getId}}\">Calculer Mes Besoins</a></li>
 \t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"/PreparedMeals\">repas préparés</a></li>
 \t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"/Articles\">Articles</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"/Profile\">Profil</a></li>
+\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"/Profile/{{app.user.getId}}\">Profil</a></li>
 \t\t\t\t\t\t<li class=\"nav-item active\"><a class=\"nav-link\" href=\"/Contact\">Contact</a></li>
 \t\t\t\t\t</ul>
 \t\t\t\t</div>
@@ -352,7 +355,7 @@ class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b
 \t\t\t<div class=\"row\">
 \t\t\t\t<div class=\"col-lg-12\">
 \t\t\t\t\t<div class=\"heading-title text-center\">
-\t\t\t\t\t\t<p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+\t\t\t\t\t\t<p>Si vous avez des questions ou si vous voulez réclamer à une problème, n'hésitez pas à nous laisser un message.</p>
 \t\t\t\t\t</div>
 \t\t\t\t</div>
 \t\t\t</div>
@@ -483,6 +486,6 @@ class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b
 \t\t}
 \t</script>
 </body>
-</html>", "contact/contact.html.twig", "C:\\Users\\tarza\\SymfonyProjects\\ProjetSymfony\\templates\\contact\\contact.html.twig");
+</html>", "/contact/contact.html.twig", "C:\\Users\\tarza\\SymfonyProjects\\ProjetSymfony\\templates\\contact\\contact.html.twig");
     }
 }

@@ -20,43 +20,48 @@ class Repas
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $type;
+    public $type;
 
     /**
      * @ORM\Column(type="integer")
      */
-    private $prot_val;
+    public $prot_val;
 
     /**
      * @ORM\Column(type="integer")
      */
-    private $cal_val;
+    public $cal_val;
 
     /**
      * @ORM\Column(type="integer")
      */
-    private $fat_val;
+    public $fat_val;
 
     /**
      * @ORM\Column(type="integer")
      */
-    private $carb_val;
+    public $carb_val;
 
     /**
      * @ORM\Column(type="float")
      */
-    private $prix;
+    public $prix;
 
     /**
      * @ORM\Column(type="blob")
      */
-    private $image;
+    public $image;
 
     /**
      * @ORM\OneToOne(targetEntity="Traiteur")
      * @ORM\Column(type="integer")
      */
-    private $id_traiteur;
+    public $id_traiteur;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    public $nom;
 
     public function getId(): ?int
     {
@@ -155,6 +160,18 @@ class Repas
     public function setIdTraiteur(int $id_traiteur): self
     {
         $this->id_traiteur = $id_traiteur;
+
+        return $this;
+    }
+
+    public function getNom(): ?string
+    {
+        return $this->nom;
+    }
+
+    public function setNom(string $Nom): self
+    {
+        $this->nom = $Nom;
 
         return $this;
     }

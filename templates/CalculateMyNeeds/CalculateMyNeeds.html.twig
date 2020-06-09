@@ -16,7 +16,7 @@
     <!-- Site Icons -->
     <link rel="shortcut icon" href={{asset("images/favicon.ico")}} type="image/x-icon">
     <link rel="apple-touch-icon" href={{asset("images/apple-touch-icon.png")}}>
-	<link rel="icon" href="images/logo.png">
+	<link rel="icon" href={{asset("images/logo.png")}}>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href={{asset("css/bootstrap.min.css")}}>    
@@ -71,7 +71,7 @@
 						<li class="nav-item active"><a class="nav-link" href="/CalculateMyNeeds/{{app.user.getId}}">Calculer Mes Besoins</a></li>
 						<li class="nav-item"><a class="nav-link" href="/PreparedMeals">Repas Préparés</a></li>
 						<li class="nav-item"><a class="nav-link" href="/Articles">Articles</a></li>
-						<li class="nav-item"><a class="nav-link" href="/Profile">Profil</a></li>
+						<li class="nav-item"><a class="nav-link" href="/Profile/{{app.user.getId}}">Profil</a></li>
 						<li class="nav-item"><a class="nav-link" href="/Contact">Contact</a></li>
 					</ul>
 				</div>

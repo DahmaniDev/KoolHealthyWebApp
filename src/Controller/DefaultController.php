@@ -10,6 +10,9 @@ use App\Entity\Article;
 use App\Entity\Recette;
 use App\Entity\Message;
 use App\Entity\Besoins;
+use App\Entity\Repas;
+use App\Entity\Traiteur;
+use App\Entity\Commande;
 
 class DefaultController extends AbstractController
 {
@@ -130,20 +133,47 @@ class DefaultController extends AbstractController
    * @Route("/PreparedMeals", name="PreparedMeals")
    */
   public function PreparedMeals():Response{
-    return $this->render('/preparedmeals/preparedmeals.html.twig');
+    $meals=$this->getDoctrine()->getRepository(Repas::class)->findAll();
+    $veg_count=0;
+    $chick_count=0;
+    $seaf_count=0;
+    foreach($meals as $key=>$value)
+    {
+      $value->setImage(base64_encode(stream_get_contents($value->getImage())));
+    }
+    $veg_meals=$this->getDoctrine()->getRepository(Repas::class)->findBy(array('type' => 'Végétarien'));
+    $chick_meals=$this->getDoctrine()->getRepository(Repas::class)->findBy(array('type' => 'Poulet'));
+    $seaf_meals=$this->getDoctrine()->getRepository(Repas::class)->findBy(array('type' => 'FruitsDeMer'));
+    return $this->render('/preparedmeals/preparedmeals.html.twig',[
+      'meals'=>$meals,
+      'repas_veg'=>$veg_meals,
+      'repas_pou'=>$chick_meals,
+      'repas_frmer'=>$seaf_meals
+    ]);
   }
   
   /**
-   * @Route("/Profile", name="Profile")
+   * @Route("/Profile/{id}", name="Profile")
    */
-  public function Profile():Response{
-    return $this->render('/profile/profile.html.twig');
+  public function Profile($id):Response{
+    $user=$this->getDoctrine()->getRepository(User::class)->find($id);
+    $user->setImage(base64_encode(stream_get_contents($user->getImage())));
+    return $this->render('/profile/profile.html.twig',[
+      'user'=>$user,
+    ]);
   }
   /**
-   * @Route("/Commandes", name="Commandes")
+   * @Route("/Profile/{id}/Commandes", name="Commandes")
    */
-  public function Commandes():Response{
-    return $this->render('/commandes/commandes.html.twig');
+  public function Commandes($id):Response{
+    $commandes=$this->getDoctrine()->getRepository(Commande::class)->findBy(array('id_user' => $id));
+    $meals=$this->getDoctrine()->getRepository(Repas::class)->findAll();
+    $traiteurs=$this->getDoctrine()->getRepository(Traiteur::class)->findAll();
+    return $this->render('/commandes/commandes.html.twig',[
+      'commandes'=>$commandes,
+      'repas'=>$meals,
+      'traiteurs'=>$traiteurs
+    ]);
   }
   /**
    * @Route("/Contact", name="Contact")
@@ -178,9 +208,60 @@ class DefaultController extends AbstractController
     return $this->render('/partenariat/partenariat.html.twig');
   }
   /**
-   * @Route("/repas", name="repas")
+   * @Route("/repas/{id}", name="repas")
    */
-  public function repas():Response{
-    return $this->render('/repas/repas.html.twig');
+  public function repas($id):Response{
+    $repas=$this->getDoctrine()->getRepository(Repas::class)->find($id);
+    $repas->setImage(base64_encode(stream_get_contents($repas->getImage())));
+    $traiteur=$this->getDoctrine()->getRepository(Traiteur::class)->find($repas->getIdTraiteur());
+    return $this->render('/repas/repas.html.twig',[
+      'repas'=>$repas,
+      'traiteur'=>$traiteur
+    ]);
+  }
+  /**
+   * @Route("/Profile/{id}/ModifierProfile", name="ModiferProfile")
+   */
+  public function ModifierProfile($id):Response{
+    $user=$this->getDoctrine()->getRepository(User::class)->find($id);
+    $user->setImage(base64_encode(stream_get_contents($user->getImage())));
+    return $this->render('/ModifierProfile/ModifierProfile.html.twig',[
+      'user'=>$user
+    ]);
+  }
+  /**
+   * @Route("/admin-kool-healthy-123456789", name="adminInterface")
+   */
+  public function adminInterface():Response{
+    return $this->render('/interfaceadmin/interfaceadmin.html.twig');
+  }
+  /**
+   * @Route("/admin-kool-healthy-123456789-historiques-commandes", name="adminHistoriqueCommandes")
+   */
+  public function adminHistoriqueCommandes():Response{
+    $commandes=$this->getDoctrine()->getRepository(Commande::class)->findAll();
+    return $this->render('/interfaceadmin/historiqueComm.html.twig',[
+      'commandes'=>$commandes
+    ]);
+  }
+  /**
+   * @Route("/admin-kool-healthy-123456789-liste-traiteur", name="adminListeTraiteur")
+   */
+  public function adminListeTraiteur():Response{
+    $traiteurs=$this->getDoctrine()->getRepository(Traiteur::class)->findAll();
+    return $this->render('/interfaceadmin/listeTraiteur.html.twig',[
+      'traiteurs'=>$traiteurs
+    ]);
+  }
+  /**
+   * @Route("/admin-kool-healthy-123456789-liste-membre", name="adminListeMembre")
+   */
+  public function adminListeMembre():Response{
+    $membres=$this->getDoctrine()->getRepository(User::class)->findAll();
+    return $this->render('/interfaceadmin/listeMembre.html.twig',[
+      'membres'=>$membres
+    ]);
   }
 }
+
+

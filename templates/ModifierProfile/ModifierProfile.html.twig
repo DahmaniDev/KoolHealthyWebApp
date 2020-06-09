@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en"><!-- Basic -->
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Site Metas -->
+    <title>Kool Healthy PFE</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href={{asset("images/favicon.ico")}} type="image/x-icon">
+    <link rel="apple-touch-icon" href={{asset("images/apple-touch-icon.png")}}>
+	<link rel="icon" href={{asset("images/logo.png")}}>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href={{asset("css/bootstrap.min.css")}}>    
+	<!-- Site CSS -->
+    <link rel="stylesheet" href={{asset("css/style.css")}}>    
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href={{asset("css/responsive.css")}}>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href={{asset("css/custom.css")}}>
+
+	<style>
+	.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+	}
+	</style>
+
+</head>
+
+<body>
+	<!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container">
+				<a class="navbar-brand" href="/home">
+					<img src={{asset("images/logo.png")}} alt="" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-rs-food" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-rs-food">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a class="nav-link" href="/home">Accueil</a></li>
+						<li class="nav-item"><a class="nav-link" href="/CalculateMyNeeds/{{app.user.getId}}">Calculer Mes besoins</a></li>
+						<li class="nav-item"><a class="nav-link" href="/PreparedMeals">Repas préparés</a></li>
+						<li class="nav-item"><a class="nav-link" href="/Articles">Articles</a></li>
+						<li class="nav-item active"><a class="nav-link" href="/Profile/{{app.user.getId}}">Profil</a></li>
+						<li class="nav-item"><a class="nav-link" href="/Contact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+	
+	<!-- Start All Pages -->
+	<div class="all-page-title page-breadcrumb">
+		<div class="container text-center">
+			<div class="row">
+				<div class="col-lg-12">
+					<h1>Profil</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End All Pages -->
+	
+	<div class="reservation-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-sm-12 col-xs-12">
+					<div class="contact-block">
+						<form id="contactForm">
+							<div class="heading-title text-center">
+								<img src="data:article/png;base64, {{user.image}}" class="avatar">
+                                <input type="file" style="position:relative; left: calc(25% - 50px);">
+								<br>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<h3>Nom</h3>
+									<div class="col-md-12">
+										<div class="form-group">
+											<input type="text" class="form-control" id="name" name="name" placeholder="{{app.user.getNom}}" required data-error="S'il vous plaît entrez votre nom">
+											<div class="help-block with-errors"></div>
+										</div>                                
+									</div>
+									<h3>Nom d'utilisateur</h3>
+									<div class="col-md-12">
+										<div class="form-group">
+											<input type="text" class="form-control" id="name" name="name" placeholder="{{app.user.username}}" required data-error="S'il vous plaît entrez votre nom d'utilisateur">
+											<div class="help-block with-errors"></div>
+										</div>                                
+									</div>
+									<h3>Sexe</h3>
+									<div class="col-md-12">
+										<div class="form-group">
+											<select class="custom-select d-block form-control" id="person" required data-error="S'il vous plaît sélectionner votre sexe">
+											  <option disabled selected>Sélectionner votre sexe</option>
+											  <option value="1">Homme</option>
+											  <option value="2">Femme</option>
+											</select>
+											<div class="help-block with-errors"></div>
+										</div> 
+									</div>
+									<h3>À quel point êtes-vous physiquement actif</h3>
+									<div class="col-md-12">
+										<div class="form-group">
+											<select class="custom-select d-block form-control" id="person" required data-error="S'il vous plaît sélectionner votre niveau">
+											  <option disabled selected>Sélectionner votre niveau</option>
+											  <option value="1">Pas Actif</option>
+											  <option value="2">Peu Actif</option>
+											  <option value="3">Actif</option>
+											  <option value="4">Super Actif</option>
+											</select>
+											<div class="help-block with-errors"></div>
+										</div> 
+									</div>
+									
+								</div>
+								<div class="col-md-6">
+									<h3>Âge</h3>
+									<div class="col-md-12">
+										<div class="form-group">
+											<input type="text" class="form-control" id="name" name="name" placeholder="{{app.user.getAge}}" required data-error="S'il vous plaît entrer votre âge">
+											<div class="help-block with-errors"></div>
+										</div>                                 
+									</div>
+									<h3>Poids</h3>
+									<div class="col-md-12">
+										<div class="form-group">
+											<input type="text" placeholder="{{app.user.weight}}" id="email" class="form-control" name="email" required data-error="S'il vous plaît entrer votre poids">
+											<div class="help-block with-errors"></div>
+										</div> 
+									</div>
+									<h3>Taille</h3>
+									<div class="col-md-12">
+										<div class="form-group">
+											<input type="text" placeholder="{{app.user.height}}" id="phone" class="form-control" name="phone" required data-error="S'il vous plaît entrer votre taille">
+											<div class="help-block with-errors"></div>
+										</div> 
+									</div>
+									<h3>Objectif</h3>
+									<div class="col-md-12">
+										<div class="form-group">
+											<select class="custom-select d-block form-control" id="person" required data-error="S'il vous plaît sélectionner votre objectif">
+											  <option disabled selected>Sélectionner votre objectif</option>
+											  <option value="1">Perdre du poids</option>
+											  <option value="2">Maintenir le poids</option>
+											  <option value="3">Prendre du poids (Bulk)</option>
+											</select>
+											<div class="help-block with-errors"></div>
+										</div> 
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="submit-button text-center">
+										<button class="btn btn-common" id="submit" type="submit">Sauvegarder</button>
+										<div id="msgSubmit" class="h3 text-center hidden"></div> 
+										<div class="clearfix"></div> 
+									</div>
+								</div>
+							</div>            
+						</form>
+					</div>
+				</div>
+				<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="/logout">Déconnecter</a></p>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	<!-- Start Contact info -->
+	<div class="contact-imfo-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 arrow-right">
+					<i class="fa fa-volume-control-phone"></i>
+					<div class="overflow-hidden">
+						<h4>Téléphone</h4>
+						<p class="lead">
+							+216 52-680-290
+						</p>
+					</div>
+				</div>
+				<i class="fa fa-envelope"></i>
+					<div class="overflow-hidden">
+						<h4>Email</h4>
+						<p class="lead">
+							kool.healthy.contact@gmail.com
+						</p>
+					</div>
+				<div class="col-md-4">
+					<i class="fa fa-map-marker"></i>
+					<div class="overflow-hidden">
+						<h4>Localisation</h4>
+						<p class="lead">
+							5000, Monastir, Tunisia
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Contact info -->
+	
+	<!-- Start Footer -->
+	<footer class="footer-area bg-f">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+					<h3>à propos</h3>
+					<p>Kool Healthy est un service de préparation de repas basé en Tunisie. Fondé en 2020 avec l'aide de: M. Sami Bhiri et OneDev</p>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<h3>Courriel</h3>
+					<div class="subscribe_form">
+						<button type="submit" class="submit" onclick="showDialogAbonnez()">Abonnez-Vous</button>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<h3>Contact</h3>
+					<p class="lead">Monastir</p>
+					<p class="lead"><a href="#">+216 52 680 290</a></p>
+					<p><a href="#"> kool.healthy.contact@gmail.com</a></p>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<h3>Suivez-Nous</h3>
+					<ul class="list-inline f-social">
+						<li class="list-inline-item"><a href="https://facebook.com/DahmaniMhd/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="https://linkedin.com/in/mohamed-hedi-dahmani/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="https://github.com/DahmaniDev"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="https://instagram.com/mohamedhedi.dahmani"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<p class="company-name">Tous Droits Réservés &copy; 2020 <a href="#">Kool Healthy</a> Développé par : 
+					<a href="https://github.com/DahmaniDev">DahmaniDev<i class="fa fa-github"></i></a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</footer>
+	<!-- End Footer -->
+	
+	<a href="#" id="back-to-top" title="Back to top" style="display: none;"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></a>
+
+	
+	<script>
+		function showDialogAbonnez() {
+  			alert("Vous êtes abonné à notre courriel éléctronique ! Vous serez informés par chaque mise à jour");
+		}
+	</script>
+</body>
+</html>
