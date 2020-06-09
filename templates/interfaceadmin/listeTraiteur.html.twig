@@ -101,7 +101,7 @@
         #navcontainer a {
             display : block;
             padding : 3px;
-            width : 160px;
+            width : 90%;
             background-color : #333;
             color : #adae75;
             border-bottom : 1px solid #adae75;
@@ -170,13 +170,13 @@
                         <td>{{traiteur.telephone}}</td>
                         <td>{{traiteur.login}}</td>
                         <td>{{traiteur.password}}</td>
-                        <td style="border: 0px"><button class="btnModify" href="#">Modifier</butoon></td>
-                        <td style="border: 0px"><button class="btnModify" href="#">Supprimer</butoon></td>
+                        <td style="border: 0px"><a href="/admin-kool-healthy-123456789-modifier-traiteur/{{traiteur.id}}"><button class="btnModify" >Modifier</button></a></td>
+                        <td style="border: 0px"><a href="#"><button class="btnModify">Supprimer</button></a></td>
                     </tr>
                     {% endfor %}
                 </table>
             </div>
-            <p><a href="#">Ajouter Traiteur</a></p>
+            <p><a href="/admin-kool-healthy-123456789-ajout-traiteur">Ajouter Traiteur</a></p>
             <br>
         </div>
         <div id="footer">

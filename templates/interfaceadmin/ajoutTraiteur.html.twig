@@ -90,7 +90,7 @@
         }
         #navcontainer {
             width : 200px;
-            margin-left : 20px;
+            margin-left : 200px;
             padding-bottom : 20px;
         }
         #navcontainer ul {
@@ -115,6 +115,55 @@
             background-color : #424a33;
             color : #d6ddbc;
         }
+        #navcontainer input[type="text"]{
+            width: 150%;
+            margin-bottom: 20px;
+            border: none;
+            border-bottom: 1px solid #fff;
+            background: transparent;
+            outline: none;
+            height: 30px;
+            color: #fff;
+        }
+        #navcontainer textarea{
+            width: 150%;
+            margin-bottom: 20px;
+            border: none;
+            border-bottom: 1px solid #fff;
+            background: transparent;
+            outline: none;
+            height: 80px;
+            color: #fff;
+        }
+        #navcontainer input[type="file"]{
+            width: 100%;
+            margin-bottom: 20px;
+            border: none;
+            border-bottom: 1px solid #fff;
+            background: transparent;
+            outline: none;
+            height: 20px;
+            color: #fff;
+            opacity: 1;
+            color: #adae75;
+            border: 1px solid currentColor;
+            font-weight: 700;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            cursor: pointer;
+            display: inline-block;
+            overflow: hidden;
+        }
+        #navcontainer input[type="submit"]
+        {
+            border: none;
+            outline: none;
+            height: 30px;
+            background: #adae75;
+            color: #000;
+            font-size: 14px;
+            cursor: pointer;
+        }
 
     </style>
 </head>
@@ -128,16 +177,29 @@
             <h2>Administrer</h2>
             <p>Vous ne pouvez pas annuler vos modifications!</p>
             <div id="navcontainer">
-                <ul id="navlist">
-                    <li id="active"><a href="/admin-kool-healthy-123456789-historiques-commandes" id="current">Historique Commandes</a></li>
-                    <li><a href="/admin-kool-healthy-123456789-liste-traiteur">Listes des comptes traiteurs</a></li>
-                    <li><a href="/admin-kool-healthy-123456789-liste-membre">Listes des comptes membres</a></li>
-                    <li><a href="/admin-kool-healthy-123456789-upload-article">Télécharger un article</a></li>
-                </ul>
+                <form>
+                    <label for="nom">Nom : </label>
+                    <input type="text" id="nom" placeholder="Nom Traiteur" required data-error="Entrez le nom du traiteur">
+                    <div class="help-block with-errors"></div>
+                    <label for="email">E-mail : </label>
+                    <input type="text" id="email" placeholder="E-mail Traiteur" required data-error="Entrez l'E-mail du traiteur">
+                    <div class="help-block with-errors"></div>
+                    <label for="telephone">Téléphone : </label>
+                    <input type="text" id="telephone" placeholder="Téléphone Traiteur" required data-error="Entrez le téléphone du traiteur">
+                    <div class="help-block with-errors"></div>
+                    <label for="login">Login : </label>
+                    <input type="text" id="login" placeholder="Login Traiteur" required data-error="Entrez le login du traiteur">
+                    <div class="help-block with-errors"></div>
+                    <label for="password">Mot De Passe : </label>
+                    <input type="text" id="password" placeholder="Password Traiteur" required data-error="Entrez le password du traiteur">
+                    <div class="help-block with-errors"></div>
+                    <input type="submit" value="Ajouter">
+                </form>
             </div>
         </div>
         <div id="footer">
-            <p><a href="/admin-kool-healthy-123456789">Accueil</a></p>
+            <p><a href="/admin-kool-healthy-123456789">Accueil</a>
+            <a href="/admin-kool-healthy-123456789-liste-traiteur">Liste Traiteur</a></p>
         </div>
     </div>
 </body>

@@ -262,6 +262,27 @@ class DefaultController extends AbstractController
       'membres'=>$membres
     ]);
   }
+  /**
+   * @Route("/admin-kool-healthy-123456789-upload-article", name="adminUploadArticle")
+   */
+  public function adminUploadArticle():Response{
+    return $this->render('/interfaceadmin/uploadarticle.html.twig');
+  }
+  /**
+   * @Route("/admin-kool-healthy-123456789-ajout-traiteur", name="adminAjoutTraiteur")
+   */
+  public function adminAjoutTraiteur():Response{
+    return $this->render('/interfaceadmin/ajoutTraiteur.html.twig');
+  }
+  /**
+   * @Route("/admin-kool-healthy-123456789-modifier-traiteur/{id}", name="adminModifierTraiteur")
+   */
+  public function adminModifierTraiteur($id):Response{
+    $traiteur=$this->getDoctrine()->getRepository(Traiteur::class)->find($id);
+    return $this->render('/interfaceadmin/modifierTraiteur.html.twig',[
+      'traiteur'=>$traiteur
+    ]);
+  }
 }
 
 
