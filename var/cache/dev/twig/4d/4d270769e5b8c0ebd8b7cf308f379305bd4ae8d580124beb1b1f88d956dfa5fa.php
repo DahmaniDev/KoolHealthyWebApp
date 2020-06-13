@@ -123,7 +123,9 @@ class __TwigTemplate_5552c4b3b699db7bd9a2a589ba5c0059ecc7a426f20b501d4791828c010
 \t\t\t\t\t\t";
         // line 50
         if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 50, $this->source); })()), "user", [], "any", false, false, false, 50)) {
-            echo "<li class=\"nav-item\"><a class=\"nav-link\" href=\"/Profile\">Profil</a></li> ";
+            echo "<li class=\"nav-item\"><a class=\"nav-link\" href=\"/Profile/";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 50, $this->source); })()), "user", [], "any", false, false, false, 50), "getId", [], "any", false, false, false, 50), "html", null, true);
+            echo "\">Profil</a></li> ";
         }
         // line 51
         echo "\t\t\t\t\t\t";
@@ -319,7 +321,7 @@ class __TwigTemplate_5552c4b3b699db7bd9a2a589ba5c0059ecc7a426f20b501d4791828c010
 
     public function getDebugInfo()
     {
-        return array (  253 => 150,  244 => 143,  242 => 142,  187 => 90,  180 => 86,  174 => 83,  161 => 73,  139 => 53,  134 => 52,  129 => 51,  125 => 50,  121 => 48,  115 => 47,  104 => 39,  90 => 28,  85 => 26,  80 => 24,  75 => 22,  69 => 19,  65 => 18,  61 => 17,  43 => 1,);
+        return array (  255 => 150,  246 => 143,  244 => 142,  189 => 90,  182 => 86,  176 => 83,  163 => 73,  141 => 53,  136 => 52,  131 => 51,  125 => 50,  121 => 48,  115 => 47,  104 => 39,  90 => 28,  85 => 26,  80 => 24,  75 => 22,  69 => 19,  65 => 18,  61 => 17,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -373,7 +375,7 @@ class __TwigTemplate_5552c4b3b699db7bd9a2a589ba5c0059ecc7a426f20b501d4791828c010
 \t\t\t\t\t\t{% if app.user %}<li class=\"nav-item\"><a class=\"nav-link\" href=\"/CalculateMyNeeds/{{app.user.getId}}\">Calculer Mes Besoins</a></li> {% endif %}
 \t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"/PreparedMeals\">Repas Préparés</a></li>
 \t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" href=\"/Articles\">Articles</a></li>
-\t\t\t\t\t\t{% if app.user %}<li class=\"nav-item\"><a class=\"nav-link\" href=\"/Profile\">Profil</a></li> {% endif %}
+\t\t\t\t\t\t{% if app.user %}<li class=\"nav-item\"><a class=\"nav-link\" href=\"/Profile/{{app.user.getId}}\">Profil</a></li> {% endif %}
 \t\t\t\t\t\t{% if app.user %}<li class=\"nav-item\"><a class=\"nav-link\" href=\"/Contact\">Contact</a></li> {% endif %}
 \t\t\t\t\t\t{% if not app.user %}<li class=\"nav-item\"><a class=\"nav-link\" href=\"/\">Connecter</a></li> {% endif %}
 \t\t\t\t\t</ul>

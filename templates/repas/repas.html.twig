@@ -35,7 +35,7 @@
 	<header class="top-navbar">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<div class="container">
-				<a class="navbar-brand" href="home">
+				<a class="navbar-brand" href="/home">
 					<img src={{asset("images/logo.png")}} alt="" />
 				</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-rs-food" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,7 +44,7 @@
 				<div class="collapse navbar-collapse" id="navbars-rs-food">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item"><a class="nav-link" href="/home">Accueil</a></li>
-						{% if app.user %}<li class="nav-item"><a class="nav-link" href="CalculateMyNeeds/{{app.user.getId}}">Calculer Mes Besoins</a></li> {% endif %}
+						{% if app.user %}<li class="nav-item"><a class="nav-link" href="/CalculateMyNeeds/{{app.user.getId}}">Calculer Mes Besoins</a></li> {% endif %}
 						<li class="nav-item"><a class="nav-link" href="/PreparedMeals">Repas Préparés</a></li>
 						<li class="nav-item"><a class="nav-link" href="/Articles">Articles</a></li>
 						{% if app.user %}<li class="nav-item"><a class="nav-link" href="/Profile/{{app.user.getId}}">Profil</a></li> {% endif %}
@@ -95,7 +95,7 @@
 								<p>Calories : {{repas.cal_val}} Kcal<br>Protéine : {{repas.prot_val}} g<br>Graisses : {{repas.fat_val}} g<br>Glucides : {{repas.carb_val}} g<br></p>
 							</div>
 						</div>
-						{% if app.user %}<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Commander Repas</a></p>{% endif %}
+						{% if app.user %}<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="/commander-repas/{{repas.id}}">Commander Repas</a></p>{% endif %}
 						{% if not app.user %}
 						<h3>Vous devez connecter afin de faire une commande !</h3>
 						<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="/">Connecter</a></p>

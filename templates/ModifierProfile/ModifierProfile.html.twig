@@ -86,9 +86,13 @@
 					<div class="contact-block">
 						<form id="contactForm">
 							<div class="heading-title text-center">
-								<img src="data:article/png;base64, {{user.image}}" class="avatar">
-                                <input type="file" style="position:relative; left: calc(25% - 50px);">
+								{% if user.image == NULL %}
+								<img src="/images/avatar.png" class="avatar">
 								<br>
+							{% else %}
+								<img src="data:article/png;base64, {{user.image}}" class="avatar">
+								<br>
+							{% endif %}
 							</div>
 							<div class="row">
 								<div class="col-md-6">

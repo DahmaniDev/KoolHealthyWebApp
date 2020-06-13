@@ -103,7 +103,6 @@ class DefaultController extends AbstractController
       'proteinPercentage'=>$proteinPercentage,
       'fatsPercentage'=>$fatsPercentage,
       'carbsPercentage'=>$carbsPercentage,
-      'besoins'=>$besoins
     ]);
   }
   /**
@@ -134,9 +133,6 @@ class DefaultController extends AbstractController
    */
   public function PreparedMeals():Response{
     $meals=$this->getDoctrine()->getRepository(Repas::class)->findAll();
-    $veg_count=0;
-    $chick_count=0;
-    $seaf_count=0;
     foreach($meals as $key=>$value)
     {
       $value->setImage(base64_encode(stream_get_contents($value->getImage())));
@@ -146,9 +142,20 @@ class DefaultController extends AbstractController
     $seaf_meals=$this->getDoctrine()->getRepository(Repas::class)->findBy(array('type' => 'FruitsDeMer'));
     return $this->render('/preparedmeals/preparedmeals.html.twig',[
       'meals'=>$meals,
-      'repas_veg'=>$veg_meals,
-      'repas_pou'=>$chick_meals,
-      'repas_frmer'=>$seaf_meals
+    ]);
+  }
+  /**
+   * @Route("/PreparemyMeal/{calories}", name="PreparemyMeal")
+   */
+  public function PreparemyMeal($calories):Response{
+    $marge=range(($calories/3)-100,($calories/3)+100);
+    $meals=$this->getDoctrine()->getRepository(Repas::class)->findBy(array('cal_val' => $marge));
+    foreach($meals as $key=>$value)
+    {
+      $value->setImage(base64_encode(stream_get_contents($value->getImage())));
+    }
+    return $this->render('/preparemymeal/preparemymeal.html.twig',[
+      'meals'=>$meals,
     ]);
   }
   
@@ -157,7 +164,10 @@ class DefaultController extends AbstractController
    */
   public function Profile($id):Response{
     $user=$this->getDoctrine()->getRepository(User::class)->find($id);
-    $user->setImage(base64_encode(stream_get_contents($user->getImage())));
+    if($user->getImage() != NULL){
+      $user->setImage(base64_encode(stream_get_contents($user->getImage())));
+    }
+    
     return $this->render('/profile/profile.html.twig',[
       'user'=>$user,
     ]);
@@ -220,11 +230,25 @@ class DefaultController extends AbstractController
     ]);
   }
   /**
+   * @Route("/commander-repas/{id}", name="commanderrepas")
+   */
+  public function commanderrepas($id):Response{
+    $repas=$this->getDoctrine()->getRepository(Repas::class)->find($id);
+    $repas->setImage(base64_encode(stream_get_contents($repas->getImage())));
+    $traiteur=$this->getDoctrine()->getRepository(Traiteur::class)->find($repas->getIdTraiteur());
+    return $this->render('/commanderRepas/commanderRepas.html.twig',[
+      'repas'=>$repas,
+      'traiteur'=>$traiteur
+    ]);
+  }
+  /**
    * @Route("/Profile/{id}/ModifierProfile", name="ModiferProfile")
    */
   public function ModifierProfile($id):Response{
     $user=$this->getDoctrine()->getRepository(User::class)->find($id);
-    $user->setImage(base64_encode(stream_get_contents($user->getImage())));
+    if($user->getImage() != NULL){
+      $user->setImage(base64_encode(stream_get_contents($user->getImage())));
+    }
     return $this->render('/ModifierProfile/ModifierProfile.html.twig',[
       'user'=>$user
     ]);

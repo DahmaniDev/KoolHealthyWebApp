@@ -55,6 +55,11 @@ class Commande
      */
     private $id_traiteur;
 
+    /**
+     * @ORM\Column(type="date")
+     */
+    private $date_livraison;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -140,6 +145,18 @@ class Commande
     public function setIdTraiteur(int $id_traiteur): self
     {
         $this->id_traiteur = $id_traiteur;
+
+        return $this;
+    }
+
+    public function getDateLivraison(): ?\DateTimeInterface
+    {
+        return $this->date_livraison;
+    }
+
+    public function setDateLivraison(\DateTimeInterface $date_livraison): self
+    {
+        $this->date_livraison = $date_livraison;
 
         return $this;
     }

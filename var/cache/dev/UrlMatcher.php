@@ -46,19 +46,23 @@ return [
                     .')'
                 .')'
                 .'|/CalculateMyNeeds/([^/]++)(*:195)'
-                .'|/Profile/([^/]++)(?'
-                    .'|(*:223)'
-                    .'|/(?'
-                        .'|Commandes(*:244)'
-                        .'|ModifierProfile(*:267)'
+                .'|/Pr(?'
+                    .'|eparemyMeal/([^/]++)(*:229)'
+                    .'|ofile/([^/]++)(?'
+                        .'|(*:254)'
+                        .'|/(?'
+                            .'|Commandes(*:275)'
+                            .'|ModifierProfile(*:298)'
+                        .')'
                     .')'
                 .')'
-                .'|/blog/([^/]++)(*:291)'
+                .'|/blog/([^/]++)(*:323)'
                 .'|/re(?'
-                    .'|cette/([^/]++)(*:319)'
-                    .'|pas/([^/]++)(*:339)'
+                    .'|cette/([^/]++)(*:351)'
+                    .'|pas/([^/]++)(*:371)'
                 .')'
-                .'|/admin\\-kool\\-healthy\\-123456789\\-modifier\\-traiteur/([^/]++)(*:409)'
+                .'|/commander\\-repas/([^/]++)(*:406)'
+                .'|/admin\\-kool\\-healthy\\-123456789\\-modifier\\-traiteur/([^/]++)(*:475)'
             .')/?$}sD',
     ],
     [ // $dynamicRoutes
@@ -70,13 +74,15 @@ return [
         149 => [[['_route' => '_profiler_exception_css', '_controller' => 'web_profiler.controller.exception_panel::stylesheet'], ['token'], null, null, false, false, null]],
         159 => [[['_route' => '_profiler', '_controller' => 'web_profiler.controller.profiler::panelAction'], ['token'], null, null, false, true, null]],
         195 => [[['_route' => 'CalculateMyNeeds', '_controller' => 'App\\Controller\\DefaultController::CalculateMyNeeds'], ['id'], null, null, false, true, null]],
-        223 => [[['_route' => 'Profile', '_controller' => 'App\\Controller\\DefaultController::Profile'], ['id'], null, null, false, true, null]],
-        244 => [[['_route' => 'Commandes', '_controller' => 'App\\Controller\\DefaultController::Commandes'], ['id'], null, null, false, false, null]],
-        267 => [[['_route' => 'ModiferProfile', '_controller' => 'App\\Controller\\DefaultController::ModifierProfile'], ['id'], null, null, false, false, null]],
-        291 => [[['_route' => 'blog', '_controller' => 'App\\Controller\\DefaultController::blog'], ['id'], null, null, false, true, null]],
-        319 => [[['_route' => 'recette', '_controller' => 'App\\Controller\\DefaultController::recette'], ['id'], null, null, false, true, null]],
-        339 => [[['_route' => 'repas', '_controller' => 'App\\Controller\\DefaultController::repas'], ['id'], null, null, false, true, null]],
-        409 => [
+        229 => [[['_route' => 'PreparemyMeal', '_controller' => 'App\\Controller\\DefaultController::PreparemyMeal'], ['calories'], null, null, false, true, null]],
+        254 => [[['_route' => 'Profile', '_controller' => 'App\\Controller\\DefaultController::Profile'], ['id'], null, null, false, true, null]],
+        275 => [[['_route' => 'Commandes', '_controller' => 'App\\Controller\\DefaultController::Commandes'], ['id'], null, null, false, false, null]],
+        298 => [[['_route' => 'ModiferProfile', '_controller' => 'App\\Controller\\DefaultController::ModifierProfile'], ['id'], null, null, false, false, null]],
+        323 => [[['_route' => 'blog', '_controller' => 'App\\Controller\\DefaultController::blog'], ['id'], null, null, false, true, null]],
+        351 => [[['_route' => 'recette', '_controller' => 'App\\Controller\\DefaultController::recette'], ['id'], null, null, false, true, null]],
+        371 => [[['_route' => 'repas', '_controller' => 'App\\Controller\\DefaultController::repas'], ['id'], null, null, false, true, null]],
+        406 => [[['_route' => 'commanderrepas', '_controller' => 'App\\Controller\\DefaultController::commanderrepas'], ['id'], null, null, false, true, null]],
+        475 => [
             [['_route' => 'adminModifierTraiteur', '_controller' => 'App\\Controller\\DefaultController::adminModifierTraiteur'], ['id'], null, null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],
