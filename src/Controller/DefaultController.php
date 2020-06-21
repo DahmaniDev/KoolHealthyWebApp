@@ -5,6 +5,7 @@ namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\Request;
 use App\Entity\User;
 use App\Entity\Article;
 use App\Entity\Recette;
@@ -13,6 +14,9 @@ use App\Entity\Besoins;
 use App\Entity\Repas;
 use App\Entity\Traiteur;
 use App\Entity\Commande;
+use App\Form\PartenariatType;
+use App\Form\ContactType;
+use App\Form\ModifierProfilType;
 
 class DefaultController extends AbstractController
 {
@@ -120,12 +124,8 @@ class DefaultController extends AbstractController
       $value->setImage(base64_encode(stream_get_contents($value->getImage())));
     }
     return $this->render('/articles/articles.html.twig',[
-      'actualité1'=>$articles[0],
-      'actualité2'=>$articles[1],
-      'actualité3'=>$articles[2],
-      'recette1'=>$recettes[0],
-      'recette2'=>$recettes[1],
-      'recette3'=>$recettes[2]
+      'actualités'=>$articles,
+      'recettes'=>$recettes
     ]);
   }
   /**
@@ -188,8 +188,25 @@ class DefaultController extends AbstractController
   /**
    * @Route("/Contact", name="Contact")
    */
-  public function contact():Response{
-    return $this->render('/contact/contact.html.twig');
+  public function contact(Request $request):Response{
+    $user = $this->getUser();
+    $message = new Message();
+    $form = $this->createForm(ContactType::class,$message);
+
+    if($request->isMethod('POST') && $form->handleRequest($request)->isValid()){
+      $message->setDate(new \DateTime('now'));
+      $message->setType('Contact');
+      $message->setNom($user->getNom());
+      $message->setEmail($user->getUsername());
+      
+      $entityManager = $this->getDoctrine()->getManager();
+      $entityManager->persist($message);
+      $entityManager->flush();
+    }
+    
+    return $this->render('/contact/contact.html.twig',[
+      'form' => $form->createView()
+    ]);
   }
   /**
    * @Route("/blog/{id}", name="blog")
@@ -214,8 +231,22 @@ class DefaultController extends AbstractController
   /**
    * @Route("/partenariat", name="partenariat")
    */
-  public function partenariat():Response{
-    return $this->render('/partenariat/partenariat.html.twig');
+  public function partenariat(Request $request):Response{
+    $message = new Message();
+    $form = $this->createForm(PartenariatType::class,$message);
+    
+
+    if($request->isMethod('POST') && $form->handleRequest($request)->isValid()){
+      $message->setDate(new \DateTime('now'));
+      $message->setType('Partenariat');
+
+      $entityManager = $this->getDoctrine()->getManager();
+      $entityManager->persist($message);
+      $entityManager->flush();
+    }
+    return $this->render('/partenariat/partenariat.html.twig',[
+      'form' => $form->createView()
+    ]);
   }
   /**
    * @Route("/repas/{id}", name="repas")
@@ -244,13 +275,21 @@ class DefaultController extends AbstractController
   /**
    * @Route("/Profile/{id}/ModifierProfile", name="ModiferProfile")
    */
-  public function ModifierProfile($id):Response{
+  public function ModifierProfile($id, Request $request):Response{
     $user=$this->getDoctrine()->getRepository(User::class)->find($id);
+    $form = $this->createForm(ModifierProfilType::class,$user);
+
     if($user->getImage() != NULL){
       $user->setImage(base64_encode(stream_get_contents($user->getImage())));
     }
+    if($request->isMethod('POST') && $form->handleRequest($request)->isValid()){
+      $entityManager = $this->getDoctrine()->getManager();
+      $entityManager->persist($user);
+      $entityManager->flush();
+    }
     return $this->render('/ModifierProfile/ModifierProfile.html.twig',[
-      'user'=>$user
+      'user'=>$user,
+      'form' => $form->createView()
     ]);
   }
   /**
@@ -287,10 +326,54 @@ class DefaultController extends AbstractController
     ]);
   }
   /**
+   * @Route("/admin-kool-healthy-123456789-liste-messages", name="adminListeMessages")
+   */
+  public function adminListeMessages():Response{
+    $messages=$this->getDoctrine()->getRepository(Message::class)->findAll();
+    return $this->render('/interfaceadmin/listeMessage.html.twig',[
+      'messages'=>$messages
+    ]);
+  }
+  /**
    * @Route("/admin-kool-healthy-123456789-upload-article", name="adminUploadArticle")
    */
   public function adminUploadArticle():Response{
     return $this->render('/interfaceadmin/uploadarticle.html.twig');
+  }
+  /**
+   * @Route("/admin-kool-healthy-123456789-liste-article", name="adminListeArticle")
+   */
+  public function adminListeArticle():Response{
+    $actualités=$this->getDoctrine()->getRepository(Article::class)->findAll();
+    $recettes=$this->getDoctrine()->getRepository(Recette::class)->findAll();
+    return $this->render('/interfaceadmin/listeArticle.html.twig',[
+      'actualités'=>$actualités,
+      'recettes'=>$recettes
+    ]);
+  }
+  /**
+   * @Route("/admin-kool-healthy-123456789-supprimer-article/{id}", name="adminSupprimerArticle")
+   */
+  public function adminSupprimerArticle($id):Response{
+    $em=$this->getDoctrine()->getManager();
+    $actualité=$this->getDoctrine()->getRepository(Article::class)->find($id);
+    $em->remove($actualité);
+    $em->flush();
+    return $this->render('/interfaceadmin/suppressionArticle.html.twig',[
+      'actualité'=>$actualité
+    ]);
+  }
+  /**
+   * @Route("/admin-kool-healthy-123456789-supprimer-recette/{id}", name="adminSupprimerRecette")
+   */
+  public function adminSupprimerRecette($id):Response{
+    $em=$this->getDoctrine()->getManager();
+    $recette=$this->getDoctrine()->getRepository(Recette::class)->find($id);
+    $em->remove($recette);
+    $em->flush();
+    return $this->render('/interfaceadmin/suppressionRecette.html.twig',[
+      'recette'=>$recette
+    ]);
   }
   /**
    * @Route("/admin-kool-healthy-123456789-ajout-traiteur", name="adminAjoutTraiteur")
@@ -305,6 +388,38 @@ class DefaultController extends AbstractController
     $traiteur=$this->getDoctrine()->getRepository(Traiteur::class)->find($id);
     return $this->render('/interfaceadmin/modifierTraiteur.html.twig',[
       'traiteur'=>$traiteur
+    ]);
+  }
+  /**
+   * @Route("/admin-kool-healthy-123456789-supprimer-traiteur/{id}", name="adminSupprimerTraiteur")
+   */
+  public function adminSupprimerTraiteur($id):Response{
+    $em=$this->getDoctrine()->getManager();
+    $traiteur=$this->getDoctrine()->getRepository(Traiteur::class)->find($id);
+    $meals=$this->getDoctrine()->getRepository(Repas::class)->findBy(array('id_traiteur' => $id));
+    foreach($meals as $key=>$value)
+    {
+      $em->remove($value);
+    }
+    
+    $em->remove($traiteur);
+    $em->flush();
+
+    return $this->render('/interfaceadmin/suppressionTraiteur.html.twig',[
+      'traiteur'=>$traiteur
+    ]);
+  }
+  /**
+   * @Route("/admin-kool-healthy-123456789-supprimer-user/{id}", name="adminSupprimerUser")
+   */
+  public function adminSupprimerUser($id):Response{
+    $em=$this->getDoctrine()->getManager();
+    $user=$this->getDoctrine()->getRepository(User::class)->find($id);
+    $em->remove($user);
+    $em->flush();
+
+    return $this->render('/interfaceadmin/suppressionUser.html.twig',[
+      'user'=>$user
     ]);
   }
 }

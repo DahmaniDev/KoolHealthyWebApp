@@ -83,42 +83,20 @@
 				</div>
 			</div>
 			<div class="row">
+				{% for actualité in actualités %}
 				<div class="col-lg-4 col-md-6 col-12">
 					<div class="blog-box-inner">
 						<div class="blog-img-box">
-							<img class="img-fluid" src="data:actualité1/png;base64, {{actualité1.image}}">
+							<img class="img-fluid" src="data:actualité1/png;base64, {{actualité.image}}">
 						</div>
 						<div class="blog-detail">
-							<h4>{{actualité1.titre}}</h4>
-							<p>{{actualité1.heading}}</p>
-							<a class="btn btn-lg btn-circle btn-outline-new-white" style="position: absolute; bottom: 0; margin-bottom: 20px;" href="/blog/{{actualité1.getId}}">Voir plus</a>
+							<h4>{{actualité.titre}}</h4>
+							<p>{{actualité.heading}}</p>
+							<a class="btn btn-lg btn-circle btn-outline-new-white" style="position: absolute; bottom: 0; margin-bottom: 20px;" href="/blog/{{actualité.getId}}">Voir plus</a>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-6 col-12">
-					<div class="blog-box-inner">
-						<div class="blog-img-box">
-							<img class="img-fluid" src="data:actualité1/png;base64, {{actualité2.image}}">
-						</div>
-						<div class="blog-detail">
-							<h4>{{actualité2.titre}}</h4>
-							<p>{{actualité1.heading}}</p>
-							<a class="btn btn-lg btn-circle btn-outline-new-white" style="position: absolute; bottom: 0; margin-bottom: 20px;" href="/blog/{{actualité2.getId}}">Voir plus</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-12">
-					<div class="blog-box-inner">
-						<div class="blog-img-box">
-							<img class="img-fluid" src="data:actualité1/png;base64, {{actualité3.image}}">
-						</div>
-						<div class="blog-detail">
-							<h4>{{actualité3.titre}}</h4>
-							<p>{{actualité3.heading}}</p>
-							<a class="btn btn-lg btn-circle btn-outline-new-white" style="position: absolute; bottom: 0; margin-bottom: 20px;" href="/blog/{{actualité3.getId}}">Voir plus</a>
-						</div>
-					</div>
-				</div>
+				{% endfor %}
 			</div>
 			<div class="row">
 				<div class="col-lg-12">
@@ -128,42 +106,20 @@
 				</div>
 			</div>
 			<div class ="row">
+				{% for recette in recettes %}
 				<div class="col-lg-4 col-md-6 col-12">
 					<div class="blog-box-inner">
 						<div class="blog-img-box">
-							<img class="img-fluid" src="data:recette1/png;base64, {{recette1.image}}">
+							<img class="img-fluid" src="data:recette1/png;base64, {{recette.image}}">
 						</div>
 						<div class="blog-detail">
-							<h4>{{recette1.titre}}</h4>
-							<p>{{recette1.heading}}</p>
-							<a class="btn btn-lg btn-circle btn-outline-new-white" style="position: absolute; bottom: 0; margin-bottom: 20px;" href="/recette/{{recette1.getId}}">Voir plus</a>
+							<h4>{{recette.titre}}</h4>
+							<p>{{recette.heading}}</p>
+							<a class="btn btn-lg btn-circle btn-outline-new-white" style="position: absolute; bottom: 0; margin-bottom: 20px;" href="/recette/{{recette.getId}}">Voir plus</a>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-6 col-12">
-					<div class="blog-box-inner">
-						<div class="blog-img-box">
-							<img class="img-fluid" src="data:recette2/png;base64, {{recette2.image}}">
-						</div>
-						<div class="blog-detail">
-							<h4>{{recette2.titre}}</h4>
-							<p>{{recette2.heading}}</p>
-							<a class="btn btn-lg btn-circle btn-outline-new-white" style="position: absolute; bottom: 0; margin-bottom: 20px;" href="/recette/{{recette2.getId}}">Voir plus</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-12">
-					<div class="blog-box-inner">
-						<div class="blog-img-box">
-							<img class="img-fluid" src="data:recette3/png;base64, {{recette3.image}}">
-						</div>
-						<div class="blog-detail">
-							<h4>{{recette3.titre}}</h4>
-							<p>{{recette3.heading}}</p>
-							<a class="btn btn-lg btn-circle btn-outline-new-white" style="position: absolute; bottom: 0; margin-bottom: 20px;" href="/recette/{{recette3.getId}}">Voir plus</a>
-						</div>
-					</div>
-				</div>
+				{% endfor %}
 			</div>
 		</div>
 	</div>
@@ -251,24 +207,7 @@
 	</footer>
 	<!-- End Footer -->
 	
-	<a href="#" id="back-to-top" title="Back to top" style="display: none;"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></a>
-
-	<!-- ALL JS FILES -->
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-    <!-- ALL PLUGINS -->
-	<script src="js/jquery.superslides.min.js"></script>
-	<script src="js/images-loded.min.js"></script>
-	<script src="js/isotope.min.js"></script>
-	<script src="js/baguetteBox.min.js"></script>
-	<script src="js/picker.js"></script>
-	<script src="js/picker.date.js"></script>
-	<script src="js/picker.time.js"></script>
-	<script src="js/legacy.js"></script>
-	<script src="js/form-validator.min.js"></script>
-    <script src="js/contact-form-script.js"></script>
-    <script src="js/custom.js"></script>
+	
 	<script>
 		function showDialogAbonnez() {
   			alert("Vous êtes abonné à notre courriel éléctronique ! Vous serez informés par chaque mise à jour");

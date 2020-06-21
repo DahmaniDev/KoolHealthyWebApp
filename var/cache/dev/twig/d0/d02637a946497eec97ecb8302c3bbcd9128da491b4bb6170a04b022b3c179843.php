@@ -77,7 +77,7 @@ class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b
 \t<header class=\"top-navbar\">
 \t\t<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
 \t\t\t<div class=\"container\">
-\t\t\t\t<a class=\"navbar-brand\" href=\"home\">
+\t\t\t\t<a class=\"navbar-brand\" href=\"/home\">
 \t\t\t\t\t<img src=\"images/logo.png\" alt=\"\" />
 \t\t\t\t</a>
 \t\t\t\t<button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbars-rs-food\" aria-controls=\"navbars-rs-food\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
@@ -128,7 +128,7 @@ class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b
 \t\t\t</div>
 \t\t\t<div class=\"row\">
 \t\t\t\t<div class=\"col-lg-12\">
-\t\t\t\t\t<form id=\"contactForm\">
+\t\t\t\t\t<!--<form id=\"contactForm\">
 \t\t\t\t\t\t<div class=\"row\">
 \t\t\t\t\t\t\t<div class=\"col-md-12\">
 \t\t\t\t\t\t\t\t<div class=\"form-group\"> 
@@ -142,7 +142,20 @@ class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b
 \t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t</div>            
-\t\t\t\t\t</form>
+\t\t\t\t\t</form>-->
+\t\t\t\t\t";
+        // line 98
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 98, $this->source); })()), 'form_start');
+        echo "
+\t\t\t\t\t\t";
+        // line 99
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 99, $this->source); })()), "contenu", [], "any", false, false, false, 99), 'row');
+        echo "
+\t\t\t\t\t\t<button type=\"submit\">Valider</button>
+\t\t\t\t\t";
+        // line 101
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 101, $this->source); })()), 'form_end');
+        echo "
 \t\t\t\t</div>
 \t\t\t</div>
 \t\t</div>
@@ -274,7 +287,7 @@ class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b
 
     public function getDebugInfo()
     {
-        return array (  97 => 50,  91 => 47,  43 => 1,);
+        return array (  157 => 101,  152 => 99,  148 => 98,  97 => 50,  91 => 47,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -316,7 +329,7 @@ class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b
 \t<header class=\"top-navbar\">
 \t\t<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
 \t\t\t<div class=\"container\">
-\t\t\t\t<a class=\"navbar-brand\" href=\"home\">
+\t\t\t\t<a class=\"navbar-brand\" href=\"/home\">
 \t\t\t\t\t<img src=\"images/logo.png\" alt=\"\" />
 \t\t\t\t</a>
 \t\t\t\t<button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbars-rs-food\" aria-controls=\"navbars-rs-food\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
@@ -361,7 +374,7 @@ class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b
 \t\t\t</div>
 \t\t\t<div class=\"row\">
 \t\t\t\t<div class=\"col-lg-12\">
-\t\t\t\t\t<form id=\"contactForm\">
+\t\t\t\t\t<!--<form id=\"contactForm\">
 \t\t\t\t\t\t<div class=\"row\">
 \t\t\t\t\t\t\t<div class=\"col-md-12\">
 \t\t\t\t\t\t\t\t<div class=\"form-group\"> 
@@ -375,7 +388,11 @@ class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b
 \t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t</div>            
-\t\t\t\t\t</form>
+\t\t\t\t\t</form>-->
+\t\t\t\t\t{{ form_start(form) }}
+\t\t\t\t\t\t{{form_row(form.contenu)}}
+\t\t\t\t\t\t<button type=\"submit\">Valider</button>
+\t\t\t\t\t{{ form_end(form) }}
 \t\t\t\t</div>
 \t\t\t</div>
 \t\t</div>

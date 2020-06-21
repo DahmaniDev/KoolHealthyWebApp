@@ -149,7 +149,12 @@
         <div id="content">
             <p>Vous ne pouvez pas annuler vos modifications!</p>
             <br>
+            <div id="footer">
+                <p><a href="/admin-kool-healthy-123456789">Accueil</a></p>
+            </div>
             <div id="navcontainer">
+                <p><a href="/admin-kool-healthy-123456789-ajout-traiteur">Ajouter Traiteur</a></p>
+                <br>
                 <table>
                     <tr>
                         <th>ID-Traiteur</th>
@@ -170,17 +175,14 @@
                         <td>{{traiteur.login}}</td>
                         <td>{{traiteur.password}}</td>
                         <td style="border: 0px"><a href="/admin-kool-healthy-123456789-modifier-traiteur/{{traiteur.id}}"><button class="btnModify" >Modifier</button></a></td>
-                        <td style="border: 0px"><a href="#"><button class="btnModify">Supprimer</button></a></td>
+                        <td style="border: 0px"><a href="/admin-kool-healthy-123456789-supprimer-traiteur/{{traiteur.id}}"><button class="btnModify">Supprimer</button></a></td>
                     </tr>
                     {% endfor %}
                 </table>
             </div>
-            <p><a href="/admin-kool-healthy-123456789-ajout-traiteur">Ajouter Traiteur</a></p>
-            <br>
+            
         </div>
-        <div id="footer">
-            <p><a href="/admin-kool-healthy-123456789">Accueil</a></p>
-        </div>
+        
     </div>
 </body>
 </html>

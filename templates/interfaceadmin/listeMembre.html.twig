@@ -150,6 +150,9 @@
             
             <p>Vous ne pouvez pas annuler vos modifications!</p>
             <br>
+            <div id="footer">
+                <p><a href="/admin-kool-healthy-123456789">Accueil</a></p>
+            </div>
             <div id="navcontainer">
                 <table>
                     <tr>
@@ -175,15 +178,13 @@
                         <td>{{membre.weight}}</td>
                         <td>{{membre.goal}}</td>
                         <td>{{membre.getActivityLevel}}</td>
-                        <td style="border: 0px"><a href="#"><button class="btnModify">Supprimer</button></a></td>
+                        <td style="border: 0px"><a href="/admin-kool-healthy-123456789-supprimer-user/{{membre.id}}"><button class="btnModify">Supprimer</button></a></td>
                     </tr>
                     {% endfor %}
                 </table>
             </div>
         </div>
-        <div id="footer">
-            <p><a href="/admin-kool-healthy-123456789">Accueil</a></p>
-        </div>
+        
     </div>
 </body>
 </html>

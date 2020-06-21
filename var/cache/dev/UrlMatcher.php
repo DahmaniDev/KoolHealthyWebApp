@@ -22,7 +22,9 @@ return [
         '/admin-kool-healthy-123456789-historiques-commandes' => [[['_route' => 'adminHistoriqueCommandes', '_controller' => 'App\\Controller\\DefaultController::adminHistoriqueCommandes'], null, null, null, false, false, null]],
         '/admin-kool-healthy-123456789-liste-traiteur' => [[['_route' => 'adminListeTraiteur', '_controller' => 'App\\Controller\\DefaultController::adminListeTraiteur'], null, null, null, false, false, null]],
         '/admin-kool-healthy-123456789-liste-membre' => [[['_route' => 'adminListeMembre', '_controller' => 'App\\Controller\\DefaultController::adminListeMembre'], null, null, null, false, false, null]],
+        '/admin-kool-healthy-123456789-liste-messages' => [[['_route' => 'adminListeMessages', '_controller' => 'App\\Controller\\DefaultController::adminListeMessages'], null, null, null, false, false, null]],
         '/admin-kool-healthy-123456789-upload-article' => [[['_route' => 'adminUploadArticle', '_controller' => 'App\\Controller\\DefaultController::adminUploadArticle'], null, null, null, false, false, null]],
+        '/admin-kool-healthy-123456789-liste-article' => [[['_route' => 'adminListeArticle', '_controller' => 'App\\Controller\\DefaultController::adminListeArticle'], null, null, null, false, false, null]],
         '/admin-kool-healthy-123456789-ajout-traiteur' => [[['_route' => 'adminAjoutTraiteur', '_controller' => 'App\\Controller\\DefaultController::adminAjoutTraiteur'], null, null, null, false, false, null]],
         '/register' => [[['_route' => 'app_register', '_controller' => 'App\\Controller\\RegistrationController::register'], null, null, null, false, false, null]],
         '/' => [[['_route' => 'app_login', '_controller' => 'App\\Controller\\SecurityController::login'], null, null, null, false, false, null]],
@@ -62,7 +64,15 @@ return [
                     .'|pas/([^/]++)(*:371)'
                 .')'
                 .'|/commander\\-repas/([^/]++)(*:406)'
-                .'|/admin\\-kool\\-healthy\\-123456789\\-modifier\\-traiteur/([^/]++)(*:475)'
+                .'|/admin\\-kool\\-healthy\\-123456789\\-(?'
+                    .'|supprimer\\-(?'
+                        .'|article/([^/]++)(*:481)'
+                        .'|recette/([^/]++)(*:505)'
+                        .'|traiteur/([^/]++)(*:530)'
+                        .'|user/([^/]++)(*:551)'
+                    .')'
+                    .'|modifier\\-traiteur/([^/]++)(*:587)'
+                .')'
             .')/?$}sD',
     ],
     [ // $dynamicRoutes
@@ -82,7 +92,11 @@ return [
         351 => [[['_route' => 'recette', '_controller' => 'App\\Controller\\DefaultController::recette'], ['id'], null, null, false, true, null]],
         371 => [[['_route' => 'repas', '_controller' => 'App\\Controller\\DefaultController::repas'], ['id'], null, null, false, true, null]],
         406 => [[['_route' => 'commanderrepas', '_controller' => 'App\\Controller\\DefaultController::commanderrepas'], ['id'], null, null, false, true, null]],
-        475 => [
+        481 => [[['_route' => 'adminSupprimerArticle', '_controller' => 'App\\Controller\\DefaultController::adminSupprimerArticle'], ['id'], null, null, false, true, null]],
+        505 => [[['_route' => 'adminSupprimerRecette', '_controller' => 'App\\Controller\\DefaultController::adminSupprimerRecette'], ['id'], null, null, false, true, null]],
+        530 => [[['_route' => 'adminSupprimerTraiteur', '_controller' => 'App\\Controller\\DefaultController::adminSupprimerTraiteur'], ['id'], null, null, false, true, null]],
+        551 => [[['_route' => 'adminSupprimerUser', '_controller' => 'App\\Controller\\DefaultController::adminSupprimerUser'], ['id'], null, null, false, true, null]],
+        587 => [
             [['_route' => 'adminModifierTraiteur', '_controller' => 'App\\Controller\\DefaultController::adminModifierTraiteur'], ['id'], null, null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],
