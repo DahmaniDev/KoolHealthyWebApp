@@ -12,6 +12,7 @@ use Symfony\Component\Validator\Constraints\IsTrue;
 use Symfony\Component\Validator\Constraints\Length;
 use Symfony\Component\Validator\Constraints\NotBlank;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
 
 class RegistrationFormType extends AbstractType
 {
@@ -19,7 +20,8 @@ class RegistrationFormType extends AbstractType
     {
         $builder
             ->add('nom')
-            ->add('username')
+            ->add('username', TextType::Class , array(
+                'label'=>'E-mail'))
             ->add('sexe',ChoiceType::class, [
                 'choices'  => [
                     'Homme' => 'Homme',

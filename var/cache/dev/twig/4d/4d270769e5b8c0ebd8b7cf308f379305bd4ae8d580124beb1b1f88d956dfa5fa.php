@@ -12,7 +12,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* /blog/blog.html.twig */
+/* blog/blog.html.twig */
 class __TwigTemplate_5552c4b3b699db7bd9a2a589ba5c0059ecc7a426f20b501d4791828c010590f9 extends Template
 {
     private $source;
@@ -34,10 +34,10 @@ class __TwigTemplate_5552c4b3b699db7bd9a2a589ba5c0059ecc7a426f20b501d4791828c010
     {
         $macros = $this->macros;
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "/blog/blog.html.twig"));
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "blog/blog.html.twig"));
 
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "/blog/blog.html.twig"));
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "blog/blog.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -98,7 +98,7 @@ class __TwigTemplate_5552c4b3b699db7bd9a2a589ba5c0059ecc7a426f20b501d4791828c010
 \t<header class=\"top-navbar\">
 \t\t<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
 \t\t\t<div class=\"container\">
-\t\t\t\t<a class=\"navbar-brand\" href=\"home\">
+\t\t\t\t<a class=\"navbar-brand\" href=\"/home\">
 \t\t\t\t\t<img src=";
         // line 39
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/logo.png"), "html", null, true);
@@ -311,7 +311,7 @@ class __TwigTemplate_5552c4b3b699db7bd9a2a589ba5c0059ecc7a426f20b501d4791828c010
 
     public function getTemplateName()
     {
-        return "/blog/blog.html.twig";
+        return "blog/blog.html.twig";
     }
 
     public function isTraitable()
@@ -363,7 +363,7 @@ class __TwigTemplate_5552c4b3b699db7bd9a2a589ba5c0059ecc7a426f20b501d4791828c010
 \t<header class=\"top-navbar\">
 \t\t<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
 \t\t\t<div class=\"container\">
-\t\t\t\t<a class=\"navbar-brand\" href=\"home\">
+\t\t\t\t<a class=\"navbar-brand\" href=\"/home\">
 \t\t\t\t\t<img src={{asset(\"images/logo.png\")}} alt=\"\" />
 \t\t\t\t</a>
 \t\t\t\t<button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbars-rs-food\" aria-controls=\"navbars-rs-food\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
@@ -523,6 +523,6 @@ class __TwigTemplate_5552c4b3b699db7bd9a2a589ba5c0059ecc7a426f20b501d4791828c010
     <script src=\"js/contact-form-script.js\"></script>
     <script src=\"js/custom.js\"></script>
 </body>
-</html>", "/blog/blog.html.twig", "C:\\Users\\tarza\\SymfonyProjects\\ProjetSymfony\\templates\\blog\\blog.html.twig");
+</html>", "blog/blog.html.twig", "C:\\Users\\tarza\\SymfonyProjects\\ProjetSymfony\\templates\\blog\\blog.html.twig");
     }
 }

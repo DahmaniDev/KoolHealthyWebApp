@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kool Healthy Admin</title>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+    <link rel="icon" href="images/logo.png">
+    <style>
+
+        body {
+            margin : 0;
+            padding : 0;
+            font : 90% "lucida sans", "Trebuchet MS", verdana, tahoma, arial, sans-serif;
+            line-height : 1.7em;
+            background : #333 no-repeat;
+            color : #eee;
+        }
+        a:link, a:visited, a:active {
+            color : #9BBA7F;
+            background : inherit;
+        }
+        a:hover {
+            color : #7A7B75;
+            background : inherit;
+        }
+        h1 {
+            margin : 0;
+            padding : 20px;
+            font-size : 130%;
+            color : #adae75;
+            background : inherit;
+        }
+        #content h2 {
+            padding : 10px 0 10px 30px;
+            margin : 0;
+            font-size : 120%;
+            text-transform : uppercase;
+            color : #adae75;
+            background : inherit;
+        }
+        #container {
+            width : 750px;
+            margin-left : 0;
+            margin-right : auto;
+            color : #d6ddbc;
+            background : inherit;
+        }
+        #header {
+            width : 750px;
+            height : 172px;
+            border-bottom : 0 solid #ccc;
+            background : transparent no-repeat;
+            margin-bottom : 0;
+        }
+        #title {
+            width : 1050px;
+            height : 50px;
+            margin-bottom : 10px;
+            background : transparent no-repeat;
+        }
+        #title p {
+            text-align : center;
+            text-transform : uppercase;
+            letter-spacing : 5px;
+            color : #adae75;
+            background : inherit;
+            font-size : 130%;
+            padding : 20px 0 20px 0;
+        }
+        #content {
+            margin-right : 0;
+            width : 460px;
+        }
+        #content p {
+            padding : 5px 20px 5px 30px;
+            margin : 0;
+        }
+        #footer {
+            width : 750px;
+            height : 50px;
+            clear : right;
+            border-top : 1px solid #666;
+            background : inherit;
+            color : #eee;
+            padding : 5px 0 5px 0;
+        }
+        #footer p {
+            text-align : left;
+            padding-left : 25px;
+            font-size : 0.9em;
+        }
+        #navcontainer {
+            width : 260px;
+            margin-left : 260px;
+            padding-bottom : 20px;
+        }
+        #navcontainer ul {
+            margin-left : 0;
+            padding-left : 0;
+            list-style-type : none;
+        }
+        #navcontainer a {
+            display : block;
+            padding : 3px;
+            width : 160px;
+            background-color : #333;
+            color : #adae75;
+            border-bottom : 1px solid #adae75;
+        }
+        #navcontainer a:link, #navlist a:visited {
+            background : inherit;
+            color : #adae75;
+            text-decoration : none;
+        }
+        #navcontainer a:hover {
+            background-color : #424a33;
+            color : #d6ddbc;
+        }
+        #navcontainer input[type="text"]{
+            width: 150%;
+            margin-bottom: 20px;
+            border: none;
+            border-bottom: 1px solid #fff;
+            background: transparent;
+            outline: none;
+            height: 30px;
+            color: #fff;
+        }
+        #navcontainer textarea{
+            width: 150%;
+            margin-bottom: 20px;
+            border: none;
+            border-bottom: 1px solid #fff;
+            background: transparent;
+            outline: none;
+            height: 80px;
+            color: #fff;
+        }
+        #navcontainer input[type="file"]{
+            width: 100%;
+            margin-bottom: 20px;
+            border: none;
+            border-bottom: 1px solid #fff;
+            background: transparent;
+            outline: none;
+            height: 20px;
+            color: #fff;
+            opacity: 1;
+            color: #adae75;
+            border: 1px solid currentColor;
+            font-weight: 700;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            cursor: pointer;
+            display: inline-block;
+            overflow: hidden;
+        }
+        #navcontainer input[type="submit"]
+        {
+            border: none;
+            outline: none;
+            height: 30px;
+            background: #adae75;
+            color: #000;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="title">
+            <p>Interface Admin Kool Healthy</p>
+        </div>
+        <div id="content">
+            <h2>Administrer</h2>
+            <p>Vous ne pouvez pas annuler vos modifications!</p>
+            <br>
+            <div id="footer">
+                <p><a href="/admin-kool-healthy-123456789">Accueil</a>
+                <a href="/admin-kool-healthy-123456789-liste-article">Liste articles</a></p>
+            </div>
+            <u style="margin-left : 30px">Page ajout recette</u>
+            <div id="navcontainer">
+                <!--<form>
+                    <h4>Type d'article : </h4>
+                    <input type="radio" id="actualité" name="type" value="actualité" checked="checked">
+                    <label for="actualité">Actualité</label>
+                    <input type="radio" id="recette" name="type" value="recette">
+                    <label for="recette">Recette</label><br><br>
+                    <label for="titre">Titre d'article : </label>
+                    <input type="text" id="titre" placeholder="Titre de l'article" required data-error="Entrez le titre de votre article">
+                    <div class="help-block with-errors"></div>
+                    <label for="heading">En-tête d'article : </label>
+                    <textarea id="heading" placeholder="En-tête de l'article" rows="4" data-error="Entrez l'en-tête de votre article" required></textarea>
+                    <div class="help-block with-errors"></div>
+                    <label for="contenu">Contenu d'article : </label>
+                    <textarea id="contenu" placeholder="Contenu de l'article" rows="8" data-error="Entrez le contenu de votre article" required></textarea>
+                    <div class="help-block with-errors"></div>
+                    <label for="image">Image d'article : </label>
+                    <input type="file" id="image">
+                    <input type="submit" value="Publier">
+                </form>-->
+                {{ form_start(form) }}
+                    {{form_row(form.titre)}}
+                    {{form_row(form.heading)}}
+                    {{form_row(form.contenu)}}
+                    {{form_row(form.image)}}
+                    <br>
+					<button type="submit" style="width : 100px ;margin-bottom : 20px ; margin-left : 45% ; border: none; outline: none; height: 40px; background: #adae75; color: #fff; font-size: 18px; cursor: pointer;">Valider</button>
+					<br>
+                {{ form_end(form) }}
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

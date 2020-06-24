@@ -16,10 +16,10 @@ class PartenariatType extends AbstractType
             ->add('email')
             ->add('nom')
             ->add('contenu', ChoiceType::class, array(
-                'label'=>' ',
+                'label'=>'Vous êtes :  ',
                 'choices' => [
-                    'restaurant' => 'restaurant',
-                    'traiteur' => 'traiteur'
+                    'Restaurant' => 'Restaurant',
+                    'Traiteur' => 'Traiteur'
                 ]
             ))
         ;

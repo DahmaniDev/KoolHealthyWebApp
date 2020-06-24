@@ -96,8 +96,8 @@
 						</div>            
 					</form>-->
 					{{ form_start(form) }}
-						{{form_row(form.contenu)}}
-						<button type="submit">Valider</button>
+						{{form_row(form.contenu,{'attr':{'style':'height: 80px; width: 100%; margin-left:20px; border : 1px solid #d65106', 'placeholder' : 'Entrez votre Message ici'}})}}
+						<button type="submit" class="btn btn-common" style="margin-left : 20px">Envoyer</button>
 					{{ form_end(form) }}
 				</div>
 			</div>

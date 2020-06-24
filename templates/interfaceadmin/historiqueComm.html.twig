@@ -155,15 +155,15 @@
                     </tr>
                     {% for commande in commandes %}
                     <tr>
-                                <td>{{commande.id}}</td>
-                                <td>{{commande.getIdRepas}}</td>
-                                <td>{{commande.getDateComm | date('Y-m-d')}}</td>
-                                <td>{{commande.adresse}}</td>
-                                <td>{{commande.getPrixComm}}</td>
-                                <td>{{commande.status}}</td>
-                                <td>{{commande.getIdUser}}</td>
-                                <td>{{commande.getIdTraiteur}}</td>
-                            </tr>
+                        <td>{{commande.id}}</td>
+                        <td>{{commande.getIdRepas}}</td>
+                        <td>{{commande.getDateComm | date('Y-m-d')}}</td>
+                        <td>{{commande.adresse}}</td>
+                        <td>{{commande.getPrixComm}}</td>
+                        <td>{{commande.status}}</td>
+                        <td>{{commande.getIdUser}}</td>
+                        <td>{{commande.getIdTraiteur}}</td>
+                    </tr>
                     {% endfor %}
                 </table>
             </div>

@@ -110,12 +110,12 @@
 						</div>    
 					</form>-->
 					{{ form_start(form) }}
-						{{form_row(form.email,{'attr':{'class':'form-control','placeholder':'Entrez votre E-mail'}})}}
-						{{form_row(form.nom,{'attr':{'class':'form-control','placeholder':'Nom de votre restaurant'}})}}
+						{{form_row(form.email,{'attr':{'class':'form-control','placeholder':'Entrez votre E-mail', 'style':'border : 1px solid #d65106'}})}}
+						{{form_row(form.nom,{'attr':{'class':'form-control','placeholder':'Nom de votre restaurant', 'style':'border : 1px solid #d65106'}})}}
 						</br>
-						{{form_row(form.contenu)}}
+						{{form_row(form.contenu,{'attr':{'style':'height: 40px; width: 40%; margin-left:20px; border : 1px solid #d65106'}})}}
 						</br>
-						<button type="submit">Valider</button>
+						<button type="submit" class="btn btn-common">Envoyer</button>
 					{{ form_end(form) }}
 				</div>
 			</div>

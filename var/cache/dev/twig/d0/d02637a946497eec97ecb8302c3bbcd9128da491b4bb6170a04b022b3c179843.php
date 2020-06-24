@@ -149,9 +149,9 @@ class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b
         echo "
 \t\t\t\t\t\t";
         // line 99
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 99, $this->source); })()), "contenu", [], "any", false, false, false, 99), 'row');
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 99, $this->source); })()), "contenu", [], "any", false, false, false, 99), 'row', ["attr" => ["style" => "height: 80px; width: 100%; margin-left:20px; border : 1px solid #d65106", "placeholder" => "Entrez votre Message ici"]]);
         echo "
-\t\t\t\t\t\t<button type=\"submit\">Valider</button>
+\t\t\t\t\t\t<button type=\"submit\" class=\"btn btn-common\" style=\"margin-left : 20px\">Envoyer</button>
 \t\t\t\t\t";
         // line 101
         echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 101, $this->source); })()), 'form_end');
@@ -390,8 +390,8 @@ class __TwigTemplate_09faafb62e24b5bdf7ad564ef16fb8359c18f0b9463bfd19d82e3b64e0b
 \t\t\t\t\t\t</div>            
 \t\t\t\t\t</form>-->
 \t\t\t\t\t{{ form_start(form) }}
-\t\t\t\t\t\t{{form_row(form.contenu)}}
-\t\t\t\t\t\t<button type=\"submit\">Valider</button>
+\t\t\t\t\t\t{{form_row(form.contenu,{'attr':{'style':'height: 80px; width: 100%; margin-left:20px; border : 1px solid #d65106', 'placeholder' : 'Entrez votre Message ici'}})}}
+\t\t\t\t\t\t<button type=\"submit\" class=\"btn btn-common\" style=\"margin-left : 20px\">Envoyer</button>
 \t\t\t\t\t{{ form_end(form) }}
 \t\t\t\t</div>
 \t\t\t</div>

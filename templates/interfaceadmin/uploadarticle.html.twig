@@ -181,8 +181,9 @@
                 <p><a href="/admin-kool-healthy-123456789">Accueil</a>
                 <a href="/admin-kool-healthy-123456789-liste-article">Liste articles</a></p>
             </div>
+            <u style="margin-left : 30px">Page ajout article</u>
             <div id="navcontainer">
-                <form>
+                <!--<form>
                     <h4>Type d'article : </h4>
                     <input type="radio" id="actualité" name="type" value="actualité" checked="checked">
                     <label for="actualité">Actualité</label>
@@ -200,7 +201,16 @@
                     <label for="image">Image d'article : </label>
                     <input type="file" id="image">
                     <input type="submit" value="Publier">
-                </form>
+                </form>-->
+                {{ form_start(form) }}
+                    {{form_row(form.titre)}}
+                    {{form_row(form.heading)}}
+                    {{form_row(form.contenu)}}
+                    {{form_row(form.image)}}
+                    <br>
+					<button type="submit" style="width : 100px ;margin-bottom : 20px ; margin-left : 45% ; border: none; outline: none; height: 40px; background: #adae75; color: #fff; font-size: 18px; cursor: pointer;">Valider</button>
+					<br>
+                {{ form_end(form) }}
             </div>
         </div>
         

@@ -6,6 +6,8 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\RedirectResponse;
+use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use App\Entity\User;
 use App\Entity\Article;
 use App\Entity\Recette;
@@ -16,7 +18,15 @@ use App\Entity\Traiteur;
 use App\Entity\Commande;
 use App\Form\PartenariatType;
 use App\Form\ContactType;
+use App\Form\CommandeType;
 use App\Form\ModifierProfilType;
+use App\Form\AjoutArticleType;
+use App\Form\AjoutRecetteType;
+use App\Form\AjoutTraiteurType;
+use App\Form\ModifierTraiteurType;
+
+use Dompdf\Dompdf;
+use Dompdf\Options;
 
 class DefaultController extends AbstractController
 {
@@ -25,6 +35,36 @@ class DefaultController extends AbstractController
    */
   public function home():Response{
     return $this->render('home.html.twig');
+  }
+  /**
+   * @Route("/commandePDF/{id}", name="commandePDF")
+   */
+  public function commandePDF($id):Response{
+    $commande=$this->getDoctrine()->getRepository(Commande::class)->find($id);
+    $pdfOptions = new Options();
+    $pdfOptions->set('defaultFont', 'Times New Roman');
+    
+    // Instantiate Dompdf with our options
+    $dompdf = new Dompdf($pdfOptions);
+    
+    // Retrieve the HTML generated in our twig file
+    $html = $this->renderView('commandePDF/comandePDF.html.twig', [
+        'commande' => $commande
+    ]);
+    
+    // Load HTML to Dompdf
+    $dompdf->loadHtml($html);
+    
+    // (Optional) Setup the paper size and orientation 'portrait' or 'portrait'
+    $dompdf->setPaper('A4', 'portrait');
+
+    // Render the HTML as PDF
+    $dompdf->render();
+
+    // Output the generated PDF to Browser (force download)
+    $dompdf->stream("Commande.pdf", [
+        "Attachment" => true
+    ]);
   }
   /**
    * @Route("/CalculateMyNeeds/{id}", name="CalculateMyNeeds")
@@ -202,6 +242,7 @@ class DefaultController extends AbstractController
       $entityManager = $this->getDoctrine()->getManager();
       $entityManager->persist($message);
       $entityManager->flush();
+      return $this->render('/Message/MessageSent.html.twig');
     }
     
     return $this->render('/contact/contact.html.twig',[
@@ -243,10 +284,24 @@ class DefaultController extends AbstractController
       $entityManager = $this->getDoctrine()->getManager();
       $entityManager->persist($message);
       $entityManager->flush();
+      return $this->render('/Message/MessageSent.html.twig');
     }
     return $this->render('/partenariat/partenariat.html.twig',[
       'form' => $form->createView()
     ]);
+  }
+  /**
+   * @Route("/message-sent", name="message-sent")
+   */
+  public function MessageSent():Response{
+    return $this->render('/Message/MessageSent.html.twig');
+  }
+  /**
+   * @Route("/commande-sent/{id}", name="commande-sent")
+   */
+  public function CommandeSent($id):Response{
+    $commande==$this->getDoctrine()->getRepository(Commande::class)->find($id);
+    
   }
   /**
    * @Route("/repas/{id}", name="repas")
@@ -263,13 +318,38 @@ class DefaultController extends AbstractController
   /**
    * @Route("/commander-repas/{id}", name="commanderrepas")
    */
-  public function commanderrepas($id):Response{
+  public function commanderrepas($id, Request $request):Response{
+    $commande=new Commande();
+    $form = $this->createForm(CommandeType::class,$commande);
+
+    $user = $this->getUser();
+
     $repas=$this->getDoctrine()->getRepository(Repas::class)->find($id);
     $repas->setImage(base64_encode(stream_get_contents($repas->getImage())));
+
     $traiteur=$this->getDoctrine()->getRepository(Traiteur::class)->find($repas->getIdTraiteur());
+
+    if($request->isMethod('POST') && $form->handleRequest($request)->isValid()){
+      $commande->setDateComm(new \DateTime('now'));
+      $commande->setIdRepas($id);
+      $commande->setPrixComm($repas->getPrix());
+      $commande->setStatus('En cours de préparation');
+      $commande->setIdUser($user->getId());
+      $commande->setIdTraiteur($traiteur->getId());
+
+      $entityManager = $this->getDoctrine()->getManager();
+      $entityManager->persist($commande);
+      $entityManager->flush();
+      return $this->render('/Message/CommandeSent.html.twig',[
+        'commande'=>$commande
+      ]);
+    }
+
     return $this->render('/commanderRepas/commanderRepas.html.twig',[
-      'repas'=>$repas,
-      'traiteur'=>$traiteur
+      'repas' => $repas,
+      'traiteur' => $traiteur,
+      'commande' => $commande,
+      'form' => $form->createView()
     ]);
   }
   /**
@@ -277,15 +357,16 @@ class DefaultController extends AbstractController
    */
   public function ModifierProfile($id, Request $request):Response{
     $user=$this->getDoctrine()->getRepository(User::class)->find($id);
-    $form = $this->createForm(ModifierProfilType::class,$user);
 
-    if($user->getImage() != NULL){
-      $user->setImage(base64_encode(stream_get_contents($user->getImage())));
-    }
+    $form = $this->createForm(ModifierProfilType::class,$user);
+    
     if($request->isMethod('POST') && $form->handleRequest($request)->isValid()){
       $entityManager = $this->getDoctrine()->getManager();
       $entityManager->persist($user);
       $entityManager->flush();
+      return $this->render('/profile/profile.html.twig',[
+        'user'=>$user,
+      ]);
     }
     return $this->render('/ModifierProfile/ModifierProfile.html.twig',[
       'user'=>$user,
@@ -337,8 +418,52 @@ class DefaultController extends AbstractController
   /**
    * @Route("/admin-kool-healthy-123456789-upload-article", name="adminUploadArticle")
    */
-  public function adminUploadArticle():Response{
-    return $this->render('/interfaceadmin/uploadarticle.html.twig');
+  public function adminUploadArticle(Request $request):Response{
+    
+
+    $article = new Article();
+    $form = $this->createForm(AjoutArticleType::class,$article);
+    
+
+    if($request->isMethod('POST') && $form->handleRequest($request)->isValid()){
+      $entityManager = $this->getDoctrine()->getManager();
+      $entityManager->persist($article);
+      $entityManager->flush();
+      $actualités=$this->getDoctrine()->getRepository(Article::class)->findAll();
+      $recettes=$this->getDoctrine()->getRepository(Recette::class)->findAll();
+      return $this->render('/interfaceadmin/listeArticle.html.twig',[
+        'actualités'=>$actualités,
+        'recettes'=>$recettes
+      ]);
+    }
+    return $this->render('/interfaceadmin/uploadarticle.html.twig',[
+      'form' => $form->createView()
+    ]);
+  }
+  /**
+   * @Route("/admin-kool-healthy-123456789-upload-recette", name="adminUploadRecette")
+   */
+  public function adminUploadRecette(Request $request):Response{
+    
+
+    $recette = new Recette();
+    $form = $this->createForm(AjoutRecetteType::class,$recette);
+    
+
+    if($request->isMethod('POST') && $form->handleRequest($request)->isValid()){
+      $entityManager = $this->getDoctrine()->getManager();
+      $entityManager->persist($recette);
+      $entityManager->flush();
+      $actualités=$this->getDoctrine()->getRepository(Article::class)->findAll();
+      $recettes=$this->getDoctrine()->getRepository(Recette::class)->findAll();
+      return $this->render('/interfaceadmin/listeArticle.html.twig',[
+        'actualités'=>$actualités,
+        'recettes'=>$recettes
+      ]);
+    }
+    return $this->render('/interfaceadmin/uploadRecette.html.twig',[
+      'form' => $form->createView()
+    ]);
   }
   /**
    * @Route("/admin-kool-healthy-123456789-liste-article", name="adminListeArticle")
@@ -378,16 +503,48 @@ class DefaultController extends AbstractController
   /**
    * @Route("/admin-kool-healthy-123456789-ajout-traiteur", name="adminAjoutTraiteur")
    */
-  public function adminAjoutTraiteur():Response{
-    return $this->render('/interfaceadmin/ajoutTraiteur.html.twig');
+  public function adminAjoutTraiteur(Request $request):Response{
+    
+
+    $traiteur = new Traiteur();
+    $form = $this->createForm(AjoutTraiteurType::class,$traiteur);
+    
+
+    if($request->isMethod('POST') && $form->handleRequest($request)->isValid()){
+      $entityManager = $this->getDoctrine()->getManager();
+      $entityManager->persist($traiteur);
+      $entityManager->flush();
+      $traiteurs=$this->getDoctrine()->getRepository(Traiteur::class)->findAll();
+      return $this->render('/interfaceadmin/listeTraiteur.html.twig',[
+        'traiteurs'=>$traiteurs
+      ]);
+    }
+    return $this->render('/interfaceadmin/ajoutTraiteur.html.twig',[
+      'form' => $form->createView()
+    ]);
   }
   /**
    * @Route("/admin-kool-healthy-123456789-modifier-traiteur/{id}", name="adminModifierTraiteur")
    */
-  public function adminModifierTraiteur($id):Response{
+  public function adminModifierTraiteur($id, Request $request):Response{
     $traiteur=$this->getDoctrine()->getRepository(Traiteur::class)->find($id);
+
+    $form = $this->createForm(ModifierTraiteurType::class,$traiteur);
+    
+
+    if($request->isMethod('POST') && $form->handleRequest($request)->isValid()){
+      $entityManager = $this->getDoctrine()->getManager();
+      $entityManager->persist($traiteur);
+      $entityManager->flush();
+      $traiteurs=$this->getDoctrine()->getRepository(Traiteur::class)->findAll();
+      return $this->render('/interfaceadmin/listeTraiteur.html.twig',[
+        'traiteurs'=>$traiteurs
+      ]);
+    }
+
     return $this->render('/interfaceadmin/modifierTraiteur.html.twig',[
-      'traiteur'=>$traiteur
+      'traiteur'=>$traiteur,
+      'form' => $form->createView()
     ]);
   }
   /**
