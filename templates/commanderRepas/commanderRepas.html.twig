@@ -108,8 +108,8 @@
 					</form>-->
 					{{ form_start(form) }}
 						{{form_row(form.adresse,{'attr':{'class':'form-control', 'style':'border : 1px solid #d65106'}})}}
-						{{form_row(form.date_livraison)}}
-						{{form_row(form.temps_livraison)}}
+						{{form_row(form.date_livraison,{'attr':{'class':'form-control', 'style':'border : 1px solid #d65106', 'placeholder' : 'Date : aaaa/mm/jj'}})}}
+						{{form_row(form.temps_livraison,{'attr':{'class':'form-control', 'style':'border : 1px solid #d65106', 'placeholder' : 'Temps : hh:mm'}})}}
 						<br>
 						<button  type="submit" class="btn btn-common" style="margin-bottom : 20px">Commander</button>
 					{{ form_end(form) }}

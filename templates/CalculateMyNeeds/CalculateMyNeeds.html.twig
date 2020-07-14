@@ -27,7 +27,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href={{asset("css/custom.css")}}>
 
-	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script type="text/javascript" src={{asset("https://www.gstatic.com/charts/loader.js")}}></script>
     <script type="text/javascript">
       google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(drawChart);
@@ -42,7 +42,7 @@
         ]);
 
         var options = {
-          title: ''
+          title: ' '
         };
 
         var chart = new google.visualization.PieChart(document.getElementById('piechart'));
@@ -113,14 +113,17 @@
 							<h4>Protéines : <span> {{protein | number_format(2, '.')}} g</span></h4>
 							<h4>Graisses : <span> {{fats | number_format(2, '.')}} g</span></h4>
 							<h4>Glucides : <span> {{carbs | number_format(2, '.')}} g</span></h4>
-							<div id="piechart" style="width: 600px; height: 400px;"></div>
+							<br>
+							<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="/PreparemyMeal/{{calories}}">Préparer Mon Repas</a></p>
+							<div id="piechart" style="width: 500px; height: 300px;"></div>
 						</div>
+						
 					</div>
 					<div class="col-lg-6 col-md-6 col-sm-12">
 						<img src={{asset("images/bodies.jpg")}} alt="" class="img-fluid">
 					</div>
 				</div>
-				<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="/PreparemyMeal/{{calories}}">Préparer Mon Repas</a></p>
+				
 				</div>
 			</div>
 		</div>

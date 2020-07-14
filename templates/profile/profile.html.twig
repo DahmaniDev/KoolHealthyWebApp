@@ -87,7 +87,9 @@
 				<div class="col-lg-12 col-sm-12 col-xs-12">
 					<div class="contact-block">
 							<div class="heading-title text-center">
-								<img src="/images/avatar.png" class="avatar">
+								{% if app.user.sexe == 'Homme' %}<img src="/images/menavatar.png" class="avatar">
+								{% else %}<img src="/images/womanavatar.png" class="avatar">
+								{% endif %}
 								<br>
 							</div>
 							<div class="row">
@@ -110,7 +112,7 @@
 											<h4>{{user.sexe}}</h4>
 										</div> 
 									</div>
-									<h3>À quel point êtes-vous physiquement actif</h3>
+									<h3>À quel point êtes-vous physiquement actif?</h3>
 									<div class="col-md-12">
 										<div class="form-group">
 											<h4>{{user.getActivityLevel()}}</h4>

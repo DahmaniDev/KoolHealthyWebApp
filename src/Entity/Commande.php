@@ -24,7 +24,7 @@ class Commande
     private $id_repas;
 
     /**
-     * @ORM\Column(type="date")
+     * @ORM\Column(type="string", length=255)
      */
     private $date_comm;
 
@@ -56,12 +56,12 @@ class Commande
     private $id_traiteur;
 
     /**
-     * @ORM\Column(type="date")
+     * @ORM\Column(type="string", length=255)
      */
     private $date_livraison;
 
     /**
-     * @ORM\Column(type="time")
+     * @ORM\Column(type="string", length=255)
      */
     private $temps_livraison;
 
@@ -82,12 +82,12 @@ class Commande
         return $this;
     }
 
-    public function getDateComm(): ?\DateTimeInterface
+    public function getDateComm(): ?String
     {
         return $this->date_comm;
     }
 
-    public function setDateComm(\DateTimeInterface $date_comm): self
+    public function setDateComm(String $date_comm): self
     {
         $this->date_comm = $date_comm;
 
@@ -154,24 +154,24 @@ class Commande
         return $this;
     }
 
-    public function getDateLivraison(): ?\DateTimeInterface
+    public function getDateLivraison(): ? String
     {
         return $this->date_livraison;
     }
 
-    public function setDateLivraison(\DateTimeInterface $date_livraison): self
+    public function setDateLivraison(String $date_livraison): self
     {
         $this->date_livraison = $date_livraison;
 
         return $this;
     }
 
-    public function getTempsLivraison(): ?\DateTimeInterface
+    public function getTempsLivraison(): ?String
     {
         return $this->temps_livraison;
     }
 
-    public function setTempsLivraison(\DateTimeInterface $temps_livraison): self
+    public function setTempsLivraison(String $temps_livraison): self
     {
         $this->temps_livraison = $temps_livraison;
 

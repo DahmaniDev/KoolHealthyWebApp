@@ -232,9 +232,10 @@ class DefaultController extends AbstractController
     $user = $this->getUser();
     $message = new Message();
     $form = $this->createForm(ContactType::class,$message);
+    $date= new \DateTime('now');
 
     if($request->isMethod('POST') && $form->handleRequest($request)->isValid()){
-      $message->setDate(new \DateTime('now'));
+      $message->setDate($date->format('Y-m-d'));
       $message->setType('Contact');
       $message->setNom($user->getNom());
       $message->setEmail($user->getUsername());
@@ -275,10 +276,11 @@ class DefaultController extends AbstractController
   public function partenariat(Request $request):Response{
     $message = new Message();
     $form = $this->createForm(PartenariatType::class,$message);
-    
+    $date = new \DateTime('now');
+    $dateStr = strval($date->format('Y-m-d'));
 
     if($request->isMethod('POST') && $form->handleRequest($request)->isValid()){
-      $message->setDate(new \DateTime('now'));
+      $message->setDate($dateStr);
       $message->setType('Partenariat');
 
       $entityManager = $this->getDoctrine()->getManager();
@@ -321,7 +323,8 @@ class DefaultController extends AbstractController
   public function commanderrepas($id, Request $request):Response{
     $commande=new Commande();
     $form = $this->createForm(CommandeType::class,$commande);
-
+    $date = new \DateTime('now');
+    $dateStr = strval($date->format('Y-m-d'));
     $user = $this->getUser();
 
     $repas=$this->getDoctrine()->getRepository(Repas::class)->find($id);
@@ -330,7 +333,7 @@ class DefaultController extends AbstractController
     $traiteur=$this->getDoctrine()->getRepository(Traiteur::class)->find($repas->getIdTraiteur());
 
     if($request->isMethod('POST') && $form->handleRequest($request)->isValid()){
-      $commande->setDateComm(new \DateTime('now'));
+      $commande->setDateComm($dateStr);
       $commande->setIdRepas($id);
       $commande->setPrixComm($repas->getPrix());
       $commande->setStatus('En cours de préparation');

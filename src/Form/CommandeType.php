@@ -17,17 +17,8 @@ class CommandeType extends AbstractType
             
             ->add('adresse')
             
-            ->add('date_livraison',DateType::Class, array(
-                'widget' => 'choice',
-                'years' => range(date('Y'), date('Y')),
-                'months' => range(date('m'), 12),
-                'days' => range(date('d')+1, 31),
-              ))
-            ->add('temps_livraison',TimeType::Class, array(
-                'widget' => 'choice',
-                'hours' => range(8, 22),
-                'minutes' => range(0, 59),
-              ))
+            ->add('date_livraison')
+            ->add('temps_livraison')
         ;
     }
 
